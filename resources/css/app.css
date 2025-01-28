@@ -1,1 +1,69 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
+@import '@fortawesome/fontawesome-free/css/fontawesome.css';
+@import '@fortawesome/fontawesome-free/css/regular.css';
+@import '@fortawesome/fontawesome-free/css/solid.css';
+@import '@fortawesome/fontawesome-free/css/brands.css';
+
+@font-face {
+    font-family: 'Lora-variable';
+    src: url('../fonts/Lora/Lora-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Lora-variable-italic';
+    src: url('../fonts/Lora/Lora-Italic-VariableFont_wght.ttf');
+}
+
+* {
+    font-family: 'Lora-variable', sans-serif;
+}
+
+.header-container {
+    background-image: url('../images/redHouse.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 100vh;
+    padding: 0;
+}
+
+.navbar-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5%; /* 5% de marge de chaque côté pour obtenir 90% */
+    right: 5%;
+    height: 3px;
+    background-color: #ea322c;
+}
+
+.navbar {
+    position: sticky;
+    top: 0; /* Important : définit à partir d'où la navbar devient sticky */
+    z-index: 100;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav-item {
+    font-size: 1.2rem;
+    font-variation-settings: 'wght' 500;
+}
+
+.nav-link {
+    color: white !important;
+    text-shadow: 2px 2px 2px #000000;
+}
+.top-hero-container {
+    background-image: url('../images/top-hero.jpg');
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
