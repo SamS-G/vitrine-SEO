@@ -18,6 +18,15 @@
     font-family: 'Lora-variable', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-variation-settings: 'wght' 700;
+}
+
 .header-container {
     background-image: url('../images/redHouse.webp');
     background-size: cover;
@@ -28,7 +37,7 @@
 }
 
 .navbar-container {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     margin-left: auto;
     margin-right: auto;
 }
@@ -56,14 +65,50 @@
     font-variation-settings: 'wght' 500;
 }
 
-.nav-link {
+.nav-link, ul li a i, a, h1 {
     color: white !important;
     text-shadow: 2px 2px 2px #000000;
 }
+
 .top-hero-container {
-    background-image: url('../images/top-hero.jpg');
-    height: 50vh;
+    position: relative; /* Pour positionner top-hero-wrapper */
+    height: 30vh; /* Ajuster selon vos besoins */
+    display: flex;
+    flex-direction: column; /* H1 en haut, wrapper en bas */
+    background-image: url('../images/top-hero.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
 }
+
+
+.top-hero-wrapper {
+    position: absolute; /* Positionnement en bas */
+    bottom: 10%;
+    left: 0;
+    right: 0; /* Pour occuper toute la largeur */
+    display: flex;
+    align-items: center; /* Centre verticalement les conteneurs */
+    justify-content: space-between; /* Espacer les conteneurs horizontalement */
+    padding: 20px; /* Marge intérieure */
+}
+
+.social-container ul {
+    padding: 0;
+    margin: 0;
+    display: flex; /* Pour aligner les icônes en colonne */
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-container li, .contact-container a {
+    margin-bottom: 2vh; /* Espacement entre les icônes et liens */
+    list-style: none;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column; /* Eléments l'un au-dessus de l'autre */
+    align-items: center;
+}
+

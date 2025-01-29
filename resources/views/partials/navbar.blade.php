@@ -24,10 +24,6 @@
                     <a class="nav-link">Blog/Conseils</a>
                 </li>
             </ul>
-            <ul class="navbar-nav sm-icons">
-                <li><a class="nav-link" href="https://www.facebook.com/JDTravauxServices"><i class="fa-brands fa-xl fa-square-facebook" ></i></a></li>
-                <li><a class="nav-link" href="https://www.instagram.com/jdtravaux"><i class="fa-brands fa-xl fa-instagram"></i></a></li>
-            </ul>
         </div>
     </div>
 </nav>
