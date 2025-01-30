@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jd Travaux Services</title>
+    <link rel="icon" type="image/png" href="{{ Vite::asset('resources/images/favicon.png') }}">
     <!-- Inclure les fichiers générés par Vite -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script type="application/ld+json">
