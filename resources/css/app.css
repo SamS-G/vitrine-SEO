@@ -23,19 +23,28 @@ a {
     font-size: 1.1rem;
 }
 
-h1 {
+h1, h2 {
     font-variation-settings: 'wght' 700;
 }
-
-.header-container {
-    background-image: url('../images/redHouse.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    height: 100vh;
-    padding: 0;
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
+h1 {
+    animation: fadeInSlide 0.8s ease-out;
+}
+
+.nav-link, ul li a i, a, h1, h2 {
+     color: white !important;
+     text-shadow: 2px 2px 2px #000000!important;
+ }
 .navbar-container {
     background-color: rgba(0, 0, 0, 0.8);
     margin-left: auto;
@@ -51,7 +60,29 @@ h1 {
     height: 3px;
     background-color: #ea322c;
 }
+.nav-item {
+    font-size: 1.2rem;
+    font-variation-settings: 'wght' 500;
+}
 
+.header-container {
+    background-image: url("../images/redHouse.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 100vh;
+    padding: 0;
+}
+.header-container {
+    display: flex; /* Active le mode flexbox pour le conteneur */
+    flex-direction: column; /* Définit la direction des éléments (verticale) */
+}
+.hero-title {
+    flex-grow: 1; /* Important : permet au titre de grandir */
+    display: flex; /* Pour centrer le texte à l'intérieur du titre */
+    justify-content: center; /* Centre verticalement le texte */
+    align-items: center; /* Centre horizontalement le texte */
+}
 .navbar {
     position: sticky;
     top: 0; /* Important : définit à partir d'où la navbar devient sticky */
@@ -60,15 +91,6 @@ h1 {
     padding-bottom: 0;
 }
 
-.nav-item {
-    font-size: 1.2rem;
-    font-variation-settings: 'wght' 500;
-}
-
-.nav-link, ul li a i, a, h1 {
-    color: white !important;
-    text-shadow: 2px 2px 2px #000000;
-}
 
 .top-hero-container {
     position: relative; /* Pour positionner top-hero-wrapper */
@@ -110,5 +132,42 @@ h1 {
     display: flex;
     flex-direction: column; /* Eléments l'un au-dessus de l'autre */
     align-items: center;
+}
+.cta-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-button {
+    background-color: #ca0d00 !important;
+    border: 2px solid #1B000A!important;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-variation-settings: 'wght' 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px #1B000A;
+    animation: scaleAnimation 1s ease-in-out 2s infinite alternate; /* Délai de 2s avant démarrage */
+
+}
+.cta-button, .cta-button i {
+    margin-right: 1vw;
+    color: #FFFFFE;
+}
+.cta-button:hover {
+    animation: none; /* Stoppe l'animation au survol */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px #1B000A;
+}
+
+@keyframes scaleAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
 }
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jd Travaux Services</title>
+    <title>@yield('title', 'Jd Travaux Services')</title>
     <link rel="icon" type="image/png" href="{{ Vite::asset('resources/images/favicon.png') }}">
     <!-- Inclure les fichiers générés par Vite -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -121,11 +121,18 @@
 }
 }
     </script>
+    <!-- Stack pour ajouter des styles spécifiques à chaque page -->
+    @stack('styles')
 </head>
 
 <body>
-<div class="container mt-5">
+<main class="container-fluid">
     @yield('content')
-</div>
+</main>
+<!-- Inclusion du composant Footer -->
+@include('components.footer')
+<!-- Stack pour ajouter des scripts spécifiques -->
+@stack('scripts')
+
 </body>
 </html>
