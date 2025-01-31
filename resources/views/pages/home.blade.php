@@ -1,11 +1,8 @@
 @extends('layouts.app')
-
 @section('title', 'Accueil - JdServices')
-@section('content')
-    <x-topBanner/>
-    <x-navbar/>
 
-    <x-header
+@section('content')
+    <x-hero
         ctaButton="true"
     />
     <div class="separator-right"></div>

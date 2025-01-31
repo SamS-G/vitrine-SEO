@@ -1,4 +1,4 @@
-<section class="header">
+<section class="hero">
     <div class="container-fluid header-container">
         <h1 class="hero-title text-center">
             Artisan menuisier en Plaine de l'Ain <br/>

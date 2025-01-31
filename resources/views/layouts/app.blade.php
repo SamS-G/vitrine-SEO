@@ -126,6 +126,15 @@
 </head>
 
 <body>
+
+@if(request()->is('/'))
+    <x-topBanner />
+@endif
+
+<header class="container-fluid">
+    <x-navbar/>
+</header>
+
 <main class="container-fluid">
     @yield('content')
 </main>
