@@ -2,10 +2,17 @@
     <div class="container-fluid header-container">
         <h1 class="hero-title text-center">
             Artisan menuisier en Plaine de l'Ain <br/>
-            Spécialiste en réparation et pose de volets roulants, fenêtres et portes près de chez vous.
+            Spécialiste en réparation et pose de volets roulants et moustiquaires, <br/>
+            fenêtres, baies, portes et portails près de chez vous.
         </h1>
         @if($ctaButton)
-            <x-ctaButton />
+            <x-button
+            buttonName="Demander mon devis"
+            link="#"
+            linkClass="btn btn-lg cta-button"
+            iconClass="fa-regular fa-envelope"
+            container="cta-container"
+            />
         @endif
     </div>
 </section>

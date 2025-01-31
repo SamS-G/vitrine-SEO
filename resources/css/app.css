@@ -14,8 +14,23 @@
     src: url('../fonts/Lora/Lora-Italic-VariableFont_wght.ttf');
 }
 
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Baloo';
+    src: url('../fonts/Baloo/Baloo-Regular.ttf');
+}
+
+/* COMMUN */
 * {
-    font-family: 'Lora-variable', sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background: #FFFEFC;
 }
 
 a {
@@ -26,6 +41,104 @@ a {
 h1, h2 {
     font-variation-settings: 'wght' 700;
 }
+
+h1 {
+    text-shadow: 2px 2px 2px #000000 !important;
+    animation: fadeInSlide 0.8s ease-out;
+}
+
+.nav-link, ul li a i, a, h1, h2 {
+    color: white !important;
+    text-shadow: 1px 1px 1px #000000 !important;
+}
+
+.button, .button i {
+    color: #FFFFFE;
+}
+
+.button:hover, .cta-button:hover {
+    animation: none; /* Stoppe l'animation au survol */
+    transform: scale(1.01);
+    box-shadow: 0 2px 3px #1B000A;
+}
+.section-title {
+    position: relative;
+    margin-left: 5%;
+}
+
+.section-title i {
+    position: absolute; /* Positionner l'image absolument */
+    top: 50%; /* Centrer verticalement */
+    right: 15%; /* Aligner à droite */
+    transform: translateY(-50%); /* Ajuster le centrage vertical */
+    color: #ca0d00;
+    text-shadow: 1px 1px 1px #212C33;
+    font-size: 50px;
+}
+.section-title h3, .section-title h4 {
+    color: #ca0d00;
+    text-shadow: 1px 1px 1px #737373;
+    font-style: oblique;
+    line-height: 1.5;
+}
+
+.section-title h3 {
+    line-height: 1.5;
+}
+
+.section-wrapper {
+    margin-top: 10vh;
+}
+
+.section-wrapper h3 {
+    text-transform: uppercase;
+    font-variation-settings: 'wght' 700;
+    color: #ca0d00;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.separator-right, .separator-left {
+    position: relative;
+    background-color: #fff;
+    padding: 0 0;
+}
+
+.separator-right::after, .separator-left::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+}
+
+.separator-left::after {
+    background-color:#212C33;
+}
+
+.separator-right::after {
+    background-color:#ca0d00;
+}
+
+.separator-left::after {
+    clip-path: polygon(0 100%, 100% 0, 0 0);
+}
+
+.separator-right::after {
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+
+/* HOME PAGE SERVICE SECTION */
+.card:not(:first-child) {
+    background: #FCFDFF;
+    color: black;
+    padding-left: 1rem;
+}
+
+.card {
+    border: none;
+}
+
 @keyframes fadeInSlide {
     from {
         opacity: 0;
@@ -37,14 +150,31 @@ h1, h2 {
     }
 }
 
-h1 {
-    animation: fadeInSlide 0.8s ease-out;
+.card h4 {
+    text-transform: uppercase;
+    padding-top: 1rem;
+    font-family: Baloo, serif;
+    font-weight: 600;
+    color:#212C33;
 }
 
-.nav-link, ul li a i, a, h1, h2 {
-     color: white !important;
-     text-shadow: 2px 2px 2px #000000!important;
- }
+.card p {
+    font-size: 1.2rem;
+    color:#212C33;
+}
+
+.card-group {
+    margin-top: 2vh;
+}
+
+.section-wrapper {
+    border-radius: 10px;
+    box-shadow: 0 -10px 20px #00000030, 0 10px 20px #00000030, 0 -6px 6px #0000003b, 0 6px 6px #0000003b;
+    padding: 5vh 7vh;
+}
+
+
+/* NAVBAR */
 .navbar-container {
     background-color: rgba(0, 0, 0, 0.8);
     margin-left: auto;
@@ -60,29 +190,7 @@ h1 {
     height: 3px;
     background-color: #ea322c;
 }
-.nav-item {
-    font-size: 1.2rem;
-    font-variation-settings: 'wght' 500;
-}
 
-.header-container {
-    background-image: url("../images/redHouse.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    height: 100vh;
-    padding: 0;
-}
-.header-container {
-    display: flex; /* Active le mode flexbox pour le conteneur */
-    flex-direction: column; /* Définit la direction des éléments (verticale) */
-}
-.hero-title {
-    flex-grow: 1; /* Important : permet au titre de grandir */
-    display: flex; /* Pour centrer le texte à l'intérieur du titre */
-    justify-content: center; /* Centre verticalement le texte */
-    align-items: center; /* Centre horizontalement le texte */
-}
 .navbar {
     position: sticky;
     top: 0; /* Important : définit à partir d'où la navbar devient sticky */
@@ -91,6 +199,33 @@ h1 {
     padding-bottom: 0;
 }
 
+.nav-item {
+    font-size: 1.4rem;
+    font-variation-settings: 'wght' 500;
+}
+
+/* HEADER */
+.header-container {
+    background-image: url("../images/redHouse.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 100vh;
+    padding: 0;
+}
+
+.header-container {
+    display: flex; /* Active le mode flexbox pour le conteneur */
+    flex-direction: column; /* Définit la direction des éléments (verticale) */
+}
+
+/*TOP BANNER */
+.hero-title {
+    flex-grow: 1; /* Important : permet au titre de grandir */
+    display: flex; /* Pour centrer le texte à l'intérieur du titre */
+    justify-content: center; /* Centre verticalement le texte */
+    align-items: center; /* Centre horizontalement le texte */
+}
 
 .top-hero-container {
     position: relative; /* Pour positionner top-hero-wrapper */
@@ -102,7 +237,6 @@ h1 {
     background-repeat: no-repeat;
     background-position-x: center;
 }
-
 
 .top-hero-wrapper {
     position: absolute; /* Positionnement en bas */
@@ -133,6 +267,7 @@ h1 {
     flex-direction: column; /* Eléments l'un au-dessus de l'autre */
     align-items: center;
 }
+
 .cta-container {
     flex-grow: 1;
     display: flex;
@@ -141,33 +276,36 @@ h1 {
 }
 
 .cta-button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 4px #1B000A;
+    animation: scaleAnimation 1s ease-in-out 2s infinite alternate; /* Délai de 2s avant démarrage */
+}
+
+.button, .cta-button {
     background-color: #ca0d00 !important;
-    border: 2px solid #1B000A!important;
-    font-weight: bold;
+    border: 1px solid #1B000A !important;
     text-transform: uppercase;
     font-style: oblique;
     font-variation-settings: 'wght' 500;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px #1B000A;
-    animation: scaleAnimation 1s ease-in-out 2s infinite alternate; /* Délai de 2s avant démarrage */
-
-}
-.cta-button, .cta-button i {
-    margin-right: 1vw;
-    color: #FFFFFE;
-}
-.cta-button:hover {
-    animation: none; /* Stoppe l'animation au survol */
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px #1B000A;
 }
 
 @keyframes scaleAnimation {
     from {
+        h1 {
+            text-shadow: 2px 2px 2px #000000 !important;
+        }
+
+        .nav-link, ul li a i, a, h1, h2 {
+            color: white !important;
+            text-shadow: 1px 1px 1px #000000 !important;
+        }
+
         transform: scale(1);
     }
     to {
         transform: scale(1.1);
     }
 }
+
+
 

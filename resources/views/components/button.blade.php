@@ -1,5 +1,9 @@
-<div class="cta-container">
-    <a href="#contact" class="btn btn-lg cta-button">
-        <i class="fa-regular fa-envelope"></i>Demander mon devis
+<div class="{{ $container ?? 'container' }}">
+    <a href="{{ $link ?? "#" }}" class="{{ $linkClass ?? "" }}">
+       @if($iconClass)
+            <i class="{{ $iconClass }}"></i> {{ $buttonName ?? 'My Button' }}
+        @else
+            {{ $buttonName ?? 'My Button' }}
+       @endif
     </a>
 </div>

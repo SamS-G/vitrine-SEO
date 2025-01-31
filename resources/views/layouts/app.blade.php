@@ -13,7 +13,7 @@
 "@type": "HomeAndConstructionBusiness",
 "name": "Nom de votre entreprise",
 "image": "URL-de-votre-logo.jpg",
-"description": "Entreprise spécialisée dans la pose et le dépannage de volets roulants, l'installation de portes et fenêtres en bois et PVC. Service professionnel et intervention rapide.",
+"description": "Entreprise spécialisée dans la pose et le dépannage de volets roulants et moustiquaires, l'installation de portes et portails, fenêtres et baies vitrées. Service professionnel et intervention rapide.",
 "@id": "URL-de-votre-site#organization",
 "url": "URL-de-votre-site",
 "telephone": "Votre-numéro",
