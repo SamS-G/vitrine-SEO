@@ -64,5 +64,24 @@
         </div>
     </section>
     <div class="separator-right"></div>
+
+    <section class="section-wrapper">
+        <div class="section-title">
+            <h3 class="h1"><span>C</span>e que disent nos <span>C</span>lients</h3>
+            <h4 class="h5">Nos avis</h4>
+        </div>
+        @php $reviews = [[
+     'rating' => 5, 'profile_photo_url' => 'https://picsum.photos/200', 'author_name' => 'David', 'text' => 'Accusamus accusantium ad adipisci amet asperiores cupiditate delectus ducimus eaque fugiat itaque laborum, molestiae nemo odit quia quis saepe sint tempora tempore unde velit vitae voluptatem, voluptates? Atque, reprehenderit, voluptate.'],
+     ['rating' => 5, 'profile_photo_url' => 'https://picsum.photos/200', 'author_name' => 'Marie', 'text' => 'Accusamus accusantium ad adipisci amet asperiores cupiditate delectus ducimus eaque fugiat itaque laborum, molestiae nemo odit quia quis saepe sint tempora tempore unde velit vitae voluptatem, voluptates? Atque, reprehenderit, voluptate.'],
+     ['rating' => 5, 'profile_photo_url' => 'https://picsum.photos/200', 'author_name' => 'Jean', 'text' => 'Accusamus accusantium ad adipisci amet asperiores cupiditate delectus ducimus eaque fugiat itaque laborum, molestiae nemo odit quia quis saepe sint tempora tempore unde velit vitae voluptatem, voluptates? Atque, reprehenderit, voluptate.'],
+     ['rating' => 5, 'profile_photo_url' => 'https://picsum.photos/200', 'author_name' => 'Claude', 'text' => 'Accusamus accusantium ad adipisci amet asperiores cupiditate delectus ducimus eaque fugiat itaque laborum, molestiae nemo odit quia quis saepe sint tempora tempore unde velit vitae voluptatem, voluptates? Atque, reprehenderit, voluptate.'],
+     ['rating' => 5, 'profile_photo_url' => 'https://picsum.photos/200', 'author_name' => 'Maggy', 'text' => 'Accusamus accusantium ad adipisci amet asperiores cupiditate delectus ducimus eaque fugiat itaque laborum, molestiae nemo odit quia quis saepe sint tempora tempore unde velit vitae voluptatem, voluptates? Atque, reprehenderit, voluptate.']
+     ]
+        @endphp
+        <x-carousel
+        :reviews="$reviews"
+        />
+    </section>
+    <div class="separator-left"></div>
 @endsection
-{{--TODO footer / bottom banner--}}
+{{--TODO bottom banner--}}

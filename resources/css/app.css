@@ -46,6 +46,10 @@ h1 {
     text-shadow: 2px 2px 2px #000000 !important;
     animation: fadeInSlide 0.8s ease-out;
 }
+button i {
+    color: #000000;
+    font-size: 2rem;
+}
 
 .nav-link, ul li a i, a, h1, h2 {
     color: white !important;
@@ -61,6 +65,7 @@ h1 {
     transform: scale(1.01);
     box-shadow: 0 2px 3px #1B000A;
 }
+
 .section-title {
     position: relative;
     margin-bottom: 3%;
@@ -95,7 +100,7 @@ h1 {
     content: '';
     display: block;
     height: 3px;
-    width: 75px;
+    width: 50px;
 }
 .section-title h4:after {
     background-color: #212C33;
@@ -104,7 +109,7 @@ h1 {
     position:absolute;
     right:0;
     height: 3px;
-    width: 75px;
+    width: 50px;
 }
 
 .section-title h3 span {
@@ -138,23 +143,19 @@ h1 {
     left: 0;
     width: 100%;
     height: 30px;
-    background-color:#ca0d00;
 
 }
 
 .separator-right::after {
     border-radius: 0 0 10px 0;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    background-color:#ca0d00;
 }
 
 .separator-left::after {
     border-radius: 0 0 0 10px;
-}
-.separator-left::after {
     clip-path: polygon(0 100%, 100% 0, 0 0);
-}
-
-.separator-right::after {
-    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    background-color: #212529;
 }
 
 /* HOME PAGE SERVICE SECTION */
