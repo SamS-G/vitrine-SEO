@@ -278,7 +278,6 @@ header {
 }
 footer {
     background-clip: content-box;
-    margin-top: 10vh;
 }
 .footer-row {
     padding: 3rem 2rem 2rem 2rem;
@@ -352,5 +351,14 @@ footer {
     }
 }
 
+.bottom-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("../images/bottom-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 60vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8)!important;
+}
 
 

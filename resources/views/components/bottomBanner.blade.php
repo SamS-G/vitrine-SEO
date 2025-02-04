@@ -1,2 +1,4 @@
-<?php
-//TODO background couleur + image outils à droite
+<section class="banner-bottom">
+    <div class="bottom-banner"></div>
+</section>
+
