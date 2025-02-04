@@ -5,11 +5,12 @@
     <x-hero
         ctaButton="true"
     />
+    <div class="separator-left"></div>
     <div class="separator-right"></div>
     <section class="section-wrapper">
         <div class="section-title">
             <h3 class="h1"><span>S</span>ervices</h3>
-            <h4 class="h5">Menuiserie, Dépannage, Multi-Services</h4>
+            <h4 class="h5">Menuiserie, Dépannages, Multi-Services</h4>
         </div>
         <div class="card-group">
             <x-card
@@ -17,6 +18,7 @@
                 text="Une large gamme de menuiseries bois ou PVC"
                 iconClass="fa-solid fa-plus"
                 link="#"
+                src="{{ Vite::asset('resources/images/large-bay-windows.jpg') }}"
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
             />
@@ -25,6 +27,7 @@
                 text="Portail coulissant ou battant, portes de garage sectionnelles"
                 iconClass="fa-solid fa-plus"
                 link="#"
+                src="{{ Vite::asset('resources/images/portail-maison.jpg') }}"
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
             />
@@ -33,6 +36,7 @@
                 text="Volets roulants électriques, solaires"
                 iconClass="fa-solid fa-plus"
                 link="#"
+                src="{{ Vite::asset('resources/images/volet-moustiquaire.jpg') }}"
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
             />
@@ -41,12 +45,14 @@
                 text="Dépannage sur volets roulants PVC ou aluminium"
                 iconClass="fa-solid fa-plus"
                 link="#"
+                src="{{ Vite::asset('resources/images/reparation-volet.webp') }}"
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
             />
         </div>
     </section>
     <div class="separator-left"></div>
+    <div class="separator-right"></div>
 
     <section class="section-wrapper">
         <div class="section-title">
@@ -63,11 +69,12 @@
             </p>
         </div>
     </section>
+    <div class="separator-left"></div>
     <div class="separator-right"></div>
 
     <section class="section-wrapper">
         <div class="section-title">
-            <h3 class="h1"><span>C</span>e que disent nos <span>C</span>lients</h3>
+            <h3 class="h1"><span>C</span>e qu'en disent nos <span>C</span>lients</h3>
             <h4 class="h5">Nos avis</h4>
         </div>
         @php $reviews = [[
@@ -83,5 +90,6 @@
         />
     </section>
     <div class="separator-left"></div>
+    <div class="separator-right"></div>
 @endsection
 {{--TODO bottom banner--}}

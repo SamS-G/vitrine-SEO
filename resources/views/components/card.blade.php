@@ -1,5 +1,5 @@
 <div class="card">
-    <img class="img-fluid" src="https://picsum.photos/200/125" alt="Card image cap">
+    <img class="img-fluid" src="{{ $src }}" alt="Card image cap">
     <h4 class="text-center h3">{{ $title }}</h4>
     <p class="text-center">{{ $text }}</p>
     <div class="text-center">

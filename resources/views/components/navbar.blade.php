@@ -15,13 +15,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link">A propos de JD Travaux</a>
+                    <a class="nav-link">JD Travaux Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Marques</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">Blog/Conseils</a>
                 </li>
             </ul>
         </div>
