@@ -2,7 +2,7 @@
 @section('title', 'Services - JdServices')
 
 @section('content')
-    <div class="container-fluid my-5">
+    <div class="col-10 mx-auto my-5">
         <h1 class="text-center mb-5 services-title">Nos Services</h1>
         <div class="container pb-5">
             <p>

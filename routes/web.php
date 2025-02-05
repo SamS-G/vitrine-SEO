@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.home');
 })->name('home');
+Route::get('/contact', function () {
+    return view('pages.contact');
+})->name('contact');
 
 Route::get('/services', function () {
     return view('pages.services.index');
@@ -33,4 +36,9 @@ Route::get('/services/volets-roulants', function () {
 Route::get('/services/depannage-volets', function () {
     return view('pages.services.depannage-volets');
 })->name('services.depannage-volets');
+
+
+Route::get('/services/service', function () {
+    return view('components.service');
+})->name('services.service');
 

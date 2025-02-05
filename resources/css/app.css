@@ -37,9 +37,11 @@ a {
     text-decoration: none;
     font-size: 1.1rem;
 }
+
 p {
     font-size: 1.1rem;
 }
+
 h1, h2 {
     font-variation-settings: 'wght' 700;
 }
@@ -48,6 +50,7 @@ h1 {
     text-shadow: 2px 2px 2px #000000 !important;
     animation: fadeInSlide 0.8s ease-out;
 }
+
 button i {
     color: #000000;
     font-size: 2rem;
@@ -57,6 +60,7 @@ button i {
     color: white !important;
     text-shadow: 2px 2px 2px #000000 !important;
 }
+
 /* SEPARATORS */
 .separator-right, .separator-left, .separator-nav {
     position: relative;
@@ -76,7 +80,7 @@ button i {
 .separator-right::after, .separator-nav::after {
     border-radius: 0 0 10px 0;
     clip-path: polygon(0 0, 100% 100%, 100% 0);
-    background-color:#ca0d00;
+    background-color: #ca0d00;
 }
 
 .separator-left::after {
@@ -84,6 +88,7 @@ button i {
     clip-path: polygon(0 100%, 100% 0, 0 0);
     background-color: #212529;
 }
+
 .separator-nav::after {
     background-color: #212529;
 }
@@ -92,6 +97,7 @@ button i {
     position: relative;
     margin-bottom: 3%;
 }
+
 /* SECTIONS */
 
 /*.section-title i {*/
@@ -109,9 +115,11 @@ button i {
     text-shadow: 1px 1px 1px #737373;
     line-height: 1.5;
 }
+
 .section-title h3 {
-   text-align: center;
+    text-align: center;
 }
+
 .section-title h4 {
     position: absolute;
     left: 50%;
@@ -125,12 +133,13 @@ button i {
     height: 3px;
     width: 50px;
 }
+
 .section-title h4:after {
     background-color: #212C33;
     content: '';
     display: block;
-    position:absolute;
-    right:0;
+    position: absolute;
+    right: 0;
     height: 3px;
     width: 50px;
 }
@@ -142,11 +151,8 @@ button i {
 .section-wrapper {
     margin-top: 10vh;
     border-radius: 10px 10px 0 0;
-    box-shadow:
-        rgba(0, 0, 0, 0.1) 0 -5px 10px, /* Ombre supérieure adoucie */
-        rgba(0, 0, 0, 0.19) 0 10px 20px,
-        rgba(0, 0, 0, 0.15) 0 -3px 6px, /* Ombre supérieure adoucie */
-        rgba(0, 0, 0, 0.23) 0 6px 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 -5px 10px, /* Ombre supérieure adoucie */ rgba(0, 0, 0, 0.19) 0 10px 20px,
+    rgba(0, 0, 0, 0.15) 0 -3px 6px, /* Ombre supérieure adoucie */ rgba(0, 0, 0, 0.23) 0 6px 6px;
     padding: 5vh 7vh;
 }
 
@@ -183,18 +189,17 @@ button i {
     padding-top: 1rem;
     font-family: Baloo, serif;
     font-weight: 600;
-    color:#212C33;
+    color: #212C33;
 }
 
 .card p {
     font-size: 1.1rem;
-    color:#212C33;
+    color: #212C33;
 }
 
 .card-group {
     margin-top: 2vh;
 }
-
 
 
 /* NAVBAR */
@@ -232,9 +237,10 @@ button i {
 
 .nav-link.hovered { /* Style pour le hover sur un nav-link */
     font-variation-settings: 'wght' 900;
-    color: #ca0d00!important;
+    color: #ca0d00 !important;
     text-shadow: none;
 }
+
 /* HEADER */
 header {
     position: sticky;
@@ -312,6 +318,7 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 /* BUTTONS */
 .cta-button {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -326,6 +333,7 @@ header {
     font-style: oblique;
     font-variation-settings: 'wght' 500;
 }
+
 .button, .button i {
     color: #FFFFFE;
 }
@@ -353,6 +361,7 @@ header {
         transform: scale(1.1);
     }
 }
+
 /* HOME BANNER BOTTOM*/
 .bottom-banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("../images/bottom-banner.webp");
@@ -361,8 +370,9 @@ header {
     background-position-x: center;
     height: 60vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8)!important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
 }
+
 /* SERVICE-PAGE */
 .services-title {
     background-color: rgba(0, 0, 0, 0.8);
@@ -371,6 +381,7 @@ header {
     border-bottom: 2px solid #ca0d00;
     border-radius: 4px;
 }
+
 .service-button {
     box-shadow: 0 2px 3px #1B000A;
     background-color: #ca0d00;
@@ -378,9 +389,10 @@ header {
     letter-spacing: 1px;
     transition: transform 0.5s ease-in-out;
 }
+
 .service-button:hover {
     transform: scale(1.1);
-    background-color: #ca0d00 ;
+    background-color: #ca0d00;
 }
 
 .service-card-body {
@@ -397,6 +409,9 @@ header {
     align-self: flex-start; /* Optionnel : Ajuste la position du bouton */
 }
 
+.accordion-button:not(.collapsed) {
+    background-color: rgba(202, 13, 0, 0.25);
+}
 
 
 
@@ -404,6 +419,7 @@ header {
 footer {
     background-clip: content-box;
 }
+
 .footer-row {
     padding: 3rem 2rem 2rem 2rem;
 }
