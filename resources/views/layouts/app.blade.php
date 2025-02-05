@@ -132,7 +132,16 @@
 @endif
 
 <header class="container-fluid">
-    <x-navbar/>
+    <x-navbar
+    :navItems="[
+    ['title' => 'Accueil', 'href' => 'home'],
+    ['title' => 'Services', 'href' => 'services.index'],
+    ['title' => 'Réalisations', 'href' => 'home'],
+    ['title' => 'JD Travaux Services', 'href' => 'home'],
+    ['title' => 'Marques', 'href' => 'home'],
+    ['title' => 'Contact', 'href' => 'home'],
+    ]"
+    />
 </header>
 
 <main class="container-fluid">

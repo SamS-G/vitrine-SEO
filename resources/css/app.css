@@ -37,7 +37,9 @@ a {
     text-decoration: none;
     font-size: 1.1rem;
 }
-
+p {
+    font-size: 1.1rem;
+}
 h1, h2 {
     font-variation-settings: 'wght' 700;
 }
@@ -55,21 +57,42 @@ button i {
     color: white !important;
     text-shadow: 2px 2px 2px #000000 !important;
 }
-
-.button, .button i {
-    color: #FFFFFE;
+/* SEPARATORS */
+.separator-right, .separator-left, .separator-nav {
+    position: relative;
+    background-color: #fff;
+    padding: 0 0;
 }
 
-.button:hover, .cta-button:hover {
-    animation: none; /* Stoppe l'animation au survol */
-    transform: scale(1.01);
-    box-shadow: 0 2px 3px #1B000A;
+.separator-right::after, .separator-left::after, .separator-nav:after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+}
+
+.separator-right::after, .separator-nav::after {
+    border-radius: 0 0 10px 0;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    background-color:#ca0d00;
+}
+
+.separator-left::after {
+    border-radius: 0 0 0 10px;
+    clip-path: polygon(0 100%, 100% 0, 0 0);
+    background-color: #212529;
+}
+.separator-nav::after {
+    background-color: #212529;
 }
 
 .section-title {
     position: relative;
     margin-bottom: 3%;
 }
+/* SECTIONS */
 
 /*.section-title i {*/
 /*    position: absolute; !* Positionner l'image absolument *!*/
@@ -127,39 +150,10 @@ button i {
     padding: 5vh 7vh;
 }
 
-
 .section-wrapper h3 {
     font-variation-settings: 'wght' 700;
     color: #ca0d00;
     text-shadow: 1px 1px 1px #212529;
-}
-
-.separator-right, .separator-left {
-    position: relative;
-    background-color: #fff;
-    padding: 0 0;
-}
-
-.separator-right::after, .separator-left::after {
-    content: "";
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    width: 100%;
-    height: 30px;
-
-}
-
-.separator-right::after {
-    border-radius: 0 0 10px 0;
-    clip-path: polygon(0 0, 100% 100%, 100% 0);
-    background-color:#ca0d00;
-}
-
-.separator-left::after {
-    border-radius: 0 0 0 10px;
-    clip-path: polygon(0 100%, 100% 0, 0 0);
-    background-color: #212529;
 }
 
 /* HOME PAGE SERVICE SECTION */
@@ -169,7 +163,7 @@ button i {
     padding-left: 1rem;
 }
 
-.card {
+.card-group .card {
     border: none;
 }
 
@@ -193,7 +187,7 @@ button i {
 }
 
 .card p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color:#212C33;
 }
 
@@ -205,25 +199,21 @@ button i {
 
 /* NAVBAR */
 .navbar-container {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #212529;
     margin-left: auto;
     margin-right: auto;
 }
 
-.navbar::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background-color: #ea322c;
-}
-header {
-    position: sticky;
-    top: 0; /* Important : définit à partir d'où la navbar devient sticky */
-    z-index: 1000;
-}
+/*.navbar::after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    height: 3px;*/
+/*    background-color: #ea322c;*/
+/*}*/
+
 .navbar {
     padding-top: 0;
     padding-bottom: 0;
@@ -235,14 +225,23 @@ header {
     width: 11vw;
     text-align: center;
 }
+
 .nav-link {
     transition: 700ms ease;
 }
+
 .nav-link.hovered { /* Style pour le hover sur un nav-link */
     font-variation-settings: 'wght' 900;
-    color: #1FB31B!important;
+    color: #ca0d00!important;
+    text-shadow: none;
 }
 /* HEADER */
+header {
+    position: sticky;
+    top: 0; /* Important : définit à partir d'où la navbar devient sticky */
+    z-index: 1000;
+}
+
 .header-container {
     background-image: url("../images/redHouse.webp");
     background-size: cover;
@@ -276,12 +275,7 @@ header {
     background-position-x: center;
     background-clip: content-box; /*  L’image s’affiche uniquement dans la zone de contenu, donc après le padding ou le margin */
 }
-footer {
-    background-clip: content-box;
-}
-.footer-row {
-    padding: 3rem 2rem 2rem 2rem;
-}
+
 .top-hero-wrapper {
     position: absolute; /* Positionnement en bas */
     bottom: 10%;
@@ -318,7 +312,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
+/* BUTTONS */
 .cta-button {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 4px #1B000A;
@@ -331,6 +325,15 @@ footer {
     text-transform: uppercase;
     font-style: oblique;
     font-variation-settings: 'wght' 500;
+}
+.button, .button i {
+    color: #FFFFFE;
+}
+
+.button:hover, .cta-button:hover {
+    animation: none; /* Stoppe l'animation au survol */
+    transform: scale(1.01);
+    box-shadow: 0 2px 3px #1B000A;
 }
 
 @keyframes scaleAnimation {
@@ -350,9 +353,9 @@ footer {
         transform: scale(1.1);
     }
 }
-
+/* HOME BANNER BOTTOM*/
 .bottom-banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("../images/bottom-banner.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("../images/bottom-banner.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -360,5 +363,47 @@ footer {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8)!important;
 }
+/* SERVICE-PAGE */
+.services-title {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.5rem;
+    border-top: 2px solid #ca0d00;
+    border-bottom: 2px solid #ca0d00;
+    border-radius: 4px;
+}
+.service-button {
+    box-shadow: 0 2px 3px #1B000A;
+    background-color: #ca0d00;
+    font-variation-settings: 'wght' 700;
+    letter-spacing: 1px;
+    transition: transform 0.5s ease-in-out;
+}
+.service-button:hover {
+    transform: scale(1.1);
+    background-color: #ca0d00 ;
+}
+
+.service-card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Remplit toute la hauteur disponible */
+}
+
+.service-card-text {
+    flex-grow: 1; /* Pousse le bouton vers le bas */
+}
+
+.service-button {
+    align-self: flex-start; /* Optionnel : Ajuste la position du bouton */
+}
 
 
+
+
+/* FOOTER */
+footer {
+    background-clip: content-box;
+}
+.footer-row {
+    padding: 3rem 2rem 2rem 2rem;
+}

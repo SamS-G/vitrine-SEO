@@ -19,7 +19,7 @@
                 text="Une large gamme de menuiseries bois ou PVC"
                 iconClass="fa-solid fa-plus"
                 link="#"
-                src="{{ Vite::asset('resources/images/large-bay-windows.jpg') }}"
+                src="{{ Vite::asset('resources/images/large-bay-windows.webp') }}"
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
             />
@@ -28,7 +28,7 @@
                 text="Portail coulissant ou battant, portes de garage sectionnelles"
                 iconClass="fa-solid fa-plus"
                 link="#"
-                src="{{ Vite::asset('resources/images/portail-maison.jpg') }}"
+                src="{{ Vite::asset('resources/images/portail-maison.webp') }}"
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
             />
@@ -37,7 +37,7 @@
                 text="Volets roulants électriques, solaires"
                 iconClass="fa-solid fa-plus"
                 link="#"
-                src="{{ Vite::asset('resources/images/volet-moustiquaire.jpg') }}"
+                src="{{ Vite::asset('resources/images/volet-moustiquaire.webp') }}"
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
             />
