@@ -25,6 +25,9 @@ Route::get('/services/portes-garage', function () {
     return view('pages.services.garageDoorService');
 })->name('services.garageDoor');
 
+Route::get('/services/revetement-de-sol', function () {
+    return view('pages.services.flooringService');
+})->name('services.flooring');
 Route::get('/services/portail', function () {
     return view('pages.services.gateService');
 })->name('services.gate');
