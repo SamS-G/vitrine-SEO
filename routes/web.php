@@ -18,8 +18,8 @@ Route::get('/services/fenetres', function () {
 })->name('services.window');
 
 Route::get('/services/portes-entree', function () {
-    return view('pages.services.portes-entree');
-})->name('services.portes-entree');
+    return view('pages.services.doorService');
+})->name('services.door');
 
 Route::get('/services/portes-garage', function () {
     return view('pages.services.portes-garage');

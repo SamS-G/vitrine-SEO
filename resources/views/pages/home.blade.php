@@ -5,8 +5,8 @@
     <x-hero
         ctaButton="true"
     />
-    <div class="separator-left"></div>
     <div class="separator-right"></div>
+    <div class="separator-left"></div>
 {{-- Services --}}
     <section class="section-wrapper">
         <div class="section-title">
