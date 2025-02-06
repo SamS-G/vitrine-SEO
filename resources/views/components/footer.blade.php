@@ -25,7 +25,7 @@
                 <h5>🏭 Nos marques</h5>
                 <ul class="list-unstyled">
                     <li><a href="https://www.castes-industrie.fr" class="text-light text-decoration-none">🇫🇷 CASTRES</a></li>
-                    <li><a href="https://www.ambmoustiquaire.com" class="text-light text-decoration-none">🇮🇹 AMB</a></li>
+                    <li><a href="https://www.ambmoustiquaire.com" class="text-light text-decoration-none">🇫🇷 AMB</a></li>
                     <li><a href="https://www.lakal.de/fr" class="text-light text-decoration-none">🇩🇪 LAKAL</a></li>
                 </ul>
             </div>

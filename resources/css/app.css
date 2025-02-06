@@ -23,10 +23,14 @@
     font-family: 'Baloo';
     src: url('../fonts/Baloo/Baloo-Regular.ttf');
 }
+@font-face {
+    font-family: 'Playwrite_GB_S';
+    src: url('../fonts/Playwrite_GB_S/PlaywriteGBS-VariableFont_wght.ttf');
+}
 
 /* COMMUN */
 * {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Playwrite_GB_S', sans-serif;
 }
 
 body {
@@ -99,17 +103,6 @@ button i {
 }
 
 /* SECTIONS */
-
-/*.section-title i {*/
-/*    position: absolute; !* Positionner l'image absolument *!*/
-/*    top: 50%; !* Centrer verticalement *!*/
-/*    right: 15%; !* Aligner à droite *!*/
-/*    transform: translateY(-50%); !* Ajuster le centrage vertical *!*/
-/*    color: #ca0d00;*/
-/*    text-shadow: 1px 1px 1px #212C33;*/
-/*    font-size: 50px;*/
-/*}*/
-
 .section-title h3, .section-title h4 {
     color: #ca0d00;
     text-shadow: 1px 1px 1px #737373;
@@ -207,21 +200,14 @@ button i {
     background-color: #212529;
     margin-left: auto;
     margin-right: auto;
+    padding: 1rem
 }
-
-/*.navbar::after {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    bottom: 0;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    height: 3px;*/
-/*    background-color: #ea322c;*/
-/*}*/
 
 .navbar {
     padding-top: 0;
     padding-bottom: 0;
+    border-top: 2px solid #ca0d00;
+    border-bottom: 2px solid #ca0d00;
 }
 
 .nav-item {
@@ -272,44 +258,60 @@ header {
 
 .top-hero-container {
     position: relative; /* Pour positionner top-hero-wrapper */
-    height: 30vh; /* Ajuster selon vos besoins */
     display: flex;
     flex-direction: column; /* H1 en haut, wrapper en bas */
-    background-image: url('../images/top-hero.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-clip: content-box; /*  L’image s’affiche uniquement dans la zone de contenu, donc après le padding ou le margin */
 }
 
 .top-hero-wrapper {
-    position: absolute; /* Positionnement en bas */
-    bottom: 10%;
-    left: 0;
-    right: 0; /* Pour occuper toute la largeur */
     display: flex;
-    align-items: center; /* Centre verticalement les conteneurs */
-    justify-content: space-between; /* Espacer les conteneurs horizontalement */
-    padding: 20px; /* Marge intérieure */
+    align-items: center; /* Centrage vertical */
+    justify-content: space-between; /* Répartir les éléments sur la largeur */
+    position: relative; /* Permet de positionner le h2 absolument */
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+}
+
+.hero-logo {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+
+}
+.hero-logo img {
+    border-radius: 2%;
+}
+.top-hero-wrapper h2 {
+    position: absolute; /* On le sort du flux normal */
+    left: 50%; /* Déplacer à 50% du conteneur */
+    transform: translateX(-50%); /* Centrer parfaitement */
+    margin: 0;
 }
 
 .social-container ul {
-    padding: 0;
-    margin: 0;
-    display: flex; /* Pour aligner les icônes en colonne */
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end; /* Aligner à droite */
+    margin: 0;
+    padding: 0;
 }
 
 .social-container li, .contact-container a {
-    margin-bottom: 2vh; /* Espacement entre les icônes et liens */
+    /*margin-bottom: 2vh; !* Espacement entre les icônes et liens *!*/
     list-style: none;
 }
 
 .contact-container {
     display: flex;
+    padding-right: 1rem;
+    line-height: 2rem;
+}
+
+.mail-phone-wrapper {
+    display: flex;
     flex-direction: column; /* Eléments l'un au-dessus de l'autre */
-    align-items: center;
+    align-items: baseline;
+    margin-left: 1rem;
 }
 
 .cta-container {
@@ -412,7 +414,6 @@ header {
 .accordion-button:not(.collapsed) {
     background-color: rgba(202, 13, 0, 0.25);
 }
-
 
 
 /* FOOTER */
