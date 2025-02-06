@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35c92cc5-239c-439c-9ee6-d2990f999970" name="Changes" comment="creation de la page, route + modif hero background">
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/services/garageDoorService.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/vitre.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/vitre.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/garageDoorsService.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/services/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +171,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "services-page",
+    "git-widget-placeholder": "porte-garage",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
