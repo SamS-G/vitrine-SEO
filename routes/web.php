@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.home');
 })->name('home');
+
 Route::get('/contact', function () {
     return view('pages.contact');
 })->name('contact');
@@ -28,6 +29,7 @@ Route::get('/services/portes-garage', function () {
 Route::get('/services/revetement-de-sol', function () {
     return view('pages.services.flooringService');
 })->name('services.flooring');
+
 Route::get('/services/portail', function () {
     return view('pages.services.gateService');
 })->name('services.gate');
@@ -39,4 +41,8 @@ Route::get('/services/volets-roulants', function () {
 Route::get('/services/depannage-volets', function () {
     return view('pages.services.repairService');
 })->name('services.depannage');
+
+Route::get('/services/multi-services', function () {
+    return view('pages.services.multiService');
+})->name('services.multiservice');
 
