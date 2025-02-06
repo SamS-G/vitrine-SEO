@@ -26,8 +26,8 @@ Route::get('/services/portes-garage', function () {
 })->name('services.garageDoor');
 
 Route::get('/services/portail', function () {
-    return view('pages.services.portails');
-})->name('services.portails');
+    return view('pages.services.gateService');
+})->name('services.gate');
 
 Route::get('/services/volets-roulants', function () {
     return view('pages.services.shutterService');
