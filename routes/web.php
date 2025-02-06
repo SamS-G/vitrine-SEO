@@ -6,10 +6,16 @@ Route::get('/', function () {
     return view('pages.home');
 })->name('home');
 
+Route::get('/realisations', function () {
+    return view('pages.projects');
+})->name('project');
+
 Route::get('/contact', function () {
     return view('pages.contact');
 })->name('contact');
 
+
+// SERVICES
 Route::get('/services', function () {
     return view('pages.services.layout.index');
 })->name('services.index');
@@ -45,4 +51,4 @@ Route::get('/services/depannage-volets', function () {
 Route::get('/services/multi-services', function () {
     return view('pages.services.multiService');
 })->name('services.multiservice');
-
+// END SERVICES
