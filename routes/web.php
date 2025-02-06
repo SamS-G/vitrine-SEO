@@ -30,8 +30,8 @@ Route::get('/services/portail', function () {
 })->name('services.portails');
 
 Route::get('/services/volets-roulants', function () {
-    return view('pages.services.volets-roulants');
-})->name('services.volets-roulants');
+    return view('pages.services.shutterService');
+})->name('services.shutter');
 
 Route::get('/services/depannage-volets', function () {
     return view('pages.services.depannage-volets');
