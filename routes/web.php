@@ -10,7 +10,7 @@ Route::get('/contact', function () {
 })->name('contact');
 
 Route::get('/services', function () {
-    return view('pages.services.index');
+    return view('pages.services.layout.index');
 })->name('services.index');
 
 Route::get('/services/fenetres', function () {
@@ -37,6 +37,6 @@ Route::get('/services/volets-roulants', function () {
 })->name('services.shutter');
 
 Route::get('/services/depannage-volets', function () {
-    return view('pages.services.depannage-volets');
-})->name('services.depannage-volets');
+    return view('pages.services.repairService');
+})->name('services.depannage');
 
