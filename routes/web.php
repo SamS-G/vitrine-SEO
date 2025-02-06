@@ -14,8 +14,8 @@ Route::get('/services', function () {
 })->name('services.index');
 
 Route::get('/services/fenetres', function () {
-    return view('pages.services.fenetres');
-})->name('services.fenetres');
+    return view('pages.services.windowService');
+})->name('services.window');
 
 Route::get('/services/portes-entree', function () {
     return view('pages.services.portes-entree');
@@ -36,9 +36,4 @@ Route::get('/services/volets-roulants', function () {
 Route::get('/services/depannage-volets', function () {
     return view('pages.services.depannage-volets');
 })->name('services.depannage-volets');
-
-
-Route::get('/services/service', function () {
-    return view('components.service');
-})->name('services.service');
 
