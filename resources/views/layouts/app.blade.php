@@ -136,7 +136,7 @@
     :navItems="[
     ['title' => 'Accueil', 'href' => 'home'],
     ['title' => 'Services', 'href' => 'services.index'],
-    ['title' => 'Réalisations', 'href' => 'home'],
+    ['title' => 'Réalisations', 'href' => 'project'],
     ['title' => 'JD Travaux Services', 'href' => 'home'],
     ['title' => 'Marques', 'href' => 'home'],
     ['title' => 'Contact', 'href' => 'home'],

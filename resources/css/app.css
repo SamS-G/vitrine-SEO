@@ -221,7 +221,7 @@ button i {
     transition: 700ms ease;
 }
 
-.nav-link.hovered { /* Style pour le hover sur un nav-link */
+#navbarSupportedContent .nav-link.hovered { /* Style pour le hover sur un nav-link */
     font-variation-settings: 'wght' 900;
     color: #ca0d00 !important;
     text-shadow: none;
@@ -235,7 +235,7 @@ header {
 }
 
 .header-container {
-    background-image: url("../images/redHouse.webp");
+    background-image: url("../images/home/redHouse.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -354,7 +354,7 @@ header {
 
         .nav-link, ul li a i, a, h1, h2 {
             color: white !important;
-            text-shadow: 1px 1px 1px #000000 !important;
+            text-shadow: 1px 1px 1px #000000;
         }
 
         transform: scale(1);
@@ -366,7 +366,7 @@ header {
 
 /* HOME BANNER BOTTOM*/
 .bottom-banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("../images/bottom-banner.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("../images/home/bottom-banner.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;

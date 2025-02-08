@@ -19,7 +19,7 @@
                 text="Une large gamme de menuiseries bois ou PVC"
                 iconClass="fa-solid fa-plus"
                 link='services.window'
-                src="{{ Vite::asset('resources/images/large-bay-windows.webp') }}"
+                src="{{ Vite::asset('resources/images/home/services/large-bay-windows.webp') }}"
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
             />
@@ -28,7 +28,7 @@
                 text="Portail coulissant ou battant, portes de garage sectionnelles"
                 iconClass="fa-solid fa-plus"
                 link="home"
-                src="{{ Vite::asset('resources/images/portail-maison.webp') }}"
+                src="{{ Vite::asset('resources/images/home/services/portail-maison.webp') }}"
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
             />
@@ -37,7 +37,7 @@
                 text="Volets roulants électriques, solaires"
                 iconClass="fa-solid fa-plus"
                 link="home"
-                src="{{ Vite::asset('resources/images/volet-moustiquaire.webp') }}"
+                src="{{ Vite::asset('resources/images/home/services/volet-moustiquaire.webp') }}"
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
             />
@@ -46,7 +46,7 @@
                 text="Dépannage sur volets roulants PVC ou aluminium"
                 iconClass="fa-solid fa-plus"
                 link="home"
-                src="{{ Vite::asset('resources/images/reparation-volet.webp') }}"
+                src="{{ Vite::asset('resources/images/home/services/reparation-volet.webp') }}"
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
             />

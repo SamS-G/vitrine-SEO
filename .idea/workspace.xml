@@ -4,10 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35c92cc5-239c-439c-9ee6-d2990f999970" name="Changes" comment="creation de la page, route">
-      <change afterPath="$PROJECT_DIR$/resources/views/components/photo-gallery.blade.php" afterDir="false" />
+    <list default="true" id="4d1df957-50df-4c44-a6f6-7ede6cea1e40" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/fenetres/fenetre-blanche.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/moustiquaires/fenetre-anthracite.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/multi/acces-garage.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/multi/nettoyage-zone.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/multi/placard-avec-porte.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/multi/placard-sans-porte.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/multi/serrurerie.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/porte-garage/porte-garage-electrique.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/porte/porte-bois.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/sol/terrasse-bois.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/sol/terrasse-composite.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/volets/mecanisme-volet-roulant.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/ap-fenetre.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/ap-fenetre.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/av-ap-fenetre.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/projects-gallery/fenetres/av-ap-fenetre.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/av-fenetre.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/av-fenetre.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/bottom-banner.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/home/bottom-banner.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/images.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/large-bay-windows.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/home/services/large-bay-windows.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/multi-service.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/multi-service.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/parquet.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/parquet.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/parquet.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/parquet.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/portail-maison.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/home/services/portail-maison.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/portail.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/portail.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/porte-entree.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/porte-entree.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/porte-garage.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/porte-garage.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/redHouse.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/home/redHouse.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/reparation-volet.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/home/services/reparation-volet.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/reparation.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/reparation.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/top-hero.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/home/top-hero.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/vitre.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/vitre.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/volet-moustiquaire.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/home/services/volet-moustiquaire.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/volet.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/volet.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/photo-gallery.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/photo-gallery.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/projects.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/projects.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/layout/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/layout/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,11 +55,6 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="model-base-service" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -157,7 +188,7 @@
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
 }</component>
-  <component name="ProjectId" id="2sLGUs69PlSwy1JT0SXyse4kueo" />
+  <component name="ProjectId" id="2sg1vULpersuLBrdLq17iWZgV2D" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -165,23 +196,26 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "photo-gallery-component",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;photo-gallery-component&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/pages/services/layout" />
-      <recent name="$PROJECT_DIR$/resources/views/pages/services" />
+      <recent name="$PROJECT_DIR$/resources/images/projects-gallery/fenetres" />
+      <recent name="$PROJECT_DIR$/resources/images/projects-gallery/moustiquaire" />
+      <recent name="$PROJECT_DIR$/resources/images/home" />
+      <recent name="$PROJECT_DIR$/resources/images/home/services" />
+      <recent name="$PROJECT_DIR$/resources/images/services" />
     </key>
   </component>
   <component name="RunManager">
@@ -201,160 +235,18 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="35c92cc5-239c-439c-9ee6-d2990f999970" name="Changes" comment="" />
-      <created>1738227461223</created>
+      <changelist id="4d1df957-50df-4c44-a6f6-7ede6cea1e40" name="Changes" comment="" />
+      <created>1738862635289</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1738227461223</updated>
-      <workItem from="1738227463495" duration="20994000" />
-      <workItem from="1738331012542" duration="14661000" />
-      <workItem from="1738575778965" duration="13645000" />
-      <workItem from="1738661963078" duration="24540000" />
-      <workItem from="1738745191448" duration="22300000" />
+      <updated>1738862635289</updated>
+      <workItem from="1738862637633" duration="1453000" />
+      <workItem from="1738935067428" duration="7632000" />
+      <workItem from="1739041194768" duration="5079000" />
     </task>
-    <task id="LOCAL-00001" summary="refacto: use x-component">
-      <option name="closed" value="true" />
-      <created>1738335956389</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1738335956389</updated>
-    </task>
-    <task id="LOCAL-00002" summary="footer + refacto +nav-item::hover">
-      <option name="closed" value="true" />
-      <created>1738346975270</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1738346975270</updated>
-    </task>
-    <task id="LOCAL-00003" summary="ajout des marques">
-      <option name="closed" value="true" />
-      <created>1738576635866</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1738576635866</updated>
-    </task>
-    <task id="LOCAL-00004" summary="section sans texte">
-      <option name="closed" value="true" />
-      <created>1738588716820</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1738588716820</updated>
-    </task>
-    <task id="LOCAL-00005" summary="testimonial html + css only">
-      <option name="closed" value="true" />
-      <created>1738593567720</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1738593567720</updated>
-    </task>
-    <task id="LOCAL-00006" summary="rename nav, add reviews data to card">
-      <option name="closed" value="true" />
-      <created>1738662254242</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1738662254242</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add bottom hero">
-      <option name="closed" value="true" />
-      <created>1738679340190</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1738679340190</updated>
-    </task>
-    <task id="LOCAL-00008" summary="creation de la page">
-      <option name="closed" value="true" />
-      <created>1738762951857</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1738762951857</updated>
-    </task>
-    <task id="LOCAL-00009" summary="creation de la page, routes, css">
-      <option name="closed" value="true" />
-      <created>1738766766818</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1738766766818</updated>
-    </task>
-    <task id="LOCAL-00010" summary="creation de la page, css">
-      <option name="closed" value="true" />
-      <created>1738836087653</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1738836087653</updated>
-    </task>
-    <task id="LOCAL-00011" summary="creation de la page, route">
-      <option name="closed" value="true" />
-      <created>1738854288580</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1738854288580</updated>
-    </task>
-    <task id="LOCAL-00012" summary="creation de la page, route">
-      <option name="closed" value="true" />
-      <created>1738855655483</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1738855655483</updated>
-    </task>
-    <task id="LOCAL-00013" summary="creation de la page, route">
-      <option name="closed" value="true" />
-      <created>1738856567947</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1738856567947</updated>
-    </task>
-    <task id="LOCAL-00014" summary="creation de la page, route">
-      <option name="closed" value="true" />
-      <created>1738857443921</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1738857443921</updated>
-    </task>
-    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="refacto: use x-component" />
-    <MESSAGE value="footer + refacto +nav:hover" />
-    <MESSAGE value="footer + refacto +nav-item::hover" />
-    <MESSAGE value="ajout des marques" />
-    <MESSAGE value="section sans texte" />
-    <MESSAGE value="testimonial html + css only" />
-    <MESSAGE value="rename nav, add reviews data to card" />
-    <MESSAGE value="add bottom hero" />
-    <MESSAGE value="creation de la page" />
-    <MESSAGE value="creation de la page, routes, css" />
-    <MESSAGE value="creation de la page, css" />
-    <MESSAGE value="creation de la page, route + modif hero background" />
-    <MESSAGE value="creation de la page, route" />
-    <option name="LAST_COMMIT_MESSAGE" value="creation de la page, route" />
   </component>
 </project>
