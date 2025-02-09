@@ -4,46 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d1df957-50df-4c44-a6f6-7ede6cea1e40" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/fenetres/fenetre-blanche.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/moustiquaires/fenetre-anthracite.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/multi/acces-garage.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/multi/nettoyage-zone.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/multi/placard-avec-porte.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/multi/placard-sans-porte.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/multi/serrurerie.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/porte-garage/porte-garage-electrique.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/porte/porte-bois.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/sol/terrasse-bois.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/sol/terrasse-composite.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/projects-gallery/volets/mecanisme-volet-roulant.webp" afterDir="false" />
+    <list default="true" id="4d1df957-50df-4c44-a6f6-7ede6cea1e40" name="Changes" comment="base composant + page mes réalisations + route">
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/whoIam.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/ap-fenetre.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/ap-fenetre.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/av-ap-fenetre.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/projects-gallery/fenetres/av-ap-fenetre.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/av-fenetre.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/av-fenetre.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/bottom-banner.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/home/bottom-banner.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/images.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/large-bay-windows.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/home/services/large-bay-windows.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/multi-service.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/multi-service.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/parquet.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/parquet.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/parquet.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/parquet.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/portail-maison.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/home/services/portail-maison.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/portail.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/portail.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/porte-entree.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/porte-entree.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/porte-garage.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/porte-garage.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/redHouse.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/home/redHouse.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/reparation-volet.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/home/services/reparation-volet.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/reparation.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/reparation.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/top-hero.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/home/top-hero.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/vitre.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/vitre.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/volet-moustiquaire.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/home/services/volet-moustiquaire.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/images/volet.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/services/volet.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/photo-gallery.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/photo-gallery.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/projects.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/projects.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/layout/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/layout/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/whoIAm.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,19 +163,19 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;photo-gallery-component&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "presentation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/images/projects-gallery/fenetres" />
@@ -242,11 +209,25 @@
       <updated>1738862635289</updated>
       <workItem from="1738862637633" duration="1453000" />
       <workItem from="1738935067428" duration="7632000" />
-      <workItem from="1739041194768" duration="5079000" />
+      <workItem from="1739041194768" duration="5431000" />
+      <workItem from="1739121491071" duration="6525000" />
     </task>
+    <task id="LOCAL-00001" summary="base composant + page mes réalisations + route">
+      <option name="closed" value="true" />
+      <created>1739046522497</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739046522497</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="base composant + page mes réalisations + route" />
+    <option name="LAST_COMMIT_MESSAGE" value="base composant + page mes réalisations + route" />
   </component>
 </project>

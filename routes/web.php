@@ -9,7 +9,9 @@ Route::get('/', function () {
 Route::get('/realisations', function () {
     return view('pages.projects');
 })->name('project');
-
+Route::get('/qui-suis-je', function () {
+    return view('pages.whoIam');
+})->name('presentation');
 Route::get('/contact', function () {
     return view('pages.contact');
 })->name('contact');

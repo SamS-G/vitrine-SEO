@@ -60,9 +60,9 @@ button i {
     font-size: 2rem;
 }
 
-.nav-link, ul li a i, a, h1, h2 {
-    color: white !important;
-    text-shadow: 2px 2px 2px #000000 !important;
+.nav-link, ul li a i, h1, .top-hero-wrapper h2 {
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
 }
 
 /* SEPARATORS */
@@ -314,6 +314,10 @@ header {
     margin-left: 1rem;
 }
 
+.mail-phone-wrapper a {
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+}
 .cta-container {
     flex-grow: 1;
     display: flex;
@@ -323,17 +327,19 @@ header {
 
 /* BUTTONS */
 .cta-button {
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 4px #1B000A;
     animation: scaleAnimation 1s ease-in-out 2s infinite alternate; /* Délai de 2s avant démarrage */
 }
 
 .button, .cta-button {
-    background-color: #ca0d00 !important;
-    border: 1px solid #1B000A !important;
+    background-color: #ca0d00;
+    border: 1px solid #1B000A;
     text-transform: uppercase;
     font-style: oblique;
-    font-variation-settings: 'wght' 500;
+    font-variation-settings: 'wght' 400;
 }
 
 .button, .button i {
@@ -344,6 +350,9 @@ header {
     animation: none; /* Stoppe l'animation au survol */
     transform: scale(1.01);
     box-shadow: 0 2px 3px #1B000A;
+    color: white;
+    background-color: #ca0d00;
+    border: 1px solid #1B000A;
 }
 
 @keyframes scaleAnimation {
