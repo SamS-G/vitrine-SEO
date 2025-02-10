@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Réalisations - JdServices')
+@section('title', 'Réalisations - JD Travaux Services')
 
 @php
     $categories = [

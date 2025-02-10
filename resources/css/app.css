@@ -59,6 +59,9 @@ button i {
     color: #000000;
     font-size: 2rem;
 }
+h5 {
+    font-weight: 900;
+}
 
 .nav-link, ul li a i, h1, .top-hero-wrapper h2 {
     color: white;

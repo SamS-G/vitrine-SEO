@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Accueil - JdServices')
+@section('title', 'Accueil - JD Travaux Services')
 
 @section('content')
     <x-hero

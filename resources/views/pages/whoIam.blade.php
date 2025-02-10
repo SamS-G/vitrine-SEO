@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'JD Travaux Services')
 @section('content')
     <div class="col-8 py-5 mx-auto">
         <!-- Section de présentation -->

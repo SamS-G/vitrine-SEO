@@ -139,6 +139,7 @@
     ['title' => 'Réalisations', 'href' => 'project'],
     ['title' => 'JD Travaux Services', 'href' => 'presentation'],
     ['title' => 'Marques', 'href' => 'brands'],
+    ['title' => 'Zones d’intervention', 'href' => 'intervention'],
     ['title' => 'Contact', 'href' => 'home'],
     ]"
     />

@@ -42,6 +42,7 @@
                     </div>
                 </div>
             @endforeach
+            <div class="w-auto"><p class="alert alert-success">Si vous souhaitez connaître les communes dans lesquelles ces <strong>Services</strong> sont proposés rendez-vous sur cette <a href="{{ route('intervention') }}" class=""><strong>page.</strong></a></p></div>
         </div>
     </div>
 @endsection
