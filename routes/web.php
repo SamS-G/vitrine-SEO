@@ -12,6 +12,9 @@ Route::get('/realisations', function () {
 Route::get('/qui-suis-je', function () {
     return view('pages.whoIam');
 })->name('presentation');
+Route::get('/marques', function () {
+    return view('pages.brands');
+})->name('brands');
 Route::get('/contact', function () {
     return view('pages.contact');
 })->name('contact');

@@ -138,7 +138,7 @@
     ['title' => 'Services', 'href' => 'services.index'],
     ['title' => 'Réalisations', 'href' => 'project'],
     ['title' => 'JD Travaux Services', 'href' => 'presentation'],
-    ['title' => 'Marques', 'href' => 'home'],
+    ['title' => 'Marques', 'href' => 'brands'],
     ['title' => 'Contact', 'href' => 'home'],
     ]"
     />

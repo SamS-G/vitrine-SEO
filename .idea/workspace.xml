@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d1df957-50df-4c44-a6f6-7ede6cea1e40" name="Changes" comment="base composant + page mes réalisations + route">
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/whoIam.blade.php" afterDir="false" />
+    <list default="true" id="4d1df957-50df-4c44-a6f6-7ede6cea1e40" name="Changes" comment="page + route">
+      <change afterPath="$PROJECT_DIR$/resources/images/brands/AMB-logo.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/brands/castes-logo.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/brands/lakal-logo.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/brands.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/whoIAm.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +170,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "presentation",
+    "git-widget-placeholder": "marques",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -210,7 +213,8 @@
       <workItem from="1738862637633" duration="1453000" />
       <workItem from="1738935067428" duration="7632000" />
       <workItem from="1739041194768" duration="5431000" />
-      <workItem from="1739121491071" duration="6525000" />
+      <workItem from="1739121491071" duration="6658000" />
+      <workItem from="1739180298610" duration="5325000" />
     </task>
     <task id="LOCAL-00001" summary="base composant + page mes réalisations + route">
       <option name="closed" value="true" />
@@ -220,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739046522497</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="page + route">
+      <option name="closed" value="true" />
+      <created>1739130773409</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739130773409</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +240,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="base composant + page mes réalisations + route" />
-    <option name="LAST_COMMIT_MESSAGE" value="base composant + page mes réalisations + route" />
+    <MESSAGE value="page + route" />
+    <option name="LAST_COMMIT_MESSAGE" value="page + route" />
   </component>
 </project>

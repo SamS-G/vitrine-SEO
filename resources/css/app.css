@@ -387,25 +387,30 @@ header {
 /* SERVICE-PAGE */
 .services-title {
     background-color: rgba(0, 0, 0, 0.8);
+    color: white;
     padding: 0.5rem;
     border-top: 2px solid #ca0d00;
     border-bottom: 2px solid #ca0d00;
     border-radius: 4px;
+    text-shadow: 2px 2px 2px #000000;
 }
 
 .service-button {
     box-shadow: 0 2px 3px #1B000A;
     background-color: #ca0d00;
-    font-variation-settings: 'wght' 700;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+    font-variation-settings: 'wght' 400;
     letter-spacing: 1px;
     transition: transform 0.5s ease-in-out;
+    align-self: flex-start;
 }
 
 .service-button:hover {
     transform: scale(1.1);
+    color: white;
     background-color: #ca0d00;
 }
-
 .service-card-body {
     display: flex;
     flex-direction: column;
@@ -415,11 +420,6 @@ header {
 .service-card-text {
     flex-grow: 1; /* Pousse le bouton vers le bas */
 }
-
-.service-button {
-    align-self: flex-start; /* Optionnel : Ajuste la position du bouton */
-}
-
 .accordion-button:not(.collapsed) {
     background-color: rgba(202, 13, 0, 0.25);
 }
