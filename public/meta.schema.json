@@ -1,0 +1,126 @@
+{
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "JD Travaux Services",
+    "image": "https://jdtravauxservices.fr/logo.webp",
+    "description": "Entreprise specialise dans la pose et le depannage de volets roulants, pose de moustiquaires, installation de portes et portails, fenetres et baies vitrees. Service professionnel et intervention rapide.",
+    "@id": "https://jdtravauxservices.fr",
+    "url": "https://jdtravauxservices.fr",
+    "telephone": "0689442815",
+    "priceRange": "\u20ac\u20ac",
+    "address":
+    {
+        "@type": "PostalAddress",
+        "streetAddress": "2246 route de la PLaine",
+        "addressLocality": "Sainte-Julie",
+        "postalCode": "01150",
+        "addressCountry": "FR"
+    },
+    "geo":
+    {
+        "@type": "GeoCoordinates",
+        "latitude": "45.86976687650793",
+        "longitude": "5.279457151184211"
+    },
+    "sameAs" : [
+    "https://www.facebook.com/JDTravauxServices",
+    "https://www.instagram.com/jdtravaux"
+],
+    "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "18:00"
+        }],
+    "hasOfferCatalog":
+    {
+        "@type": "OfferCatalog",
+        "name": "Services de menuiserie en porte, fenêtre, volet  et depannage",
+        "itemListElement": [
+            {
+                "@type": "OfferCatalog",
+                "name": "Installation et depannage de volets",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered":
+                        {
+                            "@type": "Service",
+                            "name": "Pose de volets roulants",
+                            "description": "Installation professionnelle de volets roulants"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered":
+                        {
+                            "@type": "Service",
+                            "name": "Depannage de volets roulants",
+                            "description": "Service de reparation et depannage urgent de volets roulants"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered":
+                        {
+                            "@type": "Service",
+                            "name": "Installation de volets en bois",
+                            "description": "Pose de volets traditionnels en bois"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered":
+                        {
+                            "@type": "Service",
+                            "name": "Installation de volets en PVC",
+                            "description": "Pose de volets en PVC"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered":
+                        {
+                            "@type": "Service",
+                            "name": "Installation de volets en aluminium",
+                            "description": "Pose de volets en aluminium"
+                        }
+                    }]
+            },
+            {
+                "@type": "OfferCatalog",
+                "name": "Menuiseries",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered":
+                        {
+                            "@type": "Service",
+                            "name": "Pose de portes",
+                            "description": "Installation de portes d'entre et interieures"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered":
+                        {
+                            "@type": "Service",
+                            "name": "Installation de fenetres",
+                            "description": "Pose de fenetres en bois, PVC ou aluminium"
+                        }
+                    }]
+            }]
+    },
+    "areaServed":
+    {
+        "@type": "GeoCircle",
+        "geoMidpoint":
+        {
+            "@type": "GeoCoordinates",
+            "latitude": "45.86976687650793",
+            "longitude": "5.279457151184211"
+        },
+        "geoRadius": "80000"
+    }
+}

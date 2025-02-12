@@ -1,0 +1,50 @@
+{
+    "services": {
+        "fenêtres": {
+            "service-1": "Pose de fenêtres et volets près de ",
+            "service-2": "Services de dépannage à proximité de ",
+            "service-3": "Menuiserie près de "
+        },
+        "portes": {
+            "service-1": "Pose de portes de garage sectionnelles, basculantes ou enroulables dans les environs de ",
+            "service-2": "Installation de portes d'entrée sécurisées et design à proximité de ",
+            "service-3": "Remplacement et réparation de portes existantes à coté de "
+        },
+        "volets": {
+            "service-1": "Pose de volets roulants électriques ou solaires dans les environs de ",
+            "service-2": "Installation de volets classiques et design à proximité de ",
+            "service-3": "Remplacement et réparation de volets existantes à coté de "
+        }
+    },
+
+    "amberieu-en-bugey":
+    {
+        "name": "Amb\u00e9rieu-en-Bugey",
+        "latitude": 45.9601,
+        "longitude": 5.3578,
+        "postalCode": "01500",
+        "place-1": "la Maison des Sociétés",
+        "place-2": "la Gare l'Ambérieu",
+        "place-3": "Château des Allymes"
+    },
+    "lagnieu":
+    {
+        "name": "Lagnieu",
+        "latitude": 45.885,
+        "longitude": 5.348,
+        "postalCode": "01150",
+        "place-1": "La Plaine de l'Ain (Parc Industriel)",
+        "place-2": "l'Église Saint-Jean-Baptiste",
+        "place-3": "la Base de Loisirs de la Vallée Bleue"
+    },
+    "meximieux":
+    {
+        "name": "Meximieux",
+        "latitude": 45.905,
+        "longitude": 5.235,
+        "postalCode": "01800",
+        "place-1": "de La Porte de l'Horloge",
+        "place-2": "la Gare de Meximieux - Pérouges",
+        "place-3": "Pérouges"
+    }
+}

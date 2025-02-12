@@ -4,34 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d1df957-50df-4c44-a6f6-7ede6cea1e40" name="Changes" comment="page + route refacto CSS">
-      <change afterPath="$PROJECT_DIR$/resources/images/cities/amberieux.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/cities/beynost.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/cities/charnoz.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/cities/chazey-sur-ain.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/cities/dagneux.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/cities/lagnieux.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/cities/les-grottes-la-balme.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/cities/leyment.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/cities/meximieux.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/cities/miribel.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/cities/montluel.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/cities/perouges.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/cities/sainte-julie.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/cities/tramoyes.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/cities/villieu-loyes-mollon.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/local/amberieux/fenetre.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/pages/local/layouts/index.blade.php" afterDir="false" />
+    <list default="true" id="4d1df957-50df-4c44-a6f6-7ede6cea1e40" name="Changes" comment="page local index.blade.php">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LocalServicesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/local.meta.schema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/meta.schema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/services/local/fenetres.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/services/local/portes.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/services/local/volets.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/cities.data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/cities/amberieux.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/cities/amberieux.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/cities/beynost.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/cities/beynost.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/cities/charnoz.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/cities/charnoz.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/cities/chazey-sur-ain.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/cities/chazey-sur-ain.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/cities/dagneux.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/cities/dagneux.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/cities/lagnieux.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/cities/lagnieux.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/cities/les-grottes-la-balme.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/cities/les-grottes-la-balme.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/cities/leyment.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/cities/leyment.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/cities/meximieux.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/cities/meximieux.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/cities/miribel.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/cities/miribel.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/cities/montluel.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/cities/montluel.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/cities/perouges.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/cities/perouges.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/cities/sainte-julie.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/cities/sainte-julie.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/cities/tramoyes.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/cities/tramoyes.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/images/cities/villieu-loyes-mollon.webp" beforeDir="false" afterPath="$PROJECT_DIR$/resources/images/cities/villieu-loyes-mollon.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/brands.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/brands.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/projects.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/projects.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/layout/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/layout/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/whoIam.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/whoIam.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/workingArea.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/local/amberieux/fenetre.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/local/layouts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/local/layouts/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,26 +186,31 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "local",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;local&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/samuel/PhpstormProjects/jdTravauxServices/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/pages/services" />
+      <recent name="$PROJECT_DIR$/resources/views/pages/local" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/resources/images/projects-gallery/fenetres" />
       <recent name="$PROJECT_DIR$/resources/images/projects-gallery/moustiquaire" />
-      <recent name="$PROJECT_DIR$/resources/images/home" />
-      <recent name="$PROJECT_DIR$/resources/images/home/services" />
-      <recent name="$PROJECT_DIR$/resources/images/services" />
     </key>
   </component>
   <component name="RunManager">
@@ -234,7 +240,9 @@
       <workItem from="1739041194768" duration="5431000" />
       <workItem from="1739121491071" duration="6658000" />
       <workItem from="1739180298610" duration="5470000" />
-      <workItem from="1739186299385" duration="14787000" />
+      <workItem from="1739186299385" duration="15097000" />
+      <workItem from="1739261222924" duration="35830000" />
+      <workItem from="1739355360773" duration="8324000" />
     </task>
     <task id="LOCAL-00001" summary="base composant + page mes réalisations + route">
       <option name="closed" value="true" />
@@ -260,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739186125826</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="page local index.blade.php">
+      <option name="closed" value="true" />
+      <created>1739207259504</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1739207259504</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +286,7 @@
     <MESSAGE value="base composant + page mes réalisations + route" />
     <MESSAGE value="page + route" />
     <MESSAGE value="page + route refacto CSS" />
-    <option name="LAST_COMMIT_MESSAGE" value="page + route refacto CSS" />
+    <MESSAGE value="page local index.blade.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="page local index.blade.php" />
   </component>
 </project>
