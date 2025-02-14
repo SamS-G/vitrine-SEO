@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class BladePageDataModel extends Model
+class MetaSchema extends Model
 {
     //
 }
