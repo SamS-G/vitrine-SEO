@@ -5,7 +5,7 @@
     <div class="text-center">
         <x-button
             iconClass="{{ $iconClass }}"
-            link="{{ route($link) }}"
+            link="{{ url($link) }}"
             linkClass="{{ $linkClass }}"
             buttonName="{!! html_entity_decode($buttonName) !!}"
         />

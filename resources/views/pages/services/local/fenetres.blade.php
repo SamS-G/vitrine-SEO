@@ -28,6 +28,6 @@
             </p>
         </div>
         <h3 class="mb-4">Contactez-nous !</h3>
-        <a href="{{ route('contact') }}" class="btn button">Demander un devis gratuit</a>
+        <a href="{{ url('contact') }}" class="btn button">Demander un devis gratuit</a>
     </div>
 @endsection

@@ -42,7 +42,7 @@
             <!-- Copyright -->
             <div class="text-center mt-3">
                 <p class="mb-2">© 2025 JD Travaux Services - Plaine de l'Ain | <a href="https://webconceptions.fr"><em>WebConceptions</em></a> - Tous droits réservés.</p>
-                <a href="{{ route('intervention') }}" class="text-white"><em>Voir nos zones d'intervention</em></a>
+                <a href="{{ url('intervention') }}" class="text-white"><em>Voir nos zones d'intervention</em></a>
             </div>
         </div>
 </footer>

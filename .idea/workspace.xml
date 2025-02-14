@@ -5,14 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d1df957-50df-4c44-a6f6-7ede6cea1e40" name="Changes" comment="page local index.blade.php">
-      <change afterPath="$PROJECT_DIR$/app/Models/BladePageDataModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/LocalDataModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/ServiceModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/StructuredSchemaData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/StructuredSchemaModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/card.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/service.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/service.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/topBanner.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/topBanner.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/brands.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/nos-marques.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/accueil.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/projects.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/realisations.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/doorService.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/pose-portes-entree.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/flooringService.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/pose-revetements-de-sol.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/garageDoorService.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/pose-portes-garage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/gateService.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/pose-portails.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/layout/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/layout/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/local/fenetres.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/local/fenetres.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/local/portes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/local/portes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/local/volets.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/local/volets.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/multiService.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/multi-services.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/repairService.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/reparation-volets-roulants.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/shutterService.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/pose-volets-roulants.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/windowService.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/pose-fenetres-baies-vitrees.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/whoIam.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/presentation-jdtravauxservices.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +185,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "database",
+    "git-widget-placeholder": "new-routing",
     "last_opened_file_path": "/home/samuel/PhpstormProjects/jdTravauxServices/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -265,6 +281,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="base composant + page mes réalisations + route" />

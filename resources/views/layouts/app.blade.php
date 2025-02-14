@@ -29,13 +29,13 @@
 <header class="container-fluid">
     <x-navbar
         :navItems="[
-    ['title' => 'Accueil', 'href' => 'home'],
-    ['title' => 'Services', 'href' => 'services.index'],
-    ['title' => 'Réalisations', 'href' => 'project'],
-    ['title' => 'JD Travaux Services', 'href' => 'presentation'],
-    ['title' => 'Marques', 'href' => 'brands'],
-    ['title' => 'Zones d’intervention', 'href' => 'intervention'],
-    ['title' => 'Contact', 'href' => 'home'],
+    ['title' => 'Accueil', 'href' => ''],
+    ['title' => 'Services', 'href' => 'services'],
+    ['title' => 'Réalisations', 'href' => 'realisations'],
+    ['title' => 'JD Travaux Services', 'href' => 'presentation-jdtravauxservices'],
+    ['title' => 'Marques', 'href' => 'nos-marques'],
+    ['title' => 'Zones d’interventions', 'href' => 'zone-interventions'],
+    ['title' => 'Contact', 'href' => 'contact'],
     ]"
     />
 </header>

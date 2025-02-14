@@ -29,6 +29,6 @@
             </p>
         </div>
         <h3 class="mb-4">Besoin de nouveaux volets ?</h3>
-        <a href="{{ route('contact') }}" class="btn button">Obtenez votre devis gratuit</a>
+        <a href="{{ url('contact') }}" class="btn button">Obtenez votre devis gratuit</a>
     </div>
 @endsection

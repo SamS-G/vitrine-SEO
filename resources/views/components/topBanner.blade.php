@@ -1,7 +1,7 @@
 <div class="container-fluid top-hero-container">
     <div class="top-hero-wrapper">
         <!-- Logo à gauche -->
-        <a class="img-fluid hero-logo" href="{{ route('home') }}">
+        <a class="img-fluid hero-logo" href="{{ url('/') }}">
             <img src="{{ Vite::asset('resources/images/logo_small.webp') }}"
                  alt="logo" title="logo de JdTravauxServices">
         </a>

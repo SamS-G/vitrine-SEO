@@ -59,7 +59,7 @@
 
     {{-- Bouton Demander un Devis --}}
     <div class="text-center">
-        <a href="{{ route('contact') }}" class="btn btn-lg service-button">
+        <a href="{{ url('contact') }}" class="btn btn-lg service-button">
             Demander un devis <i class="fa-solid fa-envelope ms-2"></i>
         </a>
     </div>

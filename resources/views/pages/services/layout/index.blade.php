@@ -13,14 +13,14 @@
         <div class="row">
             @php
                 $services = [
-                    ['title' => 'Pose de fenêtres', 'route' => 'services.window', 'image' => 'vitre.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'   ],
-                    ['title' => 'Pose de volets roulants', 'route' => 'services.shutter', 'image' => 'volet.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
-                    ['title' => 'Pose de portes d’entrée', 'route' => 'services.door', 'image' => 'porte-entree.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
-                    ['title' => 'Pose de portes de garage', 'route' => 'services.garageDoor', 'image' => 'porte-garage.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
-                    ['title' => 'Pose de portails', 'route' => 'services.gate', 'image' => 'portail.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
-                    ['title' => 'Pose de parquet et revêtements de sol', 'route' => 'services.flooring', 'image' => 'parquet.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
-                    ['title' => 'Dépannage de volets roulants', 'route' => 'services.depannage', 'image' => 'reparation.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
-                    ['title' => 'Multi Services', 'route' => 'services.multiservice', 'image' => 'multi-service.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
+                    ['title' => 'Pose de fenêtres', 'route' => 'services/pose-fenetres-baies-vitrees', 'image' => 'vitre.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'   ],
+                    ['title' => 'Pose de volets roulants', 'route' => 'services/pose-volets-roulants', 'image' => 'volet.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
+                    ['title' => 'Pose de portes d’entrée', 'route' => 'services/pose-portes-entree', 'image' => 'porte-entree.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
+                    ['title' => 'Pose de portes de garage', 'route' => 'services/pose-portes-garage', 'image' => 'porte-garage.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
+                    ['title' => 'Pose de portails', 'route' => 'services/pose-portails', 'image' => 'portail.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
+                    ['title' => 'Pose de parquet et revêtements de sol', 'route' => 'services/pose-revetements-de-sol', 'image' => 'parquet.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
+                    ['title' => 'Dépannage de volets roulants', 'route' => 'services/reparation-volets-roulants', 'image' => 'reparation.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
+                    ['title' => 'Multi Services', 'route' => 'services/multi-services', 'image' => 'multi-service.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
                 ];
             @endphp
             @foreach ($services as $service)
@@ -35,14 +35,14 @@
                                 <div class="card-body service-card-body">
                                     <h5 class="card-title h4">{{ $service['title'] }}</h5>
                                     <p class="card-text service-card-text text-justify">{{ $service['text'] }}</p>
-                                    <a href="{{ route($service['route']) }}" class="btn btn-md service-button">Découvrir <i class="fa-solid fa-arrow-right fa-beat"></i></a>
+                                    <a href="{{ url($service['route']) }}" class="btn btn-md service-button">Découvrir <i class="fa-solid fa-arrow-right fa-beat"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             @endforeach
-            <div class="w-auto"><p class="alert alert-success">Si vous souhaitez connaître les communes dans lesquelles ces <strong>Services</strong> sont proposés rendez-vous sur cette <a href="{{ route('intervention') }}" class=""><strong>page.</strong></a></p></div>
+            <div class="w-auto"><p class="alert alert-success">Si vous souhaitez connaître les communes dans lesquelles ces <strong>Services</strong> sont proposés rendez-vous sur cette <a href="{{ url('zone-interventions') }}" class=""><strong>page.</strong></a></p></div>
         </div>
     </div>
 @endsection
