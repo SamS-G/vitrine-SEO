@@ -2,70 +2,50 @@
 
 namespace App\Http\Controllers;
 
-use Exception;
-use Illuminate\Contracts\View\Factory;
-use Illuminate\Contracts\View\View;
-use Illuminate\Foundation\Application;
+use App\Models\City;
+use App\Models\MetaSchema;
+use App\Models\Service;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Str;
 
 class LocalServicesController extends Controller
 {
-    public function show(string $type, string $ville): View|Factory|Application
+    public function showService($type, $ville)
     {
-        $cities = file_get_contents(public_path('cities.data.json'));
-        $communes = json_decode($cities, true);
+        // 🔹 Définition du slug du service en fonction de l'URL
+        $serviceType = Str::contains(URL::current(), 'pose-') ? "pose-$type" : $type;
 
-        if (!isset($communes[$ville])) {
-            abort(404, 'Pas de page trouvée avec cette URL, vérifiez l\'adresse saisie.');  // Si la ville n'est pas trouvée, renvoyer une erreur 404
+        // 🔹 Vérification et récupération des données (avec gestion d'erreurs)
+        $city = City::where('slug', $ville)->firstOrFail();
+
+        // 🔹 Vérifier si le service existe (gère les exceptions pose- et non pose-)
+        $service = Service::where('slug', $serviceType)->first();
+
+        // Si le service avec ce format n'existe pas, essayer avec `pose-`
+        if (!$service && !Str::startsWith($serviceType, 'pose-')) {
+            $serviceType = "pose-$type";
+            $service = Service::where('slug', $serviceType)->first();
         }
 
-        if (isset($communes['services'])) {
-            $services = $communes['services'];
-        }
-        $city = $communes[$ville];
-        $meta_title = "Pose de Fenêtres à {$city['name']} - JD Travaux Services"
-            ?? 'Pose de Fenêtres à Sainte-Julie - JD Travaux Services';
-        $meta_description = "JD Travaux Services propose la pose de {$type} à {$city['name']}. Contactez-nous pour un devis sur-mesure."
-            ?? 'JD Travaux Services propose la pose de volets / portes / fenêtres à Sainte-Julie. Contactez-nous pour un devis sur-mesure.';
-        $default_meta_schema = view()->shared('base_meta_schema');
-
-        try {
-            $meta_schema = $this->mergeSchema($type, $city);
-
-        } catch (Exception $exception) {
-            $meta_schema = $default_meta_schema;
-
-            return view("pages.services.local.{$type}", compact('meta_title', 'meta_description', 'meta_schema', 'city', 'type', 'services'));
+        // Si toujours pas trouvé, on retourne une 404
+        if (!$service) {
+            abort(404, "Le service demandé n'est pas proposé :(");
         }
 
-        if ($meta_schema) {
-            $meta_schema = json_encode($meta_schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
-            return view("pages.services.local.{$type}", compact('meta_title', 'meta_description', 'meta_schema', 'city', 'type', 'services'));
+        // 🔹 Récupération des métadonnées
+        $meta_data = MetaSchema::where('service_id', $service->id)
+            ->where('city_id', $city->id)
+            ->first();
+
+        if (!$meta_data) {
+            return response()->view('errors.service-not-found', [
+                'message' => 'Service non disponible pour cette ville.',
+                'meta_title' => 'Service non disponible',
+                'meta_description' => 'Aucune information disponible pour cette combinaison service/ville',
+            ], 404);
         }
 
-        $meta_schema = $default_meta_schema;
-        return view("pages.services.local.{$type}", compact('meta_title', 'meta_description', 'meta_schema', 'city', 'type', 'services'));
-    }
-
-    private function mergeSchema($type, $city): array
-    {
-        $template = file_get_contents(public_path('local.meta.schema.json')); //JSON
-        // Remplacer les variables dans le template
-        $filledSchema = str_replace(
-            ['{$type}', '{$city[\'name\']}', '{$city[\'postalCode\']}', '{$city[\'latitude\']}', '{$city[\'longitude\']}'],
-            [$type, $city['name'], $city['postalCode'], $city['latitude'], $city['longitude']],
-            $template
-        );
-        // for URL property after $city['name'] & $type are filled
-        $filledSchema = str_replace(
-            "{/services/pose-{$type}-{$city['name']}}",
-            url("/services/pose-{$type}-{$city['name']}"),
-            $filledSchema
-        );
-
-        // Récupérer le schéma de base (partagé via le service provider)
-        $base_schema = json_decode(view()->shared('base_meta_schema'), true); // ARRAY
-        $local_schema = json_decode($filledSchema, true);// ARRAY
-
-        return array_merge_recursive($base_schema, $local_schema);
+        // 🔹 Retour de la vue avec les données
+        return view("pages.services.local.{$serviceType}", compact('service', 'city', 'meta_data'));
     }
 }

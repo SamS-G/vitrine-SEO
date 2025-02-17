@@ -1,10 +1,11 @@
 {
+    "@context": "https://schema.org",
     "@type": "Service",
     "serviceType": "Pose de {$type}",
     "provider": {
         "@type": "LocalBusiness",
         "name": "JD Travaux Services",
-        "url": "{/services/pose-{$type}-{$city['name']}}",
+        "url": "{/pose-{$type}-{$city['name']}}",
         "telephone": "+33 6 89 44 28 15",
         "address": {
             "@type": "PostalAddress",

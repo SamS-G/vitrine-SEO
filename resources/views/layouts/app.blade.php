@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title', 'Jd Travaux Services')</title>
     <meta name="description"
-          content="{{ $meta_description ?? 'JD Travaux Services est spécialisé dans la pose de fenêtres, portes et volets dans la région de la Plaine de l\'Ain.' }}">
+          content="@yield('meta_description', "$base_meta_schema->meta_description")">
     <link rel="icon" type="image/png" href="{{ Vite::asset('resources/images/favicon.png') }}">
     <!-- Inclure les fichiers générés par Vite -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     {{-- Meta générique uniquement --}}
     <script type="application/ld+json">
-        {!! $meta_schema ?? $base_meta_schema !!}
+        {!! $base_meta_schema->meta_schema !!}
     </script>
-
+    {{-- Meta service local --}}
+    @yield('local_meta_data')
     <!-- Stack pour ajouter des styles spécifiques à chaque page -->
     @stack('styles')
 </head>
@@ -28,12 +29,12 @@
 
 <header class="container-fluid">
     <x-navbar
-        :navItems="[
-    ['title' => 'Accueil', 'href' => ''],
+            :navItems="[
+    ['title' => 'Accueil', 'href' => 'home'],
     ['title' => 'Services', 'href' => 'services'],
     ['title' => 'Réalisations', 'href' => 'realisations'],
-    ['title' => 'JD Travaux Services', 'href' => 'presentation-jdtravauxservices'],
-    ['title' => 'Marques', 'href' => 'nos-marques'],
+    ['title' => 'JD Travaux Services', 'href' => 'presentation'],
+    ['title' => 'Marques', 'href' => 'marques'],
     ['title' => 'Zones d’interventions', 'href' => 'zone-interventions'],
     ['title' => 'Contact', 'href' => 'contact'],
     ]"
