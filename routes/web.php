@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\LocalServicesController;
 use Illuminate\Support\Facades\Route;
 
@@ -13,8 +14,21 @@ Route::view('/zone-interventions', 'pages.services.local.layouts.index')->name('
 Route::view('/contact', 'pages.contact')->name('contact');
 
 // ROUTES GÉNÉRIQUES DES SERVICES
-$services = ['volets-roulants', 'portes-entree', 'fenetres', 'portes-garage', 'portails', 'revetements-sol', 'reparation-volets-roulants', 'travaux-batiment'];
-$exceptions = ['reparation-volets-roulants', 'travaux-batiment'];
+$services = [
+    'volets-roulants',
+    'portes-entree',
+    'fenetres',
+    'portes-garage',
+    'portails',
+    'revetements-sol',
+    'reparation-volets-roulants',
+    'travaux-batiment',
+    'moustiquaires'
+];
+$exceptions = [
+    'reparation-volets-roulants',
+    'travaux-batiment'
+];
 // 🔹 Génération dynamique des routes statiques
 foreach ($services as $service) {
     Route::view("/services/pose-$service", "pages.services.pose-$service")
@@ -43,6 +57,10 @@ Route::get('services/{type}-{ville}', [LocalServicesController::class, 'showServ
 Route::fallback(function () {
     return response()->view('pages.404', [], 404);
 });
+
+//ENVOI DU FORMULAIRE DE CONTACT
+
+Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
 
 
 

@@ -14,6 +14,7 @@
             @php
                 $services = [
                     ['title' => 'Pose de fenêtres', 'route' => 'services/pose-fenetres', 'image' => 'vitre.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'   ],
+                    ['title' => 'Pose de moustiquaires', 'route' => 'services/pose-moustiquaires', 'image' => 'volet-moustiquaire.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
                     ['title' => 'Pose de volets roulants', 'route' => 'services/pose-volets-roulants', 'image' => 'volet.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
                     ['title' => 'Pose de portes d’entrée', 'route' => 'services/pose-portes-entree', 'image' => 'porte-entree.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
                     ['title' => 'Pose de portes de garage', 'route' => 'services/pose-portes-garage', 'image' => 'porte-garage.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
@@ -21,6 +22,7 @@
                     ['title' => 'Pose de parquet et revêtements de sol', 'route' => 'services/pose-revetements-sol', 'image' => 'parquet.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
                     ['title' => 'Dépannage de volets roulants', 'route' => 'services/reparation-volets-roulants', 'image' => 'reparation.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
                     ['title' => 'Multi Services', 'route' => 'services/travaux-batiment', 'image' => 'multi-service.webp', 'text' => ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cupiditate, explicabo ipsum magni odio perferendis rerum sunt tenetur. Aliquam dolorum ea, esse et fuga neque odio possimus quas quia voluptatum!'],
+
                 ];
             @endphp
             @foreach ($services as $service)

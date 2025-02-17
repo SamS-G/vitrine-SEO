@@ -340,8 +340,8 @@ header {
 .button, .cta-button {
     background-color: #ca0d00;
     border: 1px solid #1B000A;
-    text-transform: uppercase;
-    font-style: oblique;
+    /*text-transform: uppercase;*/
+    /*font-style: oblique;*/
     font-variation-settings: 'wght' 400;
 }
 
