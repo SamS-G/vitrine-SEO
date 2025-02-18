@@ -4,23 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d1df957-50df-4c44-a6f6-7ede6cea1e40" name="Changes" comment="création formulaire et page de contact, envoi OK">
-      <change afterPath="$PROJECT_DIR$/resources/images/home/services/portail.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/home/services/porte-entree.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/home/services/porte-garage.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/home/services/pose-parquet.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/images/home/services/volets-roulants.webp" afterDir="false" />
+    <list default="true" id="4d1df957-50df-4c44-a6f6-7ede6cea1e40" name="Changes" comment="ajout services manquant  sur accueil + pages dédiées, ajout texte card services">
+      <change afterPath="$PROJECT_DIR$/resources/css/leaflet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/area-business-map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/leaflet-src.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/leaflet-src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/leaflet.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/card.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/hero.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/hero.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/service.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/service.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/accueil.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/accueil.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/nos-marques.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/nos-marques.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/presentation-jdtravauxservices.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/presentation-jdtravauxservices.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/realisations.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/realisations.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/services/layout/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/layout/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/services/local/layouts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/local/layouts/index.blade.php" afterDir="false" />
     </list>
@@ -32,6 +24,14 @@
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -175,26 +175,27 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;home-service-cards-add-new&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/samuel/PhpstormProjects/jdTravauxServices/resources/images/services&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.HTML&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "carte-zone-desservie",
+    "last_opened_file_path": "/home/samuel/PhpstormProjects/jdTravauxServices/resources/images/services",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.HTML",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mariadb&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/images/services" />
@@ -241,7 +242,7 @@
       <workItem from="1739630976495" duration="15645000" />
       <workItem from="1739714061899" duration="26598000" />
       <workItem from="1739779671407" duration="17238000" />
-      <workItem from="1739864165734" duration="5146000" />
+      <workItem from="1739864165734" duration="8383000" />
     </task>
     <task id="LOCAL-00001" summary="base composant + page mes réalisations + route">
       <option name="closed" value="true" />
@@ -299,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739788752862</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ajout services manquant  sur accueil + pages dédiées, ajout texte card services">
+      <option name="closed" value="true" />
+      <created>1739869562737</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1739869562737</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +333,8 @@
     <MESSAGE value="maj liens / router / rename viewq" />
     <MESSAGE value="création table/model/seeders" />
     <MESSAGE value="changement des routes (nom, gestion), gestion des meta_data (global,local)" />
-    <option name="LAST_COMMIT_MESSAGE" value="changement des routes (nom, gestion), gestion des meta_data (global,local)" />
+    <MESSAGE value="ajout services manquant  sur accueil + pages dédiées, ajout texte card services" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout services manquant  sur accueil + pages dédiées, ajout texte card services" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

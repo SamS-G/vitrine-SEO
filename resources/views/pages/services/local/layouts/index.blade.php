@@ -1,21 +1,29 @@
 @extends('layouts.app')
+@vite(['resources/css/leaflet.css', 'resources/js/leaflet.js', 'resources/js/area-business-map.js'])
 @section('title', 'Zone Géographique - JD Travaux Services')
 @section('content')
+
     <div class="col-10 mx-auto py-5">
         <h1 class="text-center mb-4 bg-white-soft">Nos Services de Menuiserie et Dépannage dans la Plaine de l'Ain</h1>
-
         <p class="text-justify mb-5">
-            <strong>JD Travaux Services</strong> intervient dans les communes de la <em>Plaine de l'Ain</em>, notamment à Ambérieux-en-Bugey,
-            Lagnieu,
-            Meximieux, Dagneux, Leyment, Beynost, Miribel, Montluel, Tramoyes, Pérouges, Charnoz, Sainte-Julie, Chazey,
-            Villieu-Loyes-Mollon et La-Blame-Les-Grottes.
+            <strong>JD Travaux Services</strong> intervient dans les communes de la <em>Plaine de l'Ain</em>, notamment
+            à <strong>Ambérieux-en-Bugey,
+                Lagnieu,
+                Meximieux, Dagneux, Leyment, Beynost, Miribel, Montluel, Tramoyes, Pérouges, Charnoz, Sainte-Julie,
+                Chazey,
+                Villieu-Loyes-Mollon et La-Blame-Les-Grottes.</strong><br/>
             Nous proposons des solutions sur-mesure pour la pose de fenêtres, portes, et volets dans toute la
             région.
         </p>
-        <p>Sous la carte représentant le zone dans laquelle JD Multi-Services intervient, cliquez sur votre commune
+        <div class="col-8 mx-auto">
+        <p class="alert alert-primary talert-dismissible fade show text-center" role="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            Sous la carte représentant le zone dans laquelle <strong>JD Multi-Services</strong> intervient, cliquez sur
+            votre commune
             pour découvrir nos services spécifiques.
         </p>
-
+        </div>
+        <div id="map" class="container"></div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5">
             <div class="col">
                 <div class="card h-100 shadow-sm">
@@ -33,7 +41,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="brands-logo mx-auto">

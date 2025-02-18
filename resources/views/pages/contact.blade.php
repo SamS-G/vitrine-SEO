@@ -83,18 +83,4 @@
             </div>
         </div>
     @endif
-
-
-    <style>
-        .bg-white-soft {
-            background-color: rgba(245, 245, 245, 0.9);
-            color: #444;
-            padding: 0.5rem;
-            border-top: 2px solid #aaa;
-            border-bottom: 2px solid #aaa;
-            border-radius: 4px;
-            text-shadow: 0 1px 0 #ca0d00;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-        }
-    </style>
 @endsection

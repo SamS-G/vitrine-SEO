@@ -442,7 +442,9 @@ header {
     background-color: #d4edda;
 }
 
-
+#map {
+    height: 70vh;
+}
 /* FOOTER */
 footer {
     background-clip: content-box;

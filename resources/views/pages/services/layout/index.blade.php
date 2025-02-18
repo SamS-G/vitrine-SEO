@@ -190,7 +190,7 @@
                             <div class="col-md-8">
                                 <div class="card-body service-card-body">
                                     <h5 class="card-title text-center">{{ $service['title'] }}</h5>
-                                    <p class="card-text service-card-text text-justify">{!! $service['text'] !!}</p>
+                                    <p class="card-text service-card-text text-justify">{!! strip_tags($service['text']) !!}</p>
                                     <div class="d-flex justify-content-around">
                                         <a href="{{ url($service['route']) }}" class="btn btn-md service-button">Découvrir
                                             <i class="fa-solid fa-arrow-right fa-beat"></i>
