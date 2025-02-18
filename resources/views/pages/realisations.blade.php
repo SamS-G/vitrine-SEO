@@ -131,7 +131,7 @@ nous concevons un châssis suivant les demandes et les impératifs du client et 
 
 @section('content')
 <div class="col-10 mx-auto my-5">
-    <h1 class="text-center mb-4 services-title">Galerie de Réalisations</h1>
+    <h1 class="text-center mb-4 bg-white-soft">Galerie de Réalisations</h1>
     <x-photo-gallery
         :categories="$categories"
     />

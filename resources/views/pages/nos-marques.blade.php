@@ -2,7 +2,7 @@
 @section('title', 'Marques - JD Travaux Services')
 @section('content')
     <div class="container py-5">
-        <h1 class="text-center mb-5 services-title">Nos Partenaires</h1>
+        <h1 class="text-center mb-5 bg-white-soft">Nos Partenaires</h1>
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <!-- Castes Industrie -->

@@ -2,7 +2,7 @@
 @section('title', 'Zone Géographique - JD Travaux Services')
 @section('content')
     <div class="col-10 mx-auto py-5">
-        <h1 class="text-center mb-4 services-title">Nos Services de Menuiserie et Dépannage dans la Plaine de l'Ain</h1>
+        <h1 class="text-center mb-4 bg-white-soft">Nos Services de Menuiserie et Dépannage dans la Plaine de l'Ain</h1>
 
         <p class="text-justify mb-5">
             <strong>JD Travaux Services</strong> intervient dans les communes de la <em>Plaine de l'Ain</em>, notamment à Ambérieux-en-Bugey,

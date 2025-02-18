@@ -8,7 +8,7 @@
         @if($ctaButton)
             <x-button
             buttonName="Demander mon devis"
-            link="#"
+            link="contact"
             linkClass="btn btn-lg cta-button"
             iconClass="fa-regular fa-envelope"
             container="cta-container"

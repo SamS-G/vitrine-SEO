@@ -7,7 +7,7 @@
     />
     <div class="separator-right"></div>
     <div class="separator-left"></div>
-{{-- Services --}}
+    {{-- Services --}}
     <section class="section-wrapper">
         <div class="section-title">
             <h3 class="h1"><span>S</span>ervices</h3>
@@ -15,66 +15,128 @@
         </div>
         <div class="card-group">
             <x-card
-                title="Baies et Fenêtres"
-                text="Une large gamme de menuiseries bois ou PVC"
+                title="Fenêtres et Baies"
+                text="Une large gamme de menuiseries bois, alu ou PVC"
                 iconClass="fa-solid fa-plus"
                 link='services/pose-fenetres'
                 src="{{ Vite::asset('resources/images/home/services/large-bay-windows.webp') }}"
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
+                figcaption="illustration, non disponible à la vente"
             />
             <x-card
-                title="Portes et Portails"
-                text="Portail coulissant ou battant, portes de garage sectionnelles"
+                title="Portes"
+                text="Portes d'entrée, d'intérieur"
                 iconClass="fa-solid fa-plus"
                 link="services/pose-portes-entree"
-                src="{{ Vite::asset('resources/images/home/services/portail-maison.webp') }}"
+                src="{{ Vite::asset('resources/images/home/services/porte-entree.webp') }}"
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
+                figcaption="illustration, non disponible à la vente"
             />
             <x-card
-                title="Volets et Moustiquaires"
+                title="Portes de garage"
+                text="Portes de garage sectionnelles, basculantes, enroulables"
+                iconClass="fa-solid fa-plus"
+                link="services/pose-portes-garage"
+                src="{{ Vite::asset('resources/images/home/services/porte-garage.webp') }}"
+                linkClass="btn btn-sm button"
+                buttonName="d'infos"
+                figcaption="illustration, non disponible à la vente"
+            />
+            <x-card
+                title="Portails"
+                text="Portail coulissant ou battant"
+                iconClass="fa-solid fa-plus"
+                link="services/pose-portails"
+                src="{{ Vite::asset('resources/images/home/services/portail.webp') }}"
+                linkClass="btn btn-sm button"
+                buttonName="d'infos"
+                figcaption="illustration, non disponible à la vente"
+            />
+
+        </div>
+        <div class="card-group">
+            <x-card
+                title="Volets"
                 text="Volets roulants électriques, solaires"
+                iconClass="fa-solid fa-plus"
+                link="services/pose-volets-roulants"
+                src="{{ Vite::asset('resources/images/home/services/volets-roulants.webp') }}"
+                linkClass="btn btn-sm button"
+                buttonName="d'infos"
+                figcaption="illustration, non disponible à la vente"
+            />
+            <x-card
+                title="Moustiquaires"
+                text="Moustiquaires, enroulées, plissées, fixe"
                 iconClass="fa-solid fa-plus"
                 link="services/pose-moustiquaires"
                 src="{{ Vite::asset('resources/images/home/services/volet-moustiquaire.webp') }}"
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
+                figcaption="illustration, non disponible à la vente"
             />
             <x-card
-                title="Dépannages"
+                title="Dépannage volets"
                 text="Dépannage sur volets roulants PVC ou aluminium"
                 iconClass="fa-solid fa-plus"
                 link="services/reparation-volets-roulants"
                 src="{{ Vite::asset('resources/images/home/services/reparation-volet.webp') }}"
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
+                figcaption="illustration, non disponible à la vente"
+            />
+            <x-card
+                title="Multi-services"
+                text="Travaux du bâtiment"
+                iconClass="fa-solid fa-plus"
+                link="services/travaux-batiment"
+                src="{{ Vite::asset('resources/images/home/services/pose-parquet.webp') }}"
+                linkClass="btn btn-sm button"
+                buttonName="d'infos"
+                figcaption="illustration, non disponible à la vente"
             />
         </div>
     </section>
 
     <div class="separator-right"></div>
     <div class="separator-left"></div>
-{{-- Choose me--}}
+    {{-- Choose me--}}
     <section class="section-wrapper">
         <div class="section-title">
             <h3 class="h1"><span>P</span>ourquoi choisir <span>JD</span> Travaux Services ?</h3>
-            <h4 class="h5">Un Service de Qualité, Un Interlocuteur Unique</h4>
+            <h4 class="h5">Votre Artisan de Confiance pour Tous Vos Travaux de Pose et Rénovation</h4>
         </div>
         <div class="container">
-            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta mollitia suscipit vitae! Autem culpa deserunt dicta doloribus eveniet, ex excepturi expedita in iste nisi, non repellat saepe sed ut voluptates!</span>
-                <span>Error libero, molestias nemo nihil recusandae reprehenderit veniam. Alias consectetur deserunt illum inventore iure magnam magni modi nemo nesciunt officiis quisquam ratione sed, sequi, sint suscipit ut voluptate? Impedit, ut?</span>
-                <span>Atque delectus, iusto optio quae sunt temporibus! A at beatae cupiditate dicta doloremque ducimus earum eos excepturi, fugiat impedit laudantium, libero maxime nulla, officiis optio quaerat quibusdam reprehenderit sequi veniam.</span>
-                <span>Accusantium cumque eligendi eos eveniet inventore molestias quibusdam recusandae! Cupiditate dolorum est impedit incidunt iusto, natus quae quia reprehenderit saepe similique. Accusamus alias id laborum nihil nisi placeat quisquam voluptatum.</span>
-                <span>Accusamus accusantium ad adipisci amet asperiores cupiditate delectus ducimus eaque fugiat itaque laborum, molestiae nemo odit quia quis saepe sint tempora tempore unde velit vitae voluptatem, voluptates? Atque, reprehenderit, voluptate.</span>
-                <span>A aperiam consequuntur dignissimos explicabo hic inventore minima molestias nisi tenetur? Cupiditate doloribus, eligendi fugit in iste magnam natus, nostrum quas quibusdam quos repudiandae sapiente sequi similique, sint velit voluptatibus.</span>
+            <p>
+                Lorsqu’il s’agit d’améliorer votre habitat, faire appel à un artisan qualifié et de confiance est
+                essentiel. Chez JD Travaux Services, nous vous garantissons un accompagnement sur-mesure du début à la
+                fin de votre projet. <br/>
+                Que ce soit pour la pose de fenêtres, de portes d’entrée, de portails, de revêtements de sol, de
+                moustiquaires ou encore des travaux de rénovation du bâtiment, nous mettons notre savoir-faire artisanal
+                et notre engagement client au cœur de chaque intervention.
             </p>
+            <h3>Un Seul Interlocuteur du Devis à la Pose – Un Service 100% Personnalisé</h3>
+            <p>Contrairement aux grandes enseignes où les interlocuteurs se multiplient, JD Travaux Services vous assure un suivi unique et personnalisé.</p>
+            <ul>
+                <li>✅ Un artisan dédié qui connaît chaque détail de votre projet.</li>
+                <li>✅ Une relation de proximité qui facilite la communication et vous assure une entière satisfaction.</li>
+                <li>✅ Un engagement qualité, de la sélection des matériaux à la finition parfaite.</li>
+            </ul>
+
+            <div class="cta-container mt-4">
+                <a href="{{ route('contact') }}" class="btn btn-md cta-button text-uppercase">
+                    <i class="fa-regular fa-envelope"></i> Demander mon devis
+                </a>
+            </div>
+
         </div>
     </section>
 
     <div class="separator-left"></div>
     <div class="separator-right"></div>
-{{-- Reviews --}}
+    {{-- Reviews --}}
     <section class="section-wrapper">
         <div class="section-title">
             <h3 class="h1"><span>C</span>e qu'en disent nos <span>C</span>lients</h3>
@@ -89,13 +151,13 @@
      ]
         @endphp
         <x-carousel
-        :reviews="$reviews"
+            :reviews="$reviews"
         />
     </section>
 
     <div class="separator-right"></div>
     <div class="separator-left"></div>
-{{-- Bottom banner--}}
+    {{-- Bottom banner--}}
     @include('components.bottomBanner')
 
     <div class="separator-left"></div>

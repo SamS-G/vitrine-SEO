@@ -9,7 +9,7 @@
                      alt="Artisan Menuisier Volets Fenetres Portes" class="img-fluid rounded shadow ">
             </div>
             <div class="col-md-8">
-                <h1 class="display-5 fw-bold text-center mb-5 services-title">Votre Expert en Menuiserie</h1>
+                <h1 class="display-5 fw-bold text-center mb-5 bg-white-soft">Votre Expert en Menuiserie</h1>
                 <p class="lead">
                     Avec plus de 5 ans d'expérience à <a href="https://laboutiquedumenuisier.fr" target="_blank">La Boutique Du
                         Menuisier</a>, trois maisons rénovées de A à Z en partant de quatres murs et un toit,

@@ -31,7 +31,7 @@
     <x-navbar
             :navItems="[
     ['title' => 'Accueil', 'href' => 'home'],
-    ['title' => 'Services', 'href' => 'services'],
+    ['title' => 'Tous les Services', 'href' => 'services'],
     ['title' => 'Réalisations', 'href' => 'realisations'],
     ['title' => 'JD Travaux Services', 'href' => 'presentation'],
     ['title' => 'Marques', 'href' => 'marques'],
