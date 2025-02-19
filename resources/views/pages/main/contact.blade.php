@@ -40,32 +40,32 @@
                 <div class="card shadow-lg border-0 h-100">
                     <div class="card-body">
                         <h2 class="fw-bold bg-white-soft text-center">Envoyez-nous un message</h2>
-                        <form class="row g-3 needs-validation" novalidate>
+                        <form class="row g-3 needs-validation" action="{{ route('contact.send') }}" method="POST" novalidate>
                             @csrf
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nom et prénom</label>
-                                <input type="text" class="form-control" id="name" required>
+                                <input type="text" class="form-control" id="name" name="name" required>
                                 <div class="invalid-feedback">
                                     <i class="fa-solid fa-xmark"></i> Noms manquants
                                 </div>
                             </div>
                             <div class="md-3">
                                 <label for="email" class="form-label">Adresse email</label>
-                                <input type="email" class="form-control" id="email" required>
+                                <input type="email" class="form-control" id="email" name="email" required>
                                 <div class="invalid-feedback">
                                     <i class="fa-solid fa-xmark"></i> Adresse email manquante
                                 </div>
                             </div>
                             <div class="md-3">
                                 <label for="message" class="form-label">Votre message</label>
-                                <textarea rows="10" type="text" class="form-control" id="message" required></textarea>
+                                <textarea rows="10" type="text" class="form-control" id="message" name="message" required></textarea>
                                 <div class="invalid-feedback">
                                     <i class="fa-solid fa-xmark"></i> Vote message est manquant
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck"required>
                                     <label class="form-check-label" for="invalidCheck">
                                         J'accepte d'être recontacté avec ces coordonnées
                                     </label>
@@ -83,7 +83,7 @@
             </div>
         </div>
     </div>
-    <!-- ✅ Toast pour succès -->
+    <!-- Toast pour succès -->
     @if(session('success'))
         <div class="position-fixed top-50 start-50 translate-middle p-3" style="z-index: 1050">
             <div id="toastSuccess" class="toast show align-items-center text-white bg-success border-0" role="alert"
@@ -99,14 +99,14 @@
         </div>
     @endif
 
-    <!-- ❌ Toast pour erreurs -->
+    <!-- Toast pour erreurs -->
     @if($errors->any())
         <div class="position-fixed top-50 start-50 translate-middle p-3" style="z-index: 1050">
             <div id="toastError" class="toast show align-items-center text-white bg-danger border-0" role="alert"
                  aria-live="assertive" aria-atomic="true">
                 <div class="d-flex">
                     <div class="toast-body text-center">
-                        ❌ <strong>Erreur :</strong> {{ $errors->first() }}
+                      <span>❌</span><strong>Erreur :</strong> {{ $errors->first() }}
                     </div>
                     <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
                             aria-label="Close"></button>
@@ -117,15 +117,8 @@
 
 
     <style>
-        .bg-white-soft {
-            background-color: rgba(245, 245, 245, 0.9);
-            color: #444;
-            padding: 0.5rem;
-            border-top: 2px solid #aaa;
-            border-bottom: 2px solid #aaa;
-            border-radius: 4px;
-            text-shadow: 1px 1px 1px #ca0d00;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        span {
+            color: black;
         }
     </style>
     <script>
