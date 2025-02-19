@@ -29,7 +29,7 @@
                 <tr>
                     <th><strong>Email:</strong></th>
                     <td style="padding: 20px; font-family: Arial, sans-serif; color: #555;">
-                        <a href="mailto:{{$data['email']}}">{{ $data['email'] }}}</a>
+                        <a href="mailto:{{$data['email']}}">{{ $data['email'] }}</a>
                     </td>
                 </tr>
                 <tr>
