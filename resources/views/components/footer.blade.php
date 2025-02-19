@@ -34,8 +34,8 @@
             <div class="col-md-3">
                 <h5>⚖ Mentions légales</h5>
                 <ul class="list-unstyled">
-                    <li><a href="/mentions-legales" class="text-light text-decoration-none">Mentions légales</a></li>
-                    <li><a href="/politique-confidentialite" class="text-light text-decoration-none">Politique de confidentialité</a></li>
+                    <li><a href="{{ url('mentions-legales.html') }}" class="text-light text-decoration-none">Mentions légales</a></li>
+                    <li><a href="{{ url('utilisation-donnees.html') }}" class="text-light text-decoration-none">Utilisation des données personnelles</a></li>
                 </ul>
             </div>
 
