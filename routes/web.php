@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\LocalServicesController;
+use App\Models\City;
+use App\Models\Service;
+use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Route;
 
 // PAGES STATIQUES
@@ -62,6 +65,42 @@ Route::fallback(function () {
 //ENVOI DU FORMULAIRE DE CONTACT
 Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
 
+// SITEMAP GLOBAL
+Route::get('/sitemap.xml', function () {
+    $routes = [
+        ['loc' => url('/'), 'priority' => '1.0'],
+        ['loc' => url('/contact'), 'priority' => '0.8'],
+        ['loc' => url('//presentation-jdtravauxservices'), 'priority' => '0.7'],
+        ['loc' => url('/services'), 'priority' => '0.9'],
+        ['loc' => url('/zone-interventions'), 'priority' => '0.6'],
+        ['loc' => url('/nos-marque'), 'priority' => '0.5'],
+        ['loc' => url('/mentions-legales'), 'priority' => '0.5'],
+        ['loc' => url('/utilisation-donnees'), 'priority' => '0.5'],
+        ['loc' => url('/plan-site'), 'priority' => '0.7'],
+    ];
+
+    // Ajoute le sitemap des pages locales
+    $routes[] = ['loc' => url('/sitemap-local.xml'), 'priority' => '0.9'];
+
+    return response()->view('sitemap.global', compact('routes'))->header('Content-Type', 'application/xml');
+});
+// SITEMAP LOCAL
+Route::get('/sitemap-local.xml', function () {
+    $services = Service::all();
+    $cities = City::all();
+    $routes = [];
+
+    foreach ($services as $service) {
+        foreach ($cities as $city) {
+            $routes[] = [
+                'loc' => url("/services/{$service->slug}-{$city->slug}"),
+                'priority' => '0.7'
+            ];
+        }
+    }
+
+    return Response::view('sitemap.local', compact('routes'))->header('Content-Type', 'application/xml');
+});
 
 
 
