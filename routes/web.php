@@ -5,13 +5,13 @@ use App\Http\Controllers\LocalServicesController;
 use Illuminate\Support\Facades\Route;
 
 // PAGES STATIQUES
-Route::view('/', 'pages.accueil')->name('home');
-Route::view('/services', 'pages.services.layout.index')->name('services');
-Route::view('/realisations', 'pages.realisations')->name('realisations');
-Route::view('/presentation-jdtravauxservices', 'pages.presentation-jdtravauxservices')->name('presentation');
-Route::view('/nos-marques', 'pages.nos-marques')->name('marques');
+Route::view('/', 'pages.main.accueil')->name('home');
+Route::view('/services', 'pages.main.services')->name('services');
+Route::view('/realisations', 'pages.main.realisations')->name('realisations');
+Route::view('/presentation-jdtravauxservices', 'pages.main.presentation-jdtravauxservices')->name('presentation');
+Route::view('/nos-marques', 'pages.main.nos-marques')->name('marques');
 Route::view('/zone-interventions', 'pages.services.local.layouts.index')->name('zone-interventions');
-Route::view('/contact', 'pages.contact')->name('contact');
+Route::view('/contact', 'pages.main.contact')->name('contact');
 
 // ROUTES GÉNÉRIQUES DES SERVICES
 $services = [
@@ -53,13 +53,13 @@ Route::get('services/{type}-{ville}', [LocalServicesController::class, 'showServ
     ])
     ->name('services.local.alt');
 
+Route::get('prestations-{ville}', [LocalServicesController::class, 'showCityServices']);
 // ✅ Gestion des erreurs 404
 Route::fallback(function () {
     return response()->view('pages.404', [], 404);
 });
 
 //ENVOI DU FORMULAIRE DE CONTACT
-
 Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
 
 

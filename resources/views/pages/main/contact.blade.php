@@ -12,13 +12,13 @@
             <div class="col-lg-5">
                 <div class="card shadow-lg border-0 h-100">
                     <div class="card-body">
-                        <h2 class="bg-white-soft fw-bold text-center">Nos Coordonnées</h2>
+                        <h2 class="bg-white-soft fw-bold text-center mb-4">Nos Coordonnées</h2>
                         <p class="mt-3"><strong>📍 Adresse :</strong> 2246 route de la Plaine, Sainte-Julie, 01150, FR</p>
                         <p><strong>📞 Téléphone :</strong> <a href="tel:+33689442815" class="text-decoration-none text-dark">06 89 44 28 15</a></p>
                         <p><strong>📧 Email :</strong> <a href="mailto:contact@jdtravauxservices.fr" class="text-decoration-none text-dark">contact@jdtravauxservices.fr</a></p>
                         <p><strong>💬 WhatsApp :</strong> <a href="https://wa.me/33689442815" target="_blank" class="text-decoration-none text-success">Discuter sur WhatsApp</a></p>
 
-                        <h3 class="fw-semibold mt-4 bg-white-soft text-center">Horaires d’ouverture</h3>
+                        <h3 class="fw-semibold mt-4 bg-white-soft text-center mb-4">Horaires d’ouverture</h3>
                         <ul class="list-unstyled text-muted">
                             <li><strong>🕗 Lundi - Vendredi :</strong> 08:00 - 18:00</li>
                             <li><strong>🕙 Samedi :</strong> 09:00 - 13:00</li>

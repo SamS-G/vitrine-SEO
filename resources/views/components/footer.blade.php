@@ -15,7 +15,7 @@
                 <h5>🔗 Liens rapides</h5>
                 <ul class="list-unstyled">
                     <li><a href="/contact" class="text-light text-decoration-none">📞 Contact</a></li>
-                    <li><a href="/devis" class="text-light text-decoration-none">📝 Demander un devis</a></li>
+                    <li><a href="/contact" class="text-light text-decoration-none">📝 Demander un devis</a></li>
                     <li><a href="/services" class="text-light text-decoration-none">🛠 Nos services</a></li>
                 </ul>
             </div>
@@ -42,7 +42,7 @@
             <!-- Copyright -->
             <div class="text-center mt-3">
                 <p class="mb-2">© 2025 JD Travaux Services - Plaine de l'Ain | <a href="https://webconceptions.fr"><em>WebConceptions</em></a> - Tous droits réservés.</p>
-                <a href="{{ url('intervention') }}" class="text-white"><em>Voir nos zones d'intervention</em></a>
+                <a href="{{ url('zone-interventions') }}" class="text-white"><em>Voir nos zones d'intervention</em></a>
             </div>
         </div>
 </footer>

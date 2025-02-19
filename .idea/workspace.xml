@@ -4,17 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d1df957-50df-4c44-a6f6-7ede6cea1e40" name="Changes" comment="ajout services manquant  sur accueil + pages dédiées, ajout texte card services">
-      <change afterPath="$PROJECT_DIR$/resources/css/leaflet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/area-business-map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/leaflet-src.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/leaflet-src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/leaflet.js" afterDir="false" />
+    <list default="true" id="4d1df957-50df-4c44-a6f6-7ede6cea1e40" name="Changes" comment="affiche de la carte de la zone d'intervention">
+      <change afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/prestations-par-ville.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/services/local/prestations/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LocalServicesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LocalServicesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2025_02_14_141510_create_cities_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2025_02_14_141510_create_cities_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/layout/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/layout/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/photo-gallery.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/photo-gallery.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/accueil.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/main/accueil.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/main/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/nos-marques.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/main/nos-marques.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/presentation-jdtravauxservices.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/main/presentation-jdtravauxservices.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/realisations.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/main/realisations.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/layout/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/main/services.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/services/local/layouts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/local/layouts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/local/pose-moustiquaire.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/local/pose-moustiquaires.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/local/pose-porte-garage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/local/pose-portes-garage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,38 +187,38 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "carte-zone-desservie",
-    "last_opened_file_path": "/home/samuel/PhpstormProjects/jdTravauxServices/resources/images/services",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.HTML",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;local-pages&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/samuel/PhpstormProjects/jdTravauxServices/resources/images/services&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.HTML&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/images/services" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/images" />
-      <recent name="$PROJECT_DIR$/resources/views/pages/services/local" />
-      <recent name="$PROJECT_DIR$/resources/views/pages/services" />
-      <recent name="$PROJECT_DIR$/resources/views/pages/local" />
-      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/resources/views/pages/main" />
+      <recent name="$PROJECT_DIR$/resources/views/pages" />
+      <recent name="$PROJECT_DIR$/resources/views" />
+      <recent name="$PROJECT_DIR$/resources/views/pages/services/local/prestations" />
+      <recent name="$PROJECT_DIR$/resources/views/components" />
     </key>
   </component>
   <component name="RunManager">
@@ -242,7 +254,9 @@
       <workItem from="1739630976495" duration="15645000" />
       <workItem from="1739714061899" duration="26598000" />
       <workItem from="1739779671407" duration="17238000" />
-      <workItem from="1739864165734" duration="8383000" />
+      <workItem from="1739864165734" duration="11609000" />
+      <workItem from="1739895679243" duration="8272000" />
+      <workItem from="1739959593772" duration="9635000" />
     </task>
     <task id="LOCAL-00001" summary="base composant + page mes réalisations + route">
       <option name="closed" value="true" />
@@ -308,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739869562737</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="affiche de la carte de la zone d'intervention">
+      <option name="closed" value="true" />
+      <created>1739873206138</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1739873206138</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +356,8 @@
     <MESSAGE value="création table/model/seeders" />
     <MESSAGE value="changement des routes (nom, gestion), gestion des meta_data (global,local)" />
     <MESSAGE value="ajout services manquant  sur accueil + pages dédiées, ajout texte card services" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout services manquant  sur accueil + pages dédiées, ajout texte card services" />
+    <MESSAGE value="affiche de la carte de la zone d'intervention" />
+    <option name="LAST_COMMIT_MESSAGE" value="affiche de la carte de la zone d'intervention" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

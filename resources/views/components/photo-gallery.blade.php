@@ -52,10 +52,6 @@
         z-index: 999;
         }
 
-        .nav-link.active {
-            background-color: #ca0d00 !important;
-        }
-
         #categoryTabs .nav-link {
             border: 1px solid #1B000A;
             text-transform: uppercase;
@@ -72,7 +68,11 @@
             font-size: 1rem;
         }
 
-        .gallery-button.hovered:not(.gallery-button.hovered.active) {
+        .gallery-button.active {
+            background-color: #C14444!important;
+            border-color: #A93939!important;
+        }
+        .gallery-button:hover:not(.gallery-button.active) {
             scale: 1.05;
         }
 

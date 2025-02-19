@@ -11,14 +11,18 @@
             <div class="col-md-8">
                 <h1 class="display-5 fw-bold text-center mb-5 bg-white-soft">Votre Expert en Menuiserie</h1>
                 <p class="lead">
-                    Avec plus de 5 ans d'expérience à <a href="https://laboutiquedumenuisier.fr" target="_blank">La Boutique Du
+                    Avec plus de 5 ans d'expérience à <a href="https://laboutiquedumenuisier.fr" target="_blank">La
+                        Boutique Du
                         Menuisier</a>, trois maisons rénovées de A à Z en partant de quatres murs et un toit,
                     je mets à votre disposition tout mon savoir-faire pour la pose de portes, fenêtres et volets sur
                     mesure. <br/> Chaque projet est réalisé avec précision et un souci du détail incomparable.
                 </p>
-                <p>Je suis votre seul interlocuteur, avant, pendant et après la pose. <br/>Mon objectif est de garantir
-                    votre satisfaction en créant une relation de proximité et de confiance, vous offrant des solutions
-                    adaptées à vos besoins, alliant esthétique et fonctionnalité.</p>
+                <p class="lead"> Je suis votre seul interlocuteur, <strong>avant, pendant et après</strong> la
+                    pose.<br/>
+                    Mon objectif est de garantir votre satisfaction en créant une relation de proximité et de confiance,
+                    vous offrant des solutions
+                    adaptées à vos besoins, alliant esthétique et fonctionnalité.
+                </p>
             </div>
         </div>
 

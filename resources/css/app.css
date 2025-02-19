@@ -31,6 +31,7 @@
 /* COMMUN */
 * {
     font-family: 'Playwrite_GB_S', sans-serif;
+    font-variation-settings: 'wght' 300;
 }
 
 body {
@@ -239,9 +240,16 @@ h5 {
     transition: 700ms ease;
 }
 
-#navbarSupportedContent .nav-link.hovered { /* Style pour le hover sur un nav-link */
-    font-variation-settings: 'wght' 900;
-    color: #ca0d00 !important;
+.navbar-nav .nav-link.active {
+    background-color: #C14444; /* Rouge brique doux */
+    border-color: #A93939;
+    border-radius: 4px;
+    font-variation-settings: 'wght' 400;
+}
+
+#navbarSupportedContent .nav-link:hover:not(.active) { /* Style pour le hover sur un nav-link sauf si actif*/
+    font-variation-settings: 'wght' 400;
+    color: #6c9e6f;
     text-shadow: none;
 }
 
@@ -355,9 +363,6 @@ header {
 .button, .cta-button {
     background-color: #ca0d00;
     border: 1px solid #1B000A;
-    /*text-transform: uppercase;*/
-    /*font-style: oblique;*/
-    font-variation-settings: 'wght' 400;
 }
 
 .button, .button i {
