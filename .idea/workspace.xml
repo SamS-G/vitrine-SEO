@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d1df957-50df-4c44-a6f6-7ede6cea1e40" name="Changes" comment="page d'index des prestations par commune">
-      <change afterPath="$PROJECT_DIR$/public/mentions-legales.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/utilisation-donnees.html" afterDir="false" />
+    <list default="true" id="4d1df957-50df-4c44-a6f6-7ede6cea1e40" name="Changes" comment="changement des routes (nom, gestion), gestion des meta_data (global,local)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/main/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/main/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/contact.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,15 +16,6 @@
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="CSS File" />
-        <option value="JavaScript File" />
-        <option value="HTML File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -171,39 +159,37 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "mentions-legales",
-    "last_opened_file_path": "/home/samuel/PhpstormProjects/jdTravauxServices/resources/images/services",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.HTML",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;contact-page&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/samuel/PhpstormProjects/jdTravauxServices/resources/images/services&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/images/services" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/pages/main" />
-      <recent name="$PROJECT_DIR$/resources/views/pages" />
-      <recent name="$PROJECT_DIR$/resources/views" />
-      <recent name="$PROJECT_DIR$/resources/views/pages/services/local/prestations" />
-      <recent name="$PROJECT_DIR$/resources/views/components" />
+      <recent name="$PROJECT_DIR$/resources/images" />
+      <recent name="$PROJECT_DIR$/resources/views/pages/services/local" />
+      <recent name="$PROJECT_DIR$/resources/views/pages/services" />
+      <recent name="$PROJECT_DIR$/resources/views/pages/local" />
+      <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
   <component name="RunManager">
@@ -239,9 +225,6 @@
       <workItem from="1739630976495" duration="15645000" />
       <workItem from="1739714061899" duration="26598000" />
       <workItem from="1739779671407" duration="17238000" />
-      <workItem from="1739864165734" duration="11609000" />
-      <workItem from="1739895679243" duration="8272000" />
-      <workItem from="1739959593772" duration="11437000" />
     </task>
     <task id="LOCAL-00001" summary="base composant + page mes réalisations + route">
       <option name="closed" value="true" />
@@ -299,31 +282,7 @@
       <option name="project" value="LOCAL" />
       <updated>1739788752862</updated>
     </task>
-    <task id="LOCAL-00008" summary="ajout services manquant  sur accueil + pages dédiées, ajout texte card services">
-      <option name="closed" value="true" />
-      <created>1739869562737</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1739869562737</updated>
-    </task>
-    <task id="LOCAL-00009" summary="affiche de la carte de la zone d'intervention">
-      <option name="closed" value="true" />
-      <created>1739873206138</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1739873206138</updated>
-    </task>
-    <task id="LOCAL-00010" summary="page d'index des prestations par commune">
-      <option name="closed" value="true" />
-      <created>1739969482062</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1739969482062</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,13 +307,6 @@
     <MESSAGE value="maj liens / router / rename viewq" />
     <MESSAGE value="création table/model/seeders" />
     <MESSAGE value="changement des routes (nom, gestion), gestion des meta_data (global,local)" />
-    <MESSAGE value="ajout services manquant  sur accueil + pages dédiées, ajout texte card services" />
-    <MESSAGE value="affiche de la carte de la zone d'intervention" />
-    <MESSAGE value="page d'index des prestations par commune" />
-    <option name="LAST_COMMIT_MESSAGE" value="page d'index des prestations par commune" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+    <option name="LAST_COMMIT_MESSAGE" value="changement des routes (nom, gestion), gestion des meta_data (global,local)" />
   </component>
 </project>
