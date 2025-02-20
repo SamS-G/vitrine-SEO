@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LocalServicesController;
 use App\Models\City;
 use App\Models\Service;
@@ -8,7 +9,7 @@ use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Route;
 
 // PAGES STATIQUES
-Route::view('/', 'pages.main.accueil')->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::view('/services', 'pages.main.services')->name('services');
 Route::view('/realisations', 'pages.main.realisations')->name('realisations');
 Route::view('/presentation-jdtravauxservices', 'pages.main.presentation-jdtravauxservices')->name('presentation');

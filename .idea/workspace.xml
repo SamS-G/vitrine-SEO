@@ -5,9 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d1df957-50df-4c44-a6f6-7ede6cea1e40" name="Changes" comment="1 caractère en trop sur le dernier commit qui a été rebase">
-      <change afterPath="$PROJECT_DIR$/resources/views/sitemap/global.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/sitemap/local.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Exceptions/GoogleReviewException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Mail/ExceptionNotification.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Providers/GooglePlacesServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/GooglePlacesService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/exception-notification.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/ContactMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/ContactMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/providers.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/providers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/bottomBanner.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/bottomBanner.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/carousel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/reviews-carousel.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/hero.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/hero.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/emails/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/main/accueil.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/main/accueil.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/main/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/main/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/main/nos-marques.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/main/nos-marques.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/main/realisations.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/main/realisations.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/main/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/main/services.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +185,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "sitemap",
+    "git-widget-placeholder": "reviews-carousel",
     "last_opened_file_path": "/home/samuel/PhpstormProjects/jdTravauxServices/resources/images/services",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -186,11 +207,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/resources/views/sitemap" />
       <recent name="$PROJECT_DIR$/resources/images" />
       <recent name="$PROJECT_DIR$/resources/views/pages/services/local" />
       <recent name="$PROJECT_DIR$/resources/views/pages/services" />
-      <recent name="$PROJECT_DIR$/resources/views/pages/local" />
     </key>
   </component>
   <component name="RunManager">

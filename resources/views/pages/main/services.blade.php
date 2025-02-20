@@ -3,26 +3,32 @@
 
 @section('content')
     <div class="col-10 mx-auto my-5">
-        <h1 class="text-center mb-5 bg-white-soft">Découvrez Nos Services – Expertise & Qualité au Rendez-vous !</h1>
-        <div class="container pb-5">
-            <p>
-                Chez JD Travaux Services, nous mettons notre savoir-faire artisanal au service de vos projets pour
-                améliorer votre habitat. <br/>
-                De la pose de fenêtres, portes et portails, à l’installation de revêtements de sol, en passant par la
-                pose de moustiquaires et les travaux de rénovation du bâtiment, nous vous garantissons un travail soigné
-                et durable.
-            </p>
-            <ul>
-                <li> 💡 Un seul interlocuteur du devis à la pose pour un accompagnement personnalisé et une relation de
-                    confiance.
-                </li>
-                <li> 📍 Intervention locale & devis gratuit – Parcourez nos services et contactez-nous pour donner vie à
-                    vos projets ! 🚀
-                </li>
-            </ul>
-        </div>
-
-        <div class="row">
+        <section>
+            <h1 class="text-center mb-5 bg-white-soft">Découvrez Nos Services – Expertise & Qualité au Rendez-vous
+                !</h1>
+            <div class="container pb-5">
+                <p>
+                    Chez JD Travaux Services, nous mettons notre savoir-faire artisanal au service de vos projets pour
+                    améliorer votre habitat. <br/>
+                    De la pose de fenêtres, portes et portails, à l’installation de revêtements de sol, en passant par
+                    la
+                    pose de moustiquaires et les travaux de rénovation du bâtiment, nous vous garantissons un travail
+                    soigné
+                    et durable.
+                </p>
+                <ul>
+                    <li> 💡 Un seul interlocuteur du devis à la pose pour un accompagnement personnalisé et une relation
+                        de
+                        confiance.
+                    </li>
+                    <li> 📍 Intervention locale & devis gratuit – Parcourez nos services et contactez-nous pour donner
+                        vie à
+                        vos projets ! 🚀
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="row">
             @php
                 $services = [
                     [
@@ -190,13 +196,13 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body service-card-body">
-                                    <h5 class="card-title text-center">{{ $service['title'] }}</h5>
+                                    <h4 class="card-title text-center">{{ $service['title'] }}</h4>
                                     <div class="card-text service-card-text my-3">{!! strip_tags($service['text'], '<ul>, <li>, <p>') !!}</div>
                                     <div class="d-flex justify-content-around">
-                                        <a href="{{ url($service['route']) }}" class="btn btn-md service-button">Découvrir
+                                        <a href="{{ url($service['route']) }}" class="btn btn-sm service-button">Découvrir
                                             <i class="fa-solid fa-arrow-right fa-beat"></i>
                                         </a>
-                                        <a href="tel:+33689442815" class="btn btn-md service-button">
+                                        <a href="tel:+33689442815" class="btn btn-sm service-button">
                                             <i class="fa-solid fa-phone"></i> Parlons de votre projet !
                                         </a>
                                     </div>
@@ -212,6 +218,6 @@
                     <a href="{{ url('zone-interventions') }}" class=""><strong>page.</strong></a>
                 </p>
             </div>
-        </div>
+        </section>
     </div>
 @endsection

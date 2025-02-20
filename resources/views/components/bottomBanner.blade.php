@@ -1,4 +1,2 @@
-<section class="banner-bottom">
-    <div class="bottom-banner"></div>
-</section>
+<div class="bottom-banner"></div>
 

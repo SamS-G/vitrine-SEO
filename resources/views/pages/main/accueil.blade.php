@@ -2,9 +2,11 @@
 @section('title', 'Accueil - JD Travaux Services')
 
 @section('content')
-    <x-hero
-        ctaButton="true"
-    />
+    <section class="hero">
+        <x-hero
+                ctaButton="true"
+        />
+    </section>
     <div class="separator-right"></div>
     <div class="separator-left"></div>
     {{-- Services --}}
@@ -15,87 +17,86 @@
         </div>
         <div class="card-group">
             <x-card
-                title="Fenêtres et Baies"
-                text="Une large gamme de menuiseries bois, alu ou PVC"
-                iconClass="fa-solid fa-plus"
-                link='services/pose-fenetres'
-                src="{{ Vite::asset('resources/images/home/services/large-bay-windows.webp') }}"
-                linkClass="btn btn-sm button"
-                buttonName="d'infos"
-                figcaption="illustration, non disponible à la vente"
+                    title="Fenêtres et Baies"
+                    text="Une large gamme de menuiseries bois, alu ou PVC"
+                    iconClass="fa-solid fa-plus"
+                    link='services/pose-fenetres'
+                    src="{{ Vite::asset('resources/images/home/services/large-bay-windows.webp') }}"
+                    linkClass="btn btn-sm button"
+                    buttonName="d'infos"
+                    figcaption="illustration, non disponible à la vente"
             />
             <x-card
-                title="Portes"
-                text="Portes d'entrée, d'intérieur"
-                iconClass="fa-solid fa-plus"
-                link="services/pose-portes-entree"
-                src="{{ Vite::asset('resources/images/home/services/porte-entree.webp') }}"
-                linkClass="btn btn-sm button"
-                buttonName="d'infos"
-                figcaption="illustration, non disponible à la vente"
+                    title="Portes"
+                    text="Portes d'entrée, d'intérieur"
+                    iconClass="fa-solid fa-plus"
+                    link="services/pose-portes-entree"
+                    src="{{ Vite::asset('resources/images/home/services/porte-entree.webp') }}"
+                    linkClass="btn btn-sm button"
+                    buttonName="d'infos"
+                    figcaption="illustration, non disponible à la vente"
             />
             <x-card
-                title="Portes de garage"
-                text="Portes de garage sectionnelles, basculantes, enroulables"
-                iconClass="fa-solid fa-plus"
-                link="services/pose-portes-garage"
-                src="{{ Vite::asset('resources/images/home/services/porte-garage.webp') }}"
-                linkClass="btn btn-sm button"
-                buttonName="d'infos"
-                figcaption="illustration, non disponible à la vente"
+                    title="Portes de garage"
+                    text="Portes de garage sectionnelles, basculantes, enroulables"
+                    iconClass="fa-solid fa-plus"
+                    link="services/pose-portes-garage"
+                    src="{{ Vite::asset('resources/images/home/services/porte-garage.webp') }}"
+                    linkClass="btn btn-sm button"
+                    buttonName="d'infos"
+                    figcaption="illustration, non disponible à la vente"
             />
             <x-card
-                title="Portails"
-                text="Portail coulissant ou battant"
-                iconClass="fa-solid fa-plus"
-                link="services/pose-portails"
-                src="{{ Vite::asset('resources/images/home/services/portail.webp') }}"
-                linkClass="btn btn-sm button"
-                buttonName="d'infos"
-                figcaption="illustration, non disponible à la vente"
+                    title="Portails"
+                    text="Portail coulissant ou battant"
+                    iconClass="fa-solid fa-plus"
+                    link="services/pose-portails"
+                    src="{{ Vite::asset('resources/images/home/services/portail.webp') }}"
+                    linkClass="btn btn-sm button"
+                    buttonName="d'infos"
+                    figcaption="illustration, non disponible à la vente"
             />
-
         </div>
         <div class="card-group">
             <x-card
-                title="Volets"
-                text="Volets roulants électriques, solaires"
-                iconClass="fa-solid fa-plus"
-                link="services/pose-volets-roulants"
-                src="{{ Vite::asset('resources/images/home/services/volets-roulants.webp') }}"
-                linkClass="btn btn-sm button"
-                buttonName="d'infos"
-                figcaption="illustration, non disponible à la vente"
+                    title="Volets"
+                    text="Volets roulants électriques, solaires"
+                    iconClass="fa-solid fa-plus"
+                    link="services/pose-volets-roulants"
+                    src="{{ Vite::asset('resources/images/home/services/volets-roulants.webp') }}"
+                    linkClass="btn btn-sm button"
+                    buttonName="d'infos"
+                    figcaption="illustration, non disponible à la vente"
             />
             <x-card
-                title="Moustiquaires"
-                text="Moustiquaires, enroulées, plissées, fixe"
-                iconClass="fa-solid fa-plus"
-                link="services/pose-moustiquaires"
-                src="{{ Vite::asset('resources/images/home/services/volet-moustiquaire.webp') }}"
-                linkClass="btn btn-sm button"
-                buttonName="d'infos"
-                figcaption="illustration, non disponible à la vente"
+                    title="Moustiquaires"
+                    text="Moustiquaires, enroulées, plissées, fixe"
+                    iconClass="fa-solid fa-plus"
+                    link="services/pose-moustiquaires"
+                    src="{{ Vite::asset('resources/images/home/services/volet-moustiquaire.webp') }}"
+                    linkClass="btn btn-sm button"
+                    buttonName="d'infos"
+                    figcaption="illustration, non disponible à la vente"
             />
             <x-card
-                title="Dépannage volets"
-                text="Dépannage sur volets roulants PVC ou aluminium"
-                iconClass="fa-solid fa-plus"
-                link="services/reparation-volets-roulants"
-                src="{{ Vite::asset('resources/images/home/services/reparation-volet.webp') }}"
-                linkClass="btn btn-sm button"
-                buttonName="d'infos"
-                figcaption="illustration, non disponible à la vente"
+                    title="Dépannage volets"
+                    text="Dépannage sur volets roulants PVC ou aluminium"
+                    iconClass="fa-solid fa-plus"
+                    link="services/reparation-volets-roulants"
+                    src="{{ Vite::asset('resources/images/home/services/reparation-volet.webp') }}"
+                    linkClass="btn btn-sm button"
+                    buttonName="d'infos"
+                    figcaption="illustration, non disponible à la vente"
             />
             <x-card
-                title="Multi-services"
-                text="Travaux du bâtiment"
-                iconClass="fa-solid fa-plus"
-                link="services/travaux-batiment"
-                src="{{ Vite::asset('resources/images/home/services/pose-parquet.webp') }}"
-                linkClass="btn btn-sm button"
-                buttonName="d'infos"
-                figcaption="illustration, non disponible à la vente"
+                    title="Multi-services"
+                    text="Travaux du bâtiment"
+                    iconClass="fa-solid fa-plus"
+                    link="services/travaux-batiment"
+                    src="{{ Vite::asset('resources/images/home/services/pose-parquet.webp') }}"
+                    linkClass="btn btn-sm button"
+                    buttonName="d'infos"
+                    figcaption="illustration, non disponible à la vente"
             />
         </div>
     </section>
@@ -118,10 +119,12 @@
                 et notre engagement client au cœur de chaque intervention.
             </p>
             <h3>Un Seul Interlocuteur du Devis à la Pose – Un Service 100% Personnalisé</h3>
-            <p>Contrairement aux grandes enseignes où les interlocuteurs se multiplient, JD Travaux Services vous assure un suivi unique et personnalisé.</p>
+            <p>Contrairement aux grandes enseignes où les interlocuteurs se multiplient, JD Travaux Services vous assure
+                un suivi unique et personnalisé.</p>
             <ul>
                 <li>✅ Un artisan dédié qui connaît chaque détail de votre projet.</li>
-                <li>✅ Une relation de proximité qui facilite la communication et vous assure une entière satisfaction.</li>
+                <li>✅ Une relation de proximité qui facilite la communication et vous assure une entière satisfaction.
+                </li>
                 <li>✅ Un engagement qualité, de la sélection des matériaux à la finition parfaite.</li>
             </ul>
 
@@ -142,24 +145,17 @@
             <h3 class="h1"><span>C</span>e qu'en disent nos <span>C</span>lients</h3>
             <h4 class="h5">Nos avis</h4>
         </div>
-        @php $reviews = [[
-     'rating' => 5, 'profile_photo_url' => 'https://picsum.photos/200', 'author_name' => 'David', 'text' => 'Accusamus accusantium ad adipisci amet asperiores cupiditate delectus ducimus eaque fugiat itaque laborum, molestiae nemo odit quia quis saepe sint tempora tempore unde velit vitae voluptatem, voluptates? Atque, reprehenderit, voluptate.'],
-     ['rating' => 5, 'profile_photo_url' => 'https://picsum.photos/200', 'author_name' => 'Marie', 'text' => 'Accusamus accusantium ad adipisci amet asperiores cupiditate delectus ducimus eaque fugiat itaque laborum, molestiae nemo odit quia quis saepe sint tempora tempore unde velit vitae voluptatem, voluptates? Atque, reprehenderit, voluptate.'],
-     ['rating' => 5, 'profile_photo_url' => 'https://picsum.photos/200', 'author_name' => 'Jean', 'text' => 'Accusamus accusantium ad adipisci amet asperiores cupiditate delectus ducimus eaque fugiat itaque laborum, molestiae nemo odit quia quis saepe sint tempora tempore unde velit vitae voluptatem, voluptates? Atque, reprehenderit, voluptate.'],
-     ['rating' => 5, 'profile_photo_url' => 'https://picsum.photos/200', 'author_name' => 'Claude', 'text' => 'Accusamus accusantium ad adipisci amet asperiores cupiditate delectus ducimus eaque fugiat itaque laborum, molestiae nemo odit quia quis saepe sint tempora tempore unde velit vitae voluptatem, voluptates? Atque, reprehenderit, voluptate.'],
-     ['rating' => 5, 'profile_photo_url' => 'https://picsum.photos/200', 'author_name' => 'Maggy', 'text' => 'Accusamus accusantium ad adipisci amet asperiores cupiditate delectus ducimus eaque fugiat itaque laborum, molestiae nemo odit quia quis saepe sint tempora tempore unde velit vitae voluptatem, voluptates? Atque, reprehenderit, voluptate.']
-     ]
-        @endphp
-        <x-carousel
-            :reviews="$reviews"
+        <x-reviews-carousel
+                :reviews="$reviews"
         />
     </section>
 
     <div class="separator-right"></div>
     <div class="separator-left"></div>
     {{-- Bottom banner--}}
-    @include('components.bottomBanner')
-
+    <section class="banner-bottom">
+        @include('components.bottomBanner')
+    </section>
     <div class="separator-left"></div>
     <div class="separator-right"></div>
 

@@ -34,5 +34,9 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
-
+    'google_places' => [
+        'api_key' => env('GOOGLE_PLACES_API_KEY'),
+        'place_id' => env('GOOGLE_PLACES_PLACE_ID'),
+        'cache_duration' => env('GOOGLE_PLACES_CACHE_DURATION', 604800), // Temps en secondes (par défaut : 1h)
+    ],
 ];
