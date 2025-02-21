@@ -150,6 +150,12 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         AppServiceProvider::class,
         GooglePlacesServiceProvider::class,
+        Jenssegers\Agent\AgentServiceProvider::class,
+    ],
+    'aliases' => [
+        'Agent' => Jenssegers\Agent\Facades\Agent::class,
+        'Vite' => Illuminate\Support\Facades\Vite::class,
+        'Route' => Illuminate\Support\Facades\Route::class,
     ],
     'email_to' => env('APP_EMAIL_TO', 'ver68137@gmail.com'),
 ];

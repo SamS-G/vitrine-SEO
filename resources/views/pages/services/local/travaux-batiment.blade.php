@@ -10,27 +10,28 @@
 @endsection
 
 @section('content')
-    <div class="container py-5">
-        <h1 class="text-center">Multi-services en travaux du bâtiment à {{ $city->name }}</h1>
+    <div class="container py-xl-5 mb-3">
+        <h1 class="text-center bg-white-soft mb-xl-5">Multi-services en travaux du bâtiment à {{ $city->name }}</h1>
         <p class="text-center text-muted">Petits travaux, ajustements & réparations - Professionnalisme & rapidité</p>
 
-        <div class="row">
-            <div class="col-md-6">
-                <img src="{{ asset('images/multiservices.jpg') }}" alt="Multiservices en travaux du bâtiment à {{ $city->name }}" class="img-fluid rounded">
-            </div>
-            <div class="col-md-6">
-                <h2>Nos services de multi-services</h2>
-                <ul>
-                    <li>Réparations de portes, fenêtres et volets</li>
-                    <li>Pose de plinthes, moulures et ajustements divers</li>
-                    <li>Remplacement de serrures et poignées</li>
-                    <li>Amélioration et isolation thermique et phonique</li>
+        <div class="d-flex justify-content-around">
+            <div>
+                <h2 class="h3-xl my-4">Nos services de multi-services</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Réparations de portes, fenêtres et volets</li>
+                    <li class="list-group-item">Pose de plinthes, moulures et ajustements divers</li>
+                    <li class="list-group-item">Remplacement de serrures et poignées</li>
+                    <li class="list-group-item">Amélioration et isolation thermique et phonique</li>
                 </ul>
-                <a href="{{ url('contact') }}" class="btn btn-primary mt-3">Obtenir un devis</a>
+                <a href="{{ url('contact') }}" class="btn button mt-3">Obtenir un devis</a>
             </div>
+            <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/portrait.webp') : Vite::asset('resources/images/portrait.webp')  }}"
+                 alt="Multiservices en travaux du bâtiment à {{ $city->name }}" class="img-fluid rounded">
         </div>
-
-        <h2 class="mt-5">Nos interventions à {{ $city->name }}</h2>
-        <p>Nous intervenons dans les quartiers proches de {{ implode(', ', json_decode($city->landmarks, true)) }}.</p>
+        <div class="mt-3">
+            <h2>Nos interventions à {{ $city->name }}</h2>
+            <p>Nous intervenons dans les quartiers proches de {{ implode(', ', json_decode($city->landmarks, true)) }}
+                .</p>
+        </div>
     </div>
 @endsection

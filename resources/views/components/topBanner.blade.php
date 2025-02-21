@@ -1,8 +1,8 @@
-<div class="container-fluid top-hero-container">
+<div class="top-hero-container">
     <div class="top-hero-wrapper">
         <!-- Logo à gauche -->
         <a class="img-fluid hero-logo" href="{{ url('/') }}">
-            <img src="{{ Vite::asset('resources/images/logo_small.webp') }}"
+            <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/logo_small.webp') : Vite::asset('resources/images/logo_small.webp') }}"
                  alt="logo" title="logo de JdTravauxServices">
         </a>
         <div class="contact-container">
@@ -28,7 +28,7 @@
             </div>
         </div>
         <!-- Titre centré -->
-        <h2 class="h1 text-center">JD Travaux Services</h2>
+        <h2 class="h1-xl text-center">JD Travaux Services</h2>
     </div>
 </div>
 

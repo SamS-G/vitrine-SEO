@@ -3,100 +3,98 @@
 
 @section('content')
     <section class="hero">
-        <x-hero
-                ctaButton="true"
-        />
+        <x-hero ctaButton="true"/>
     </section>
     <div class="separator-right"></div>
     <div class="separator-left"></div>
     {{-- Services --}}
     <section class="section-wrapper">
         <div class="section-title">
-            <h3 class="h1"><span>S</span>ervices</h3>
+            <h3 class="h1-xl"><span>S</span>ervices</h3>
             <h4 class="h5">Menuiserie, Dépannages, Multi-Services</h4>
         </div>
         <div class="card-group">
             <x-card
-                    title="Fenêtres et Baies"
-                    text="Une large gamme de menuiseries bois, alu ou PVC"
-                    iconClass="fa-solid fa-plus"
-                    link='services/pose-fenetres'
-                    src="{{ Vite::asset('resources/images/home/services/large-bay-windows.webp') }}"
-                    linkClass="btn btn-sm button"
-                    buttonName="d'infos"
-                    figcaption="illustration, non disponible à la vente"
+                title="Fenêtres et Baies"
+                text="Une large gamme de menuiseries bois, alu ou PVC"
+                iconClass="fa-solid fa-plus"
+                link='services/pose-fenetres'
+                src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/home/services/large-bay-windows.webp') : Vite::asset('resources/images/home/services/large-bay-windows.webp') }}"
+                linkClass="btn btn-sm button"
+                buttonName="d'infos"
+                figcaption="illustration, non disponible à la vente"
             />
             <x-card
-                    title="Portes"
-                    text="Portes d'entrée, d'intérieur"
-                    iconClass="fa-solid fa-plus"
-                    link="services/pose-portes-entree"
-                    src="{{ Vite::asset('resources/images/home/services/porte-entree.webp') }}"
-                    linkClass="btn btn-sm button"
-                    buttonName="d'infos"
-                    figcaption="illustration, non disponible à la vente"
+                title="Portes"
+                text="Portes d'entrée, d'intérieur"
+                iconClass="fa-solid fa-plus"
+                link="services/pose-portes-entree"
+                src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/home/services/porte-entree.webp') : Vite::asset('resources/images/home/services/porte-entree.webp') }}"
+                linkClass="btn btn-sm button"
+                buttonName="d'infos"
+                figcaption="illustration, non disponible à la vente"
             />
             <x-card
-                    title="Portes de garage"
-                    text="Portes de garage sectionnelles, basculantes, enroulables"
-                    iconClass="fa-solid fa-plus"
-                    link="services/pose-portes-garage"
-                    src="{{ Vite::asset('resources/images/home/services/porte-garage.webp') }}"
-                    linkClass="btn btn-sm button"
-                    buttonName="d'infos"
-                    figcaption="illustration, non disponible à la vente"
+                title="Portes de garage"
+                text="Portes de garage sectionnelles, basculantes, enroulables"
+                iconClass="fa-solid fa-plus"
+                link="services/pose-portes-garage"
+                src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/home/services/porte-garage.webp') : Vite::asset('resources/images/home/services/porte-entree.webp') }}"
+                linkClass="btn btn-sm button"
+                buttonName="d'infos"
+                figcaption="illustration, non disponible à la vente"
             />
             <x-card
-                    title="Portails"
-                    text="Portail coulissant ou battant"
-                    iconClass="fa-solid fa-plus"
-                    link="services/pose-portails"
-                    src="{{ Vite::asset('resources/images/home/services/portail.webp') }}"
-                    linkClass="btn btn-sm button"
-                    buttonName="d'infos"
-                    figcaption="illustration, non disponible à la vente"
+                title="Portails"
+                text="Portail coulissant ou battant"
+                iconClass="fa-solid fa-plus"
+                link="services/pose-portails"
+                src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/home/services/portail.webp') : Vite::asset('resources/images/home/services/porte-entree.webp') }}"
+                linkClass="btn btn-sm button"
+                buttonName="d'infos"
+                figcaption="illustration, non disponible à la vente"
             />
         </div>
         <div class="card-group">
             <x-card
-                    title="Volets"
-                    text="Volets roulants électriques, solaires"
-                    iconClass="fa-solid fa-plus"
-                    link="services/pose-volets-roulants"
-                    src="{{ Vite::asset('resources/images/home/services/volets-roulants.webp') }}"
-                    linkClass="btn btn-sm button"
-                    buttonName="d'infos"
-                    figcaption="illustration, non disponible à la vente"
+                title="Volets"
+                text="Volets roulants électriques, solaires"
+                iconClass="fa-solid fa-plus"
+                link="services/pose-volets-roulants"
+                src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/home/services/volets-roulants.webp') : Vite::asset('resources/images/home/services/porte-entree.webp') }}"
+                linkClass="btn btn-sm button"
+                buttonName="d'infos"
+                figcaption="illustration, non disponible à la vente"
             />
             <x-card
-                    title="Moustiquaires"
-                    text="Moustiquaires, enroulées, plissées, fixe"
-                    iconClass="fa-solid fa-plus"
-                    link="services/pose-moustiquaires"
-                    src="{{ Vite::asset('resources/images/home/services/volet-moustiquaire.webp') }}"
-                    linkClass="btn btn-sm button"
-                    buttonName="d'infos"
-                    figcaption="illustration, non disponible à la vente"
+                title="Moustiquaires"
+                text="Moustiquaires, enroulées, plissées, fixe"
+                iconClass="fa-solid fa-plus"
+                link="services/pose-moustiquaires"
+                src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/home/services/volet-moustiquaire.webp') : Vite::asset('resources/images/home/services/porte-entree.webp') }}"
+                linkClass="btn btn-sm button"
+                buttonName="d'infos"
+                figcaption="illustration, non disponible à la vente"
             />
             <x-card
-                    title="Dépannage volets"
-                    text="Dépannage sur volets roulants PVC ou aluminium"
-                    iconClass="fa-solid fa-plus"
-                    link="services/reparation-volets-roulants"
-                    src="{{ Vite::asset('resources/images/home/services/reparation-volet.webp') }}"
-                    linkClass="btn btn-sm button"
-                    buttonName="d'infos"
-                    figcaption="illustration, non disponible à la vente"
+                title="Dépannage volets"
+                text="Dépannage sur volets roulants PVC ou aluminium"
+                iconClass="fa-solid fa-plus"
+                link="services/reparation-volets-roulants"
+                src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/home/services/reparation-volet.webp') : Vite::asset('resources/images/home/services/porte-entree.webp') }}"
+                linkClass="btn btn-sm button"
+                buttonName="d'infos"
+                figcaption="illustration, non disponible à la vente"
             />
             <x-card
-                    title="Multi-services"
-                    text="Travaux du bâtiment"
-                    iconClass="fa-solid fa-plus"
-                    link="services/travaux-batiment"
-                    src="{{ Vite::asset('resources/images/home/services/pose-parquet.webp') }}"
-                    linkClass="btn btn-sm button"
-                    buttonName="d'infos"
-                    figcaption="illustration, non disponible à la vente"
+                title="Multi-services"
+                text="Travaux du bâtiment"
+                iconClass="fa-solid fa-plus"
+                link="services/travaux-batiment"
+                src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/home/services/pose-parquet.webp') : Vite::asset('resources/images/home/services/porte-entree.webp') }}"
+                linkClass="btn btn-sm button"
+                buttonName="d'infos"
+                figcaption="illustration, non disponible à la vente"
             />
         </div>
     </section>
@@ -106,8 +104,8 @@
     {{-- Choose me--}}
     <section class="section-wrapper">
         <div class="section-title">
-            <h3 class="h1"><span>P</span>ourquoi choisir <span>JD</span> Travaux Services ?</h3>
-            <h4 class="h5">Votre Artisan de Confiance pour Tous Vos Travaux de Pose et Rénovation</h4>
+            <h3 class="h1-xl"><span>P</span>ourquoi choisir <span>JD</span> Travaux Services ?</h3>
+            <h4 class="h5-xl">Votre Artisan de Confiance pour Tous Vos Travaux de Pose et Rénovation</h4>
         </div>
         <div class="container">
             <p>
@@ -142,11 +140,11 @@
     {{-- Reviews --}}
     <section class="section-wrapper">
         <div class="section-title">
-            <h3 class="h1"><span>C</span>e qu'en disent nos <span>C</span>lients</h3>
-            <h4 class="h5">Nos avis</h4>
+            <h3 class="h1-xl"><span>C</span>e qu'en disent nos <span>C</span>lients</h3>
+            <h4 class="h5-xl">Nos avis</h4>
         </div>
         <x-reviews-carousel
-                :reviews="$reviews"
+            :reviews="$reviews"
         />
     </section>
 

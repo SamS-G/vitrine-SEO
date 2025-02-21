@@ -42,13 +42,13 @@
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="brands-logo mx-auto">
-                        <img src="{{ Vite::asset('resources/images/cities/amberieux.webp') }}" class="card-img-top"
+                        <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/amberieux.webp') : Vite::asset('resources/images/cities/amberieux.webp') }}"
+                             class="card-img-top"
                              alt="Fenêtres, portes, volet posés à Ambérieu-en-Bugey">
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Ambérieux-en-Bugey</u></h5>
-                        <p class="card-text">Découvrez nos services de pose de fenêtres, portes et volets sur-mesure à
-                            Ambérieux-en-Bugey.
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de revêtements de sol dans la commune <em>d'Ambérieux-en-Bugey.</em>
                         </p>
                         <a href="{{ url('/prestations-amberieu-en-bugey') }}" role="button" class="btn mx-auto button">Voir
                             les services</a>
@@ -58,14 +58,13 @@
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="brands-logo mx-auto">
-                        <img src="{{ Vite::asset('resources/images/cities/meximieux.webp') }}"
+                        <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/meximieux.webp') : Vite::asset('resources/images/cities/meximieux.webp') }}"
                              class="card-img-top bg-secondary"
                              alt="Fenêtres, portes, volet posés et installés à Meximieux">
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Meximieux</u></h5>
-                        <p class="card-text">Installation de fenêtres et volets roulants à Meximieux, avec des matériaux
-                            de qualité.</p>
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de revêtements de sol dans la commune de <em>Meximieux</em></p>
                         <a href="{{ url('/prestations-meximieux') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
                     </div>
@@ -75,13 +74,13 @@
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="brands-logo mx-auto">
-                        <img src="{{ Vite::asset('resources/images/cities/lagnieux.webp') }}" class="card-img-top"
+                        <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/lagnieux.webp') : Vite::asset('resources/images/cities/lagnieux.webp') }}"
+                             class="card-img-top"
                              alt="Fenêtres, portes, volet posés et installés à Lagnieu">
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Lagnieu</u></h5>
-                        <p class="card-text">Pose de portes d'entrée modernes et sécurisées à Lagnieu et ses
-                            environs.</p>
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de revêtements de sol dans la commune de <em>Lagnieu.</em></p>
                         <a href="{{ url('/prestations-lagnieu') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
                     </div>
@@ -91,13 +90,13 @@
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="brands-logo mx-auto">
-                        <img src="{{ Vite::asset('resources/images/cities/dagneux.webp') }}" class="card-img-top w-75"
+                        <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/dagneux.webp') : Vite::asset('resources/images/cities/dagneux.webp') }}"
+                             class="card-img-top w-75"
                              alt="Fenêtres, portes, volet posés et installés à Dagneux">
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Dagneux</u></h5>
-                        <p class="card-text">Pose de portes d'entrée modernes et sécurisées à Lagnieu et ses
-                            environs.</p>
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de revêtements de sol dans la commune de <em>Dagneux</em></p>
                         <a href="{{ url('/prestations-dagneux') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
                     </div>
@@ -106,13 +105,13 @@
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="brands-logo mx-auto">
-                        <img src="{{ Vite::asset('resources/images/cities/leyment.webp') }}" class="card-img-top"
+                        <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/leyment.webp') : Vite::asset('resources/images/cities/leyment.webp') }}"
+                             class="card-img-top"
                              alt="Fenêtres, portes, volet posés et installés à Leyment">
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Leyment</u></h5>
-                        <p class="card-text">Pose de portes d'entrée modernes et sécurisées à Lagnieu et ses
-                            environs.</p>
+                        <p class="card-text">PRetrouvez toutes les prestations réalisables en menuiserie, pose de revêtements de sol dans la commune de <em>Leyment.</em></p>
                         <a href="{{ url('/prestations-leyment') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
                     </div>
@@ -121,13 +120,13 @@
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="brands-logo mx-auto">
-                        <img src="{{ Vite::asset('resources/images/cities/beynost.webp') }}" class="card-img-top"
+                        <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/beynost.webp') : Vite::asset('resources/images/cities/beynost.webp') }}"
+                             class="card-img-top"
                              alt="Fenêtres, portes, volet posés et installés à Beynost">
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Beynost</u></h5>
-                        <p class="card-text">Pose de portes d'entrée modernes et sécurisées à Lagnieu et ses
-                            environs.</p>
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de revêtements de sol dans la commune de <em>Beynost.</em></p>
                         <a href="{{ url('/prestations-beynost') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
                     </div>
@@ -136,13 +135,13 @@
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="brands-logo mx-auto">
-                        <img src="{{ Vite::asset('resources/images/cities/miribel.webp') }}" class="card-img-top"
+                        <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/miribel.webp') : Vite::asset('resources/images/cities/miribel.webp') }}"
+                             class="card-img-top"
                              alt="Fenêtres, portes, volet posés et installés à Miribel">
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Miribel</u></h5>
-                        <p class="card-text">Pose de portes d'entrée modernes et sécurisées à Lagnieu et ses
-                            environs.</p>
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de revêtements de sol dans la commune de <em>Miribel.</em></p>
                         <a href="{{ url('/prestations-miribel') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
                     </div>
@@ -151,13 +150,13 @@
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="brands-logo mx-auto">
-                        <img src="{{ Vite::asset('resources/images/cities/montluel.webp') }}" class="card-img-top"
+                        <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/montluel.webp') : Vite::asset('resources/images/cities/montluel.webp') }}"
+                             class="card-img-top"
                              alt="Fenêtres, portes, volet posés et installés à Montluel">
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Montluel</u></h5>
-                        <p class="card-text">Pose de portes d'entrée modernes et sécurisées à Lagnieu et ses
-                            environs.</p>
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de revêtements de sol dans la commune de <em>Montluel</em>.</p>
                         <a href="{{ url('/prestations-montluel') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
                     </div>
@@ -166,13 +165,13 @@
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="brands-logo mx-auto">
-                        <img src="{{ Vite::asset('resources/images/cities/tramoyes.webp') }}" class="card-img-top"
+                        <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/tramoyes.webp') : Vite::asset('resources/images/cities/tramoyes.webp') }}"
+                             class="card-img-top"
                              alt="Fenêtres, portes, volet posés et installés à Tramoyes">
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Tramoyes</u></h5>
-                        <p class="card-text">Pose de portes d'entrée modernes et sécurisées à Lagnieu et ses
-                            environs.</p>
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de revêtements de sol dans la commune de <em>Tramoyes</em>.</p>
                         <a href="{{ url('/prestations-tramoyes') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
                     </div>
@@ -181,13 +180,13 @@
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="brands-logo mx-auto">
-                        <img src="{{ Vite::asset('resources/images/cities/perouges.webp') }}" class="card-img-top"
+                        <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/perouges.webp') : Vite::asset('resources/images/cities/perouges.webp') }}"
+                             class="card-img-top"
                              alt="Fenêtres, portes, volet posés et installés à Perouges">
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Pérouges</u></h5>
-                        <p class="card-text">Pose de portes d'entrée modernes et sécurisées à Lagnieu et ses
-                            environs.</p>
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de revêtements de sol dans la commune de <em>Pérouges</em>.</p>
                         <a href="{{ url('/prestations-perouges') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
                     </div>
@@ -196,13 +195,13 @@
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="brands-logo mx-auto">
-                        <img src="{{ Vite::asset('resources/images/cities/charnoz.webp') }}" class="card-img-top"
+                        <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/charnoz.webp') : Vite::asset('resources/images/cities/charnoz.webp') }}"
+                             class="card-img-top"
                              alt="Fenêtres, portes, volet posés et installés à Charnoz-sur-Ain">
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Charnoz-sur-Ain</u></h5>
-                        <p class="card-text">Pose de portes d'entrée modernes et sécurisées à Lagnieu et ses
-                            environs.</p>
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de revêtements de sol dans la commune de <em>Charnoz-sur-Ain</em>.</p>
                         <a href="{{ url('/prestations-charnoz-sur-Ain') }}" role="button"
                            class="btn mx-auto mt-auto button">Voir
                             les services</a>
@@ -212,13 +211,13 @@
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="brands-logo mx-auto">
-                        <img src="{{ Vite::asset('resources/images/cities/sainte-julie.webp') }}" class="card-img-top"
+                        <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/sainte-julie.webp') : Vite::asset('resources/images/cities/sainte-julie.webp') }}"
+                             class="card-img-top"
                              alt="Fenêtres, portes, volet posés et installés à Sainte-Julie">
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Sainte-Julie</u></h5>
-                        <p class="card-text">Pose de portes d'entrée modernes et sécurisées à Lagnieu et ses
-                            environs.</p>
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de revêtements de sol dans la commune de <em>Sainte-Julie</em>.</p>
                         <a href="{{ url('/prestations-sainte-julie') }}" role="button"
                            class="btn mx-auto mt-auto button">Voir
                             les services</a>
@@ -228,13 +227,13 @@
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="brands-logo mx-auto">
-                        <img src="{{ Vite::asset('resources/images/cities/chazey-sur-ain.webp') }}" class="card-img-top"
+                        <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/chazey-sur-ain.webp') : Vite::asset('resources/images/cities/chazey-sur-ain.webp') }}"
+                             class="card-img-top"
                              alt="Fenêtres, portes, volet posés et installés à Chazey-sur-Ain">
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Chazey-sur-Ain</u></h5>
-                        <p class="card-text">Pose de portes d'entrée modernes et sécurisées à Lagnieu et ses
-                            environs.</p>
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de revêtements de sol dans la commune de <em>Chazey-sur-Ain.</em></p>
                         <a href="{{ url('/prestations-chazey-sur-Ain') }}" role="button"
                            class="btn mx-auto mt-auto button">Voir
                             les services</a>
@@ -244,14 +243,13 @@
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="brands-logo mx-auto">
-                        <img src="{{ Vite::asset('resources/images/cities/villieu-loyes-mollon.webp') }}"
+                        <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/villieu-loyes-mollon.webp') : Vite::asset('resources/images/cities/villieu-loyes-mollon.webp') }}"
                              class="card-img-top"
                              alt="Fenêtres, portes, volet posés et installés à Villieu-Loyes-Mollon">
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Vilieu-Loyes-Mollon</u></h5>
-                        <p class="card-text">Pose de portes d'entrée modernes et sécurisées à Lagnieu et ses
-                            environs.</p>
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de revêtements de sol dans la commune de <em>Vilieu-Loyes-Mollon</em>.</p>
                         <a href="{{ url('/prestations-vilieu-loyes-mollon') }}" role="button"
                            class="btn mx-auto mt-auto button">Voir
                             les services</a>
@@ -261,14 +259,13 @@
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="brands-logo mx-auto">
-                        <img src="{{ Vite::asset('resources/images/cities/les-grottes-la-balme.webp') }}"
+                        <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/les-grottes-la-balme.webp') : Vite::asset('resources/images/cities/les-grottes-la-balme.webp') }}"
                              class="card-img-top"
                              alt="Fenêtres, portes, volet posés et installés aux Grottes-la-Balme">
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Les-Grottes-la-Balme</u></h5>
-                        <p class="card-text">Pose de portes d'entrée modernes et sécurisées à Lagnieu et ses
-                            environs.</p>
+                        <p class="card-text">>Retrouvez toutes les prestations réalisables en menuiserie, pose de revêtements de sol dans la commune de <em>Les-Grottes-la-Balme</em>.</p>
                         <a href="{{ url('/prestations-la-balme-les-grottes') }}" role="button"
                            class="btn mx-auto mt-auto button">Voir
                             les services</a>

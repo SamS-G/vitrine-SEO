@@ -187,7 +187,7 @@
                     <div class="card">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="{{ Vite::asset("resources/images/services/") . $service['image'] }}"
+                                <img src="{{  Agent::isMobile() ? Vite::asset("resources/images/responsive/services/") . $service['image'] : Vite::asset("resources/images/services/") . $service['image'] }}"
                                      class="img-fluid rounded-start"
                                      alt="{{ $service['title'] }}">
                                 <figcaption class="text-muted text-center fs-6">

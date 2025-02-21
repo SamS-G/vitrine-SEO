@@ -2,7 +2,10 @@
 
 <nav class="navbar navbar-expand-md navbar-dark">
     <div class="container-fluid navbar-container">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav flex-fill justify-content-evenly mb-2 mb-lg-0">
                 @foreach($navItems as $navItem)
                     <li class="nav-item">

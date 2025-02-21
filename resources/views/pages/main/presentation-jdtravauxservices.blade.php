@@ -4,8 +4,8 @@
     <div class="col-8 py-5 mx-auto">
         <!-- Section de présentation -->
         <div class="row align-items-center mb-5">
-            <div class="col-md-4">
-                <img src="{{ Vite::asset('resources/images/portrait.webp') }}"
+            <div class="col-md-4 text-center">
+                <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/portrait.webp') : Vite::asset('resources/images/portrait.webp') }}"
                      alt="Artisan Menuisier Volets Fenetres Portes" class="img-fluid rounded shadow ">
             </div>
             <div class="col-md-8">

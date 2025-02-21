@@ -22,7 +22,7 @@ class LocalServicesController extends Controller
 
         // 🔹 Vérification et récupération des données (avec gestion d'erreurs)
         $city = City::where('slug', $ville)->first();
-
+//        dd($ville);
         if (is_null($city)) {
             abort(404, "La ville ($ville) demandée n'existe pas.");
         }

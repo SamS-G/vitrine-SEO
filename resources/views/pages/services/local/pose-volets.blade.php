@@ -10,18 +10,29 @@
 @endsection
 
 @section('content')
-    <div class="container py-5">
-        <h1 class="text-center">Pose de volets à {{ $city->name }}</h1>
-
-        <h2>Nos types de volets</h2>
-        <ul>
-            <li>Volets roulants électriques ou solaires</li>
-            <li>Volets battants en aluminium, PVC ou bois</li>
-            <li>Automatisation de volets existants</li>
-        </ul>
-
-        <img src="{{ asset('images/volet.jpg') }}" alt="Pose de volets à {{ $city->name }}" class="img-fluid rounded mt-3">
-
-        <a href="{{ url('contact') }}" class="btn btn-primary mt-3">Obtenir un devis</a>
+    <div class="container py-xl-5 mb-3">
+        <h1 class="text-center bg-white-soft mb-xl-5">Pose de volets à {{ $city->name }}</h1>
+        <p class="text-center text-muted">Matériel et pose de qualité, budget maîtrisé.</p>
+        <div class="d-flex justify-content-around">
+            <div>
+                <h2 class="h3-xl my-4">Nos types de volets</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Volets roulants électriques ou solaires</li>
+                    <li class="list-group-item">Volets battants en aluminium, PVC ou bois</li>
+                    <li class="list-group-item">Automatisation de volets existants</li>
+                </ul>
+                <a href="{{ url('contact') }}" class="btn mt-3 button">Obtenir un devis</a>
+            </div>
+            <img
+                src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/services/local/volet-roulant.webp') : Vite::asset('resources/images/services/local/volet-roulant.webp') }}"
+                alt="Pose de volets à {{ $city->name }}" class="img-fluid rounded mt-3">
+        </div>
+        <div class="mt-3">
+            <h2>Nos interventions à {{ $city->name }}</h2>
+            <p>
+                Nous intervenons dans les quartiers proches de
+                : {{ implode(', ', json_decode($city->landmarks, true)) }}
+                .</p>
+        </div>
     </div>
 @endsection

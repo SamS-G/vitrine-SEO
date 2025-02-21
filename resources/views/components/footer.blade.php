@@ -1,4 +1,4 @@
-<footer class="bg-dark text-light container-fluid">
+<footer class="bg-dark text-light">
         <div class="row footer-row">
             <!-- Coordonnées -->
             <div class="col-md-3">

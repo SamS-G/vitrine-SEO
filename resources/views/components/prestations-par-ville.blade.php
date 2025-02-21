@@ -1,4 +1,4 @@
-<div class="container my-5">
+<div id="prestations-par-ville" class="container">
     <h1 class="text-center bg-white-soft fw-bold my-5">Nos Prestations à {{ ucfirst($ville) }}</h1>
     <p class="text-muted">
         Vous recherchez un artisan qualifié à <strong>{{ ucfirst($ville) }}</strong> pour vos projets de rénovation et
