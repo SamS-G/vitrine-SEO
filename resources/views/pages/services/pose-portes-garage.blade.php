@@ -12,8 +12,8 @@
             'Esthétique et valorisation du bien'
     ]"
             :gallery="[
-       '/av-fenetre.jpg',
-        '/ap-fenetre.jpg',
+       'av-fenetre.jpg',
+        'ap-fenetre.jpg',
     ]"
             :faq="[
         ['question' => 'Quels types de porte de garage proposez-vous ?', 'answer' => 'Nous proposons des portes de garage sectionnelles.'],

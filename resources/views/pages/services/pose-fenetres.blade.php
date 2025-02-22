@@ -15,8 +15,8 @@ Faites-moi confiance pour l'installation de vos fenêtres et profitez d'une isol
         'Garantie décennale'
     ]"
     :gallery="[
-       '/av-fenetre.jpg',
-        '/ap-fenetre.jpg',
+       'av-fenetre.jpg',
+        'ap-fenetre.jpg',
     ]"
     :faq="[
         ['question' => 'Quels types de fenêtres proposez-vous ?', 'answer' => 'Nous proposons des fenêtres en PVC, aluminium et bois adaptées à votre logement.'],

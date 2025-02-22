@@ -18,8 +18,8 @@
             'Economique'
     ]"
             :gallery="[
-       '/av-fenetre.jpg',
-        '/ap-fenetre.jpg',
+       'av-fenetre.jpg',
+        'ap-fenetre.jpg',
     ]"
             :faq="[
         ['question' => 'Quels types de volets roulants réparez-vous ?', 'answer' => 'Nous proposons réparons tous les types de volets, manuels, électriques ou solaires'],

@@ -18,8 +18,8 @@ Vous voulez apprendre? Je peux aussi vous proposer de travailler avec vous sur v
             'Expertise'
     ]"
             :gallery="[
-       '/av-fenetre.jpg',
-        '/ap-fenetre.jpg',
+       'av-fenetre.jpg',
+        'ap-fenetre.jpg',
     ]"
             :faq="[
         ['question' => 'Quels types de prestations proposez-vous ?', 'answer' => 'Nous proposons la pose de terrasses, travaux plomberie, serrurerie, aide et formation sur votre chantier'],

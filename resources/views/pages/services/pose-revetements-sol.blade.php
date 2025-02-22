@@ -12,8 +12,8 @@
             'Isolation phonique et thermique'
     ]"
             :gallery="[
-       '/av-fenetre.jpg',
-        '/ap-fenetre.jpg',
+       'av-fenetre.jpg',
+        'ap-fenetre.jpg',
     ]"
             :faq="[
         ['question' => 'Quels types de revêtements de sol proposez-vous ?', 'answer' => 'Nous proposons du parquet bois ou du parquet résine'],

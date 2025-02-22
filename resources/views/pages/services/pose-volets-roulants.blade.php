@@ -13,8 +13,8 @@
             'Esthétique et valorisation du bien'
     ]"
             :gallery="[
-       '/av-fenetre.jpg',
-        '/ap-fenetre.jpg',
+       'av-fenetre.jpg',
+        'ap-fenetre.jpg',
     ]"
             :faq="[
         ['question' => 'Quels types de volets proposez-vous ?', 'answer' => 'Nous proposons des volets roulants manuels, électriques et solaire.'],
