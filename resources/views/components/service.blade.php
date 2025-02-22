@@ -22,7 +22,7 @@
         <div class="row">
             @foreach ($gallery as $image)
                 <div class="col-md-6 mb-3 text-center">
-                    <img src="{{ Vite::asset('resources/images') . $image }}" class="img-fluid rounded shadow"
+                    <img src="{{ Vite::asset('resources/images/services/') . $image }}" class="img-fluid rounded shadow"
                          alt="Avant / Après">
                 </div>
             @endforeach
