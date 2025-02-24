@@ -188,7 +188,7 @@
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="{{  Agent::isMobile() ? Vite::asset("resources/images/responsive/services/{$service['image']}") : Vite::asset("resources/images/services/{$service['image']}") }}"
-                                     class="img-fluid rounded-start"
+                                     class="img-fluid rounded-start ratio-2x3"
                                      alt="{{ $service['title'] }}">
                                 <figcaption class="text-muted text-center fs-6">
                                     <small><em>illustration, non disponible à la vente</em></small>

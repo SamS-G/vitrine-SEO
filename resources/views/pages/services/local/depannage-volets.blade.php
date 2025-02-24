@@ -28,7 +28,7 @@
 
             <img
                 src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/services/local/depannage.webp') : Vite::asset('resources/images/services/local/depannage.webp') }}"
-                alt="Dépannage de volets roulants à {{ $city->name }}" class="img-fluid rounded">
+                alt="Dépannage de volets roulants à {{ $city->name }}" class="img-fluid rounded ratio-2x3">
         </div>
         <div class="mt-3">
             <h2 class="mt-5">Zones d’intervention à {{ $city->name }}</h2>

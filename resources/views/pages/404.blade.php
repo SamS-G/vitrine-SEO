@@ -16,7 +16,7 @@
                     <em>Retour à l'accueil</em>
                 </a>
             </div>
-            <img src="{{ Vite::asset('resources/images/404.webp') }}" alt="Page introuvable" class="my-5 w-64 mx-auto rounded-3">
+            <img src="{{ Vite::asset('resources/images/404.webp') }}" alt="Page introuvable" class="my-5 w-64 mx-auto rounded-3 ratio-3x2">
         </div>
     </div>
 @endsection

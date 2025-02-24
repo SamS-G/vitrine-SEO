@@ -26,7 +26,7 @@
             <img
                 src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/services/local/portail.webp') : Vite::asset('resources/images/services/local/portail.webp') }}"
                 alt="Pose de portails à {{ $city->name }}"
-                class="img-fluid rounded mt-3">
+                class="img-fluid rounded mt-3 ratio-3x2">
         </div>
 
 

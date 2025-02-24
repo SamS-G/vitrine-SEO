@@ -1,38 +1,45 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
-@import '@fortawesome/fontawesome-free/css/fontawesome.css';
-@import '@fortawesome/fontawesome-free/css/regular.css';
-@import '@fortawesome/fontawesome-free/css/solid.css';
-@import '@fortawesome/fontawesome-free/css/brands.css';
-
-@font-face {
-    font-family: 'Lora-variable';
-    src: url('../fonts/Lora/Lora-VariableFont_wght.ttf');
-}
-
-@font-face {
-    font-family: 'Lora-variable-italic';
-    src: url('../fonts/Lora/Lora-Italic-VariableFont_wght.ttf');
-}
-
-@font-face {
-    font-family: 'Outfit';
-    src: url('../fonts/Outfit/Outfit-VariableFont_wght.ttf');
-}
-
 @font-face {
     font-family: 'Baloo';
     src: url('../fonts/Baloo/Baloo-Regular.ttf');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Playwrite_GB_S';
     src: url('../fonts/Playwrite_GB_S/PlaywriteGBS-VariableFont_wght.ttf');
+    font-display: swap;
 }
 
 /* COMMUN */
+.ratio-3x1 {
+    height: auto;
+    aspect-ratio: 3 / 1;
+}
+
+.ratio-3x2 {
+    height: auto;
+    aspect-ratio: 3 / 2;
+}
+
+.ratio-3x4 {
+    height: auto;
+    aspect-ratio: 3 / 4;
+}
+
+.ratio-1x1 {
+    height: auto;
+    aspect-ratio: 1 / 1;
+}
+
+.ratio-2x3 {
+    height: auto;
+    aspect-ratio: 2 / 3
+}
+
 html {
     padding: 1px 5px;
 }
+
 * {
     font-family: 'Playwrite_GB_S', sans-serif;
     font-variation-settings: 'wght' 300;
@@ -246,7 +253,7 @@ h5 {
     height: 20px;
 }
 
-.navbar {
+body header nav .navbar-dark {
     padding-top: 0;
     padding-bottom: 0;
     border-top: 2px solid #ca0d00;
@@ -373,22 +380,25 @@ header {
     box-shadow: 0 4px 4px #1B000A;
     /*animation: scaleAnimation 1s ease-in-out 2s infinite alternate; !* Délai de 2s avant démarrage *!*/
 }
-.cta-button:hover {
+
+.cta-container .cta-button:hover {
     box-shadow: 0 2px 3px #1B000A;
     color: white;
     background-color: green;
     border: 1px solid darkgreen;
 }
-.button, .cta-button {
+
+.card-body .button, .btn.btn-sm.button.text-uppercase, .cta-container .cta-button {
     background-color: #ca0d00;
     border: 1px solid #1B000A;
-}
-
-.button, .button i {
     color: #FFFFFE;
 }
 
-.button:hover {
+.button i {
+    color: #FFFFFE;
+}
+
+.card-body .button:hover {
     transform: scale(1.01);
     box-shadow: 0 2px 3px #1B000A;
     color: white;
@@ -419,9 +429,11 @@ header {
     overflow: hidden; /* Cache le dépassement */
     background-color: rgba(0, 0, 0, 0.8) !important;
 }
+
 .banner-bottom {
     width: 100%;
 }
+
 .bottom-banner img {
     object-fit: contain;
 }
@@ -437,7 +449,7 @@ header {
     text-shadow: 2px 2px 2px #000000;
 }
 
-.service-button {
+.btn.btn-sm.service-button, .btn.service-button {
     box-shadow: 0 2px 3px #1B000A;
     background-color: #ca0d00;
     color: white;
@@ -448,7 +460,7 @@ header {
     align-self: flex-start;
 }
 
-.service-button:hover {
+.btn.btn-sm.service-button:hover, .btn.service-button:hover {
     transform: scale(1.1);
     color: white;
     background-color: #ca0d00;
@@ -468,6 +480,13 @@ header {
     background-color: #d4edda;
 }
 
+/* ZONE INTERVENTION */
+.brands-logo .card-img-top {
+    height: 70px;
+    object-fit: cover;
+    width: 100%;
+}
+
 #map {
     height: 70vh;
 }
@@ -475,6 +494,7 @@ header {
 #prestations-par-ville {
     margin-top: 10vh;
 }
+
 /* FOOTER */
 footer {
     background-clip: content-box;
@@ -495,7 +515,7 @@ footer {
     }
 
     h1 {
-        font-size: 1.5rem!important;
+        font-size: 1.5rem !important;
     }
 
     h3 {
@@ -592,12 +612,13 @@ footer {
     }
 
     .hero-title {
-        padding: 0.8rem!important;
+        padding: 0.8rem !important;
         width: 100%;
-        top: 40%!important;
+        top: 40% !important;
     }
+
     body > main > section.hero > div > div > a {
-        top:85%!important;
+        top: 85% !important;
     }
 
     .top-hero-wrapper h2 {
@@ -605,12 +626,15 @@ footer {
         left: 39%;
         transform: translateX(0);
     }
+
     #testimonialCarousel > div.carousel-inner > div.carousel-item.active > div > img {
         width: 50px;
     }
+
     .bg-white-soft {
         margin-top: 5rem;
     }
+
     #prestations-par-ville {
         margin-top: 10vh;
     }

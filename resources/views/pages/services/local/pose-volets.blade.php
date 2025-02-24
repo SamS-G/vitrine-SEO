@@ -25,7 +25,7 @@
             </div>
             <img
                 src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/services/local/volet-roulant.webp') : Vite::asset('resources/images/services/local/volet-roulant.webp') }}"
-                alt="Pose de volets à {{ $city->name }}" class="img-fluid rounded mt-3">
+                alt="Pose de volets à {{ $city->name }}" class="img-fluid rounded mt-3 ratio-3x2">
         </div>
         <div class="mt-3">
             <h2>Nos interventions à {{ $city->name }}</h2>

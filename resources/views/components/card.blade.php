@@ -1,5 +1,5 @@
 <div class="card">
-    <img class="img-fluid" src="{{ $src }}" alt="{{ $title }}" loading="lazy">
+    <img class="img-fluid {{ $imgClass }}" src="{{ $src }}" alt="{{ $title }}" loading="lazy">
     <figcaption class="text-muted text-center fs-6"><small><em>{{ $figcaption }}</em></small></figcaption>
     <h4 class="text-center h3">{{ $title }}</h4>
     <p class="text-center">{{ $text }}</p>

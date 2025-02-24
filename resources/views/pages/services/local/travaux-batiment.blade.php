@@ -26,7 +26,7 @@
                 <a href="{{ url('contact') }}" class="btn button mt-3">Obtenir un devis</a>
             </div>
             <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/portrait.webp') : Vite::asset('resources/images/portrait.webp')  }}"
-                 alt="Multiservices en travaux du bâtiment à {{ $city->name }}" class="img-fluid rounded">
+                 alt="Multiservices en travaux du bâtiment à {{ $city->name }}" class="img-fluid rounded ratio-2x3">
         </div>
         <div class="mt-3">
             <h2>Nos interventions à {{ $city->name }}</h2>

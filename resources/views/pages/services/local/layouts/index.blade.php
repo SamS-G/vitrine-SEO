@@ -1,8 +1,15 @@
 @extends('layouts.app')
-@vite(['resources/css/leaflet.css', 'resources/js/leaflet.js', 'resources/js/area-business-map.js'])
+@push('styles')
+    {{--  Impossible à compiler avec Vite => fichier vide en js...  --}}
+    <link rel="stylesheet" href="{{ asset('css/leaflet.css') }}">
+@endpush
+
+@push('scripts')
+    @vite(['resources/js/leaflet.js', 'resources/js/area-business-map.js'])
+@endpush
+
 @section('title', 'Zone Géographique - JD Travaux Services')
 @section('content')
-
     <div class="col-10 mx-auto py-5">
         <h1 class="text-center mb-4 bg-white-soft">Nos Services de Menuiserie et Dépannage dans la Plaine de l'Ain</h1>
         <p class="text-justify mb-5">
@@ -32,7 +39,7 @@
             Nous proposons des solutions sur-mesure pour la pose de fenêtres, portes, et volets dans toute la
             région.
         </p>
-        <div class="col-8 mx-auto">
+        <div class="col-9 mx-auto">
             <p class="alert alert-primary talert-dismissible fade show text-center" role="alert">
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 Sous la carte représentant le zone dans laquelle <strong>JD Multi-Services</strong> intervient, cliquez
@@ -53,11 +60,16 @@
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Ambérieux-en-Bugey</u></h5>
+<<<<<<< HEAD
                         <p class="card-text">Découvrez toutes nos prestations de menuiserie et travaux du bâtiment à
                             <em>Ambérieux-en-Bugey</em> : pose de fenêtres, installation de portes d’entrée et de
                             garage,
                             réparation de volets roulants et bien plus encore. Profitez de solutions sur-mesure pour vos
                             aménagements intérieurs et extérieurs.
+=======
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de
+                            revêtements de sol dans la commune <em>d'Ambérieux-en-Bugey.</em>
+>>>>>>> a09fda5 (optimisation chargement css et format iamges)
                         </p>
                         <a href="{{ url('/prestations-amberieu-en-bugey') }}" role="button" class="btn mx-auto button">Voir
                             les services</a>
@@ -74,11 +86,16 @@
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Meximieux</u></h5>
+<<<<<<< HEAD
                         <p class="card-text">À <em>Meximieux</em>, bénéficiez de nos services spécialisés en menuiserie,
                             installation de fenêtres, pose de portes d’entrée et de garage, ainsi que la réparation de
                             volets roulants. Nous réalisons également divers travaux du bâtiment et aménagements
                             intérieurs pour un habitat confortable et performant.
                         </p>
+=======
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de
+                            revêtements de sol dans la commune de <em>Meximieux</em></p>
+>>>>>>> a09fda5 (optimisation chargement css et format iamges)
                         <a href="{{ url('/prestations-meximieux') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
                     </div>
@@ -95,12 +112,17 @@
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Lagnieu</u></h5>
+<<<<<<< HEAD
                         <p class="card-text">Besoin d’un expert en menuiserie et aménagement du bâtiment à
                             <em>Lagnieu</em> ?
                             Nous intervenons pour la pose de fenêtres, l’installation de portes d’entrée et de garage,
                             la réparation de volets roulants et tous vos travaux d’aménagement intérieur et extérieur.
                             Faites confiance à notre savoir-faire pour des résultats durables et esthétiques.
                         </p>
+=======
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de
+                            revêtements de sol dans la commune de <em>Lagnieu.</em></p>
+>>>>>>> a09fda5 (optimisation chargement css et format iamges)
                         <a href="{{ url('/prestations-lagnieu') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
                     </div>
@@ -112,16 +134,25 @@
                     <div class="brands-logo mx-auto">
                         <img
                             src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/dagneux.webp') : Vite::asset('resources/images/cities/dagneux.webp') }}"
+<<<<<<< HEAD
                             class="card-img-top w-75"
+=======
+                            class="card-img-top"
+>>>>>>> a09fda5 (optimisation chargement css et format iamges)
                             alt="Fenêtres, portes, volet posés et installés à Dagneux">
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Dagneux</u></h5>
+<<<<<<< HEAD
                         <p class="card-text">Améliorez votre habitat avec nos prestations en menuiserie et rénovation du
                             bâtiment à <em>Dagneux</em>. Spécialistes de la pose de fenêtres, portes d’entrée, portes de
                             garage et réparation de volets roulants, nous vous garantissons des installations de qualité
                             et adaptées à vos besoins.
                         </p>
+=======
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de
+                            revêtements de sol dans la commune de <em>Dagneux</em></p>
+>>>>>>> a09fda5 (optimisation chargement css et format iamges)
                         <a href="{{ url('/prestations-dagneux') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
                     </div>
@@ -137,11 +168,16 @@
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Leyment</u></h5>
+<<<<<<< HEAD
                         <p class="card-text">Retrouvez nos prestations en menuiserie et travaux de rénovation à
                             <em>Leyment</em> : pose de fenêtres, installation de portes d’entrée et de garage, dépannage
                             et réparation de volets roulants, ainsi que tous types de travaux d’aménagement et
                             d’amélioration de l’habitat. Contactez-nous pour un devis gratuit !
                         </p>
+=======
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de
+                            revêtements de sol dans la commune de <em>Leyment.</em></p>
+>>>>>>> a09fda5 (optimisation chargement css et format iamges)
                         <a href="{{ url('/prestations-leyment') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
                     </div>
@@ -157,12 +193,17 @@
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Beynost</u></h5>
+<<<<<<< HEAD
                         <p class="card-text">À la recherche d’un professionnel en menuiserie et rénovation à
                             <em>Beynost</em> ?
                             Nous assurons la pose de fenêtres, l’installation de portes d’entrée et de garage, la
                             réparation de volets roulants et d’autres travaux du bâtiment. Profitez de prestations
                             sur-mesure pour améliorer votre confort et la valeur de votre maison.
                         </p>
+=======
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de
+                            revêtements de sol dans la commune de <em>Beynost.</em></p>
+>>>>>>> a09fda5 (optimisation chargement css et format iamges)
                         <a href="{{ url('/prestations-beynost') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
                     </div>
@@ -178,6 +219,7 @@
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Miribel</u></h5>
+<<<<<<< HEAD
                         <p class="card-text">À <em>Miribel</em>, nous proposons :
                             ✔ Pose de fenêtres en PVC, aluminium ou bois
                             ✔ Installation de portes d’entrée et de garage
@@ -185,6 +227,10 @@
                             ✔ Tous travaux de menuiserie et d’aménagement intérieur
                             Faites confiance à notre expertise pour des prestations de qualité adaptées à vos besoins.
                         </p>
+=======
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de
+                            revêtements de sol dans la commune de <em>Miribel.</em></p>
+>>>>>>> a09fda5 (optimisation chargement css et format iamges)
                         <a href="{{ url('/prestations-miribel') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
                     </div>
@@ -200,11 +246,16 @@
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Montluel</u></h5>
+<<<<<<< HEAD
                         <p class="card-text">Optez pour des prestations de menuiserie et aménagement sur-mesure à
                             <em>Montluel</em> ! Nous réalisons la pose de fenêtres, l’installation de portes d’entrée et
                             de garage, la réparation de volets roulants et bien plus encore. Offrez à votre habitat des
                             finitions de qualité et un confort optimal.
                         </p>
+=======
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de
+                            revêtements de sol dans la commune de <em>Montluel</em>.</p>
+>>>>>>> a09fda5 (optimisation chargement css et format iamges)
                         <a href="{{ url('/prestations-montluel') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
                     </div>
@@ -220,12 +271,17 @@
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Tramoyes</u></h5>
+<<<<<<< HEAD
                         <p class="card-text">Travaux de menuiserie et aménagement à <em>Tramoyes</em> !
                             ✔ Pose de fenêtres et portes (entrée, garage)
                             ✔ Réparation et dépannage de volets roulants
                             ✔ Tous travaux d’aménagement du bâtiment
                             📞 Contactez-nous dès aujourd’hui pour un devis gratuit !
                         </p>
+=======
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de
+                            revêtements de sol dans la commune de <em>Tramoyes</em>.</p>
+>>>>>>> a09fda5 (optimisation chargement css et format iamges)
                         <a href="{{ url('/prestations-tramoyes') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
                     </div>
@@ -241,9 +297,14 @@
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Pérouges</u></h5>
+<<<<<<< HEAD
                         <p class="card-text">Retrouvez toutes les prestations que je réalise en menuiserie, pose de
                             revêtements de sol dans votre commune de <em>Pérouges</em>.
                         </p>
+=======
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de
+                            revêtements de sol dans la commune de <em>Pérouges</em>.</p>
+>>>>>>> a09fda5 (optimisation chargement css et format iamges)
                         <a href="{{ url('/prestations-perouges') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
                     </div>
@@ -259,6 +320,7 @@
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Charnoz-sur-Ain</u></h5>
+<<<<<<< HEAD
                         <p class="card-text">Découvrez nos services en menuiserie et rénovation à
                             <em>Charnoz-sur-Ain</em>.
                             Nous réalisons la pose de fenêtres, l’installation de portes d’entrée et de garage, ainsi
@@ -266,6 +328,10 @@
                             la réparation de volets roulants. Nos experts vous accompagnent pour tous vos travaux du
                             bâtiment, garantissant une finition soignée et durable.
                         </p>
+=======
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de
+                            revêtements de sol dans la commune de <em>Charnoz-sur-Ain</em>.</p>
+>>>>>>> a09fda5 (optimisation chargement css et format iamges)
                         <a href="{{ url('/prestations-charnoz-sur-Ain') }}" role="button"
                            class="btn mx-auto mt-auto button">Voir
                             les services</a>
@@ -282,11 +348,16 @@
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Sainte-Julie</u></h5>
+<<<<<<< HEAD
                         <p class="card-text">Faites appel à un artisan expérimenté à <em>Sainte-Julie</em> pour
                             tous vos projets de menuiserie, pose de fenêtres, installation de portes et réparation de
                             volets roulants. Avec notre savoir-faire, nous vous garantissons des solutions de qualité
                             adaptées à vos besoins en rénovation et aménagement intérieur.
                         </p>
+=======
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de
+                            revêtements de sol dans la commune de <em>Sainte-Julie</em>.</p>
+>>>>>>> a09fda5 (optimisation chargement css et format iamges)
                         <a href="{{ url('/prestations-sainte-julie') }}" role="button"
                            class="btn mx-auto mt-auto button">Voir
                             les services</a>
@@ -303,11 +374,16 @@
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Chazey-sur-Ain</u></h5>
+<<<<<<< HEAD
                         <p class="card-text">À <em>Chazey-sur-Ain</em>, nous proposons des services complets en
                             menuiserie et travaux du bâtiment : installation de fenêtres, pose de portes d’entrée et de
                             garage, réparation de volets roulants et autres prestations de rénovation. Profitez d’un
                             accompagnement personnalisé et d’une qualité de travail irréprochable.
                         </p>
+=======
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de
+                            revêtements de sol dans la commune de <em>Chazey-sur-Ain.</em></p>
+>>>>>>> a09fda5 (optimisation chargement css et format iamges)
                         <a href="{{ url('/prestations-chazey-sur-Ain') }}" role="button"
                            class="btn mx-auto mt-auto button">Voir
                             les services</a>
@@ -324,12 +400,17 @@
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Vilieu-Loyes-Mollon</u></h5>
+<<<<<<< HEAD
                         <p class="card-text">Besoin de remplacer vos fenêtres, installer une nouvelle porte d’entrée ou
                             rénover votre garage ? Nos experts en menuiserie et aménagement du bâtiment à
                             <em>Vilieu-Loyes-Mollon</em> vous accompagnent dans la pose de fenêtres, l’installation de
                             portes et la réparation de volets roulants. Contactez-nous pour une intervention rapide et
                             efficace.
                         </p>
+=======
+                        <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de
+                            revêtements de sol dans la commune de <em>Vilieu-Loyes-Mollon</em>.</p>
+>>>>>>> a09fda5 (optimisation chargement css et format iamges)
                         <a href="{{ url('/prestations-vilieu-loyes-mollon') }}" role="button"
                            class="btn mx-auto mt-auto button">Voir
                             les services</a>
@@ -346,6 +427,7 @@
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Les-Grottes-la-Balme</u></h5>
+<<<<<<< HEAD
                         <p class="card-text">>🔹 Vous cherchez un professionnel de confiance à
                             <em>Les-Grottes-la-Balme</em> ?
                             Nous assurons la pose de fenêtres, l’installation de portes d’entrée et de garage, ainsi que
@@ -353,6 +435,10 @@
                             intérieur et de rénovation du bâtiment. Faites appel à nous pour des résultats à la hauteur
                             de vos attentes !
                         </p>
+=======
+                        <p class="card-text">>Retrouvez toutes les prestations réalisables en menuiserie, pose de
+                            revêtements de sol dans la commune de <em>Les-Grottes-la-Balme</em>.</p>
+>>>>>>> a09fda5 (optimisation chargement css et format iamges)
                         <a href="{{ url('/prestations-la-balme-les-grottes') }}" role="button"
                            class="btn mx-auto mt-auto button">Voir
                             les services</a>

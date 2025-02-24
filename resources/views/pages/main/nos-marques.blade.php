@@ -9,7 +9,7 @@
                 <div class="col">
                     <div class="card h-100">
                         <div class="brands-logo mx-auto">
-                            <img src="{{ Vite::asset('resources/images/brands/castes-logo.webp') }}" class="img-fluid"
+                            <img src="{{ Vite::asset('resources/images/brands/castes-logo.webp') }}" class="img-fluid ratio-3x2"
                                  alt="Castes Industrie">
                         </div>
                         <div class="card-body">
@@ -36,7 +36,7 @@
                 <div class="col">
                     <div class="card h-100">
                         <div class="brands-logo mx-auto"><img
-                                    src="{{ Vite::asset('resources/images/brands/AMB-logo.webp') }}" class="img-fluid"
+                                    src="{{ Vite::asset('resources/images/brands/AMB-logo.webp') }}" class="img-fluid ratio-3x2"
                                     alt="AMB"></div>
                         <div class="card-body">
                             <h5 class="card-title">AMB</h5>
@@ -61,7 +61,7 @@
                 <div class="col">
                     <div class="card h-100">
                         <div class="brands-logo mx-auto"><img
-                                    src="{{ Vite::asset('resources/images/brands/lakal-logo.webp') }}" class="img-fluid"
+                                    src="{{ Vite::asset('resources/images/brands/lakal-logo.webp') }}" class="img-fluid ratio-3x2"
                                     alt="LAKAL"></div>
                         <div class="card-body">
                             <h5 class="card-title">LAKAL</h5>

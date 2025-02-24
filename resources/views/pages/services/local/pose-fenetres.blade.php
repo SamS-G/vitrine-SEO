@@ -25,7 +25,7 @@
             </div>
             <img
                 src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/services/local/fenetre.webp') : Vite::asset('resources/images/services/local/fenetre.webp')  }}"
-                alt="Pose de fenêtres à {{ $city->name }}" class="img-fluid rounded">
+                alt="Pose de fenêtres à {{ $city->name }}" class="img-fluid rounded ratio-1x1">
         </div>
         <div class="mt-3">
             <h2 class="mt-5">Nos réalisations près de {{ $city->name }}</h2>

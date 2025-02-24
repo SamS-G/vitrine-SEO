@@ -6,7 +6,7 @@
         <div class="row align-items-center mb-5">
             <div class="col-md-4 text-center">
                 <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/portrait.webp') : Vite::asset('resources/images/portrait.webp') }}"
-                     alt="Artisan Menuisier Volets Fenetres Portes" class="img-fluid rounded shadow ">
+                     alt="Artisan Menuisier Volets Fenetres Portes" class="img-fluid rounded shadow ratio-2x3">
             </div>
             <div class="col-md-8">
                 <h1 class="display-5 fw-bold text-center mb-5 bg-white-soft">Votre Expert en Menuiserie</h1>
