@@ -167,7 +167,6 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -183,8 +182,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-=======
-  <component name="PropertiesComponent"><![CDATA[{
+ <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -197,7 +195,6 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
->>>>>>> ebabe58 (rectification chemin vers image, suppression / inutile)
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -359,8 +356,7 @@
       <option name="project" value="LOCAL" />
       <updated>1740223274310</updated>
     </task>
-<<<<<<< HEAD
-    <task id="LOCAL-00014" summary="modif chemin image page services.blade.php">
+   <task id="LOCAL-00014" summary="modif chemin image page services.blade.php">
       <option name="closed" value="true" />
       <created>1740225185027</created>
       <option name="number" value="00014" />
@@ -385,7 +381,7 @@
       <updated>1740225557419</updated>
     </task>
     <option name="localTasksCounter" value="17" />
-=======
+
     <task id="LOCAL-00014" summary="rectification chemin vers image">
       <option name="closed" value="true" />
       <created>1740414067224</created>
@@ -395,7 +391,6 @@
       <updated>1740414067225</updated>
     </task>
     <option name="localTasksCounter" value="15" />
->>>>>>> ebabe58 (rectification chemin vers image, suppression / inutile)
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,14 +422,11 @@
     <MESSAGE value="responsive + jenssegers/agent pour image opti. pour mobile" />
     <MESSAGE value="ajout nouveau seeders pour cities" />
     <MESSAGE value="modif pour prod, url image service, config Vite" />
-<<<<<<< HEAD
     <MESSAGE value="modif chemin image page services.blade.php" />
     <MESSAGE value="modif chemin image page components/service.blade.php" />
     <MESSAGE value="modif chemin image pages services/" />
     <option name="LAST_COMMIT_MESSAGE" value="modif chemin image pages services/" />
-=======
     <MESSAGE value="rectification chemin vers image" />
     <option name="LAST_COMMIT_MESSAGE" value="rectification chemin vers image" />
->>>>>>> ebabe58 (rectification chemin vers image, suppression / inutile)
   </component>
 </project>
