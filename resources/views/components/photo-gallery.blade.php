@@ -30,7 +30,7 @@
                     @foreach($category['photos'] as $photo)
                         <div class="col-md-4 d-flex justify-content-center">
                             <div class="card photo-card position-relative overflow-hidden">
-                                <img src="{{ Vite::asset('resources/images/') . $photo['image'] }}"
+                                <img src="{{ Vite::asset("resources/images/{$photo['image']}") }}"
                                      class="img-fluid w-100 h-100 object-fit-cover"
                                      alt="Photo de {{ $photo['location'] }}">
                                 <div class="photo-overlay d-flex flex-column justify-content-center p-2">
