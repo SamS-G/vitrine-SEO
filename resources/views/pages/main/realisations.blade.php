@@ -7,7 +7,7 @@
         'name' => 'Fenêtres',
         'photos' => [
             [
-                'image' => '/projects-gallery/fenetres/av-ap-fenetre.jpg',
+                'image' => 'projects-gallery/fenetres/av-ap-fenetre.jpg',
                 'location' => 'Sainte-Julie',
                   'description' => "
 <p>Le client désirait remplacer sa porte de garage par un châssis vitré.</p>
@@ -18,7 +18,7 @@ nous concevons un châssis suivant les demandes et les impératifs du client et 
 fermetures 3 points renforcé par la descente du volet roulant</p>"
 ],
 [
-    'image' => '/projects-gallery/fenetres/fenetre-blanche.webp',
+    'image' => 'projects-gallery/fenetres/fenetre-blanche.webp',
     'location' => 'Sainte-Julie',
     'description' =>
     "<p>Le client désirait remplacer sa porte de garage par un châssis vitré.</p>
@@ -33,7 +33,7 @@ nous concevons un châssis suivant les demandes et les impératifs du client et 
         'name' => 'Moustiquaire',
         'photos' => [
             [
-                'image' => '/projects-gallery/moustiquaires/fenetre-anthracite.webp', 'location' => 'Sainte-Julie',
+                'image' => 'projects-gallery/moustiquaires/fenetre-anthracite.webp', 'location' => 'Sainte-Julie',
                  'description' =>
                  "<p>Le client est envahi par les moustiques et ne peuvent plus ouvrir leurs fenêtres.</p>
                  <ul>
@@ -49,7 +49,7 @@ nous concevons un châssis suivant les demandes et les impératifs du client et 
         'name' => 'Multi-Services',
         'photos' => [
             [
-                'image' => '/projects-gallery/moustiquaires/fenetre-anthracite.webp', 'location' => 'Sainte-Julie',
+                'image' => 'projects-gallery/moustiquaires/fenetre-anthracite.webp', 'location' => 'Sainte-Julie',
                  'description' =>
                  "<p>Le client est envahi par les moustiques et ne peuvent plus ouvrir leurs fenêtres.</p>
                  <ul>
@@ -65,7 +65,7 @@ nous concevons un châssis suivant les demandes et les impératifs du client et 
         'name' => 'Porte d\'entrée',
         'photos' => [
             [
-                'image' => '/projects-gallery/moustiquaires/fenetre-anthracite.webp', 'location' => 'Sainte-Julie',
+                'image' => 'projects-gallery/moustiquaires/fenetre-anthracite.webp', 'location' => 'Sainte-Julie',
                  'description' =>
                  "<p>Le client est envahi par les moustiques et ne peuvent plus ouvrir leurs fenêtres.</p>
                  <ul>
@@ -81,7 +81,7 @@ nous concevons un châssis suivant les demandes et les impératifs du client et 
         'name' => 'Porte de garage',
         'photos' => [
             [
-                'image' => '/projects-gallery/moustiquaires/fenetre-anthracite.webp', 'location' => 'Sainte-Julie',
+                'image' => 'projects-gallery/moustiquaires/fenetre-anthracite.webp', 'location' => 'Sainte-Julie',
                  'description' =>
                  "<p>Le client est envahi par les moustiques et ne peuvent plus ouvrir leurs fenêtres.</p>
                  <ul>
@@ -97,7 +97,7 @@ nous concevons un châssis suivant les demandes et les impératifs du client et 
         'name' => 'Revêtement de sol',
         'photos' => [
             [
-                'image' => '/projects-gallery/moustiquaires/fenetre-anthracite.webp', 'location' => 'Sainte-Julie',
+                'image' => 'projects-gallery/moustiquaires/fenetre-anthracite.webp', 'location' => 'Sainte-Julie',
                  'description' =>
                  "<p>Le client est envahi par les moustiques et ne peuvent plus ouvrir leurs fenêtres.</p>
                  <ul>
@@ -113,7 +113,7 @@ nous concevons un châssis suivant les demandes et les impératifs du client et 
         'name' => 'Volets',
         'photos' => [
             [
-                'image' => '/projects-gallery/moustiquaires/fenetre-anthracite.webp', 'location' => 'Sainte-Julie',
+                'image' => 'projects-gallery/moustiquaires/fenetre-anthracite.webp', 'location' => 'Sainte-Julie',
                  'description' =>
                  "<p>Le client est envahi par les moustiques et ne peuvent plus ouvrir leurs fenêtres.</p>
                  <ul>
