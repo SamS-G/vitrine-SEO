@@ -5,7 +5,7 @@
     <!-- Indicateurs -->
     <div class="carousel-indicators">
         @foreach ($reviews['reviews'] as $index => $review)
-            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="{{ $index }}"
+            <button type="button" aria-label="bouton de défilement des images" data-bs-target="#testimonialCarousel" data-bs-slide-to="{{ $index }}"
                     class="{{ $index === 0 ? 'active' : '' }}"></button>
         @endforeach
     </div>
@@ -17,6 +17,7 @@
                 <div class="testimonial text-center p-4 bg-light rounded shadow">
                     <img src="{{ $review['authorAttribution']['photoUri'] ?? 'https://via.placeholder.com/80' }}"
                          alt="Photo de {{ $review['authorAttribution']['displayName'] }}"
+                         loading="lazy"
                          class="rounded-circle mb-3 img-fluid"
                          width="128"
                          height="128"
@@ -39,10 +40,10 @@
     </div>
 
     <!-- Boutons de navigation -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" aria-label="défilement vers la gauche" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
         <i class="fa-solid fa-chevron-left"></i>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" aria-label="défilement vers la droite" data-bs-target="#testimonialCarousel" data-bs-slide="next">
         <i class="fa-solid fa-chevron-right"></i>
     </button>
 </div>

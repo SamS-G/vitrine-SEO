@@ -7,16 +7,16 @@
                 alt="logo"
                 title="logo de JdTravauxServices"
                 width="150"
-                height="150"
+                height="140"
             >
         </a>
         <div class="contact-container">
             <div class="social-container">
                 <ul>
-                    <li><a href="https://www.facebook.com/JDTravauxServices" target="_blank">
+                    <li><a href="https://www.facebook.com/JDTravauxServices" target="_blank" aria-label="vers la page Facebook de Jd travaux service">
                             <i class="fa-brands fa-xl fa-square-facebook"></i></a>
                     </li>
-                    <li><a href="https://www.instagram.com/jdtravaux" target="_blank">
+                    <li><a href="https://www.instagram.com/jdtravaux" target="_blank" aria-label="vers la page Instagram de Jd travaux service">
                             <i class="fa-brands fa-xl fa-instagram"></i></a>
                     </li>
                 </ul>

@@ -14,7 +14,7 @@
     {{-- Services --}}
     <section class="section-wrapper">
         <div class="section-title">
-            <h3 class="h1-xl"><span>S</span>ervices</h3>
+            <h2 class="h1-xl"><span>S</span>ervices</h2>
             <h4 class="h5">Menuiserie, Dépannages, Multi-Services</h4>
         </div>
         <div class="card-group">
@@ -28,8 +28,8 @@
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
                 figcaption="illustration, non disponible à la vente"
-                width="290"
-                height="163"
+                width="604"
+                height="334"
             />
             <x-card
                 title="Portes"
@@ -41,8 +41,8 @@
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
                 figcaption="illustration, non disponible à la vente"
-                width="290"
-                height="163"
+                width="604"
+                height="334"
             />
             <x-card
                 title="Portes de garage"
@@ -54,8 +54,8 @@
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
                 figcaption="illustration, non disponible à la vente"
-                width="290"
-                height="163"
+                width="604"
+                height="334"
             />
             <x-card
                 title="Portails"
@@ -67,8 +67,8 @@
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
                 figcaption="illustration, non disponible à la vente"
-                width="290"
-                height="163"
+                width="604"
+                height="334"
             />
         </div>
         <div class="card-group">
@@ -82,8 +82,8 @@
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
                 figcaption="illustration, non disponible à la vente"
-                width="290"
-                height="163"
+                width="604"
+                height="334"
             />
             <x-card
                 title="Moustiquaires"
@@ -95,8 +95,8 @@
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
                 figcaption="illustration, non disponible à la vente"
-                width="290"
-                height="163"
+                width="604"
+                height="334"
             />
             <x-card
                 title="Dépannage volets"
@@ -108,8 +108,8 @@
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
                 figcaption="illustration, non disponible à la vente"
-                width="290"
-                height="163"
+                width="604"
+                height="334"
             />
             <x-card
                 title="Multi-services"
@@ -121,8 +121,8 @@
                 linkClass="btn btn-sm button"
                 buttonName="d'infos"
                 figcaption="illustration, non disponible à la vente"
-                width="290"
-                height="163"
+                width="604"
+                height="334"
             />
         </div>
     </section>
