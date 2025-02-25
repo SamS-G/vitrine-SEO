@@ -2,8 +2,8 @@
     <img loading="eager" decoding="async" fetchpriority="high"
          src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/home/redHouse.webp') : Vite::asset('resources/images/home/redHouse.webp') }}"
          alt="Une maison à la porte rouge en pierre"
-         width="2533"
-         height="1281"
+         width="1340"
+         height="678"
     >
     <h1 class="hero-title text-center">
         Artisan menuisier en Plaine de l'Ain <br/>
