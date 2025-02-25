@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    {{--    Critical CSS --}}
-    {{--    <style>--}}
-    {{--    </style>--}}
-    {{--  Image lourde du header/hero --}}
-    @if(request()->is('/'))
-        <link rel="preload" as="image" href="http://213.130.144.31/build/assets/redHouse.webp" type="image/webp">
-    @endif
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
     <title>@yield('title', 'Jd Travaux Services')</title>
-    <meta name="description" content="@yield('meta_description', "$base_meta_schema->meta_description")">
-    {{-- FONTS --}}
-    <link rel="preload" href="{{ Vite::asset('resources/fonts/Baloo/Baloo-Regular.ttf') }}" as="font" type="font/woff2"
-          crossorigin="anonymous"/>
-    <link rel="preload" href="{{ Vite::asset('resources/fonts/Playwrite_GB_S/PlaywriteGBS-VariableFont_wght.ttf') }}"
-          as="font" type="font/woff2" crossorigin="anonymous"/>
-    <link rel="icon" type="image/png" href="{{ Vite::asset('resources/images/favicon.png') }}">
-    {{-- CSS différé--}}
-    <link rel="stylesheet" href="{{ Vite::asset('resources/css/app.css') }}" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/app.css') }}">
-    </noscript>
+
+    <!-- ✅ Préchargement des polices -->
+    <link rel="preload" href="{{ Vite::asset('resources/fonts/Baloo/Baloo-Regular.ttf') }}" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="{{ Vite::asset('resources/fonts/Playwrite_GB_S/PlaywriteGBS-VariableFont_wght.ttf') }}" as="font" type="font/ttf" crossorigin="anonymous">
+
+    {{--  Image lourde du header/hero --}}
+    @if(request()->is('/'))
+        <link rel="preload" fetchpriority="high" as="image" href="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/home/redHouse.webp') : Vite::asset('resources/images/home/redHouse.webp') }}" type="image/webp">
+        <link rel="preload" fetchpriority="high" as="image" href="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/logo_small.webp') : Vite::asset('resources/images/logo_small.webp') }}" type="image/webp">
+    @endif
+
+    <!-- ✅ Chargement différé de Bootstrap, FontAwesome et app.css -->
+    @vite(['resources/css/app.css'])
+    <!-- ✅ Déférer les scripts -->
     @vite(['resources/js/app.js'])
-    {{-- Meta générique uniquement --}}
+
+    <meta name="description" content="@yield('meta_description', "$base_meta_schema->meta_description")">
+
+    <!-- ✅ Meta générique -->
     <script type="application/ld+json">
         {!! $base_meta_schema->meta_schema !!}
     </script>
-    {{-- Meta service local --}}
+
+    <!-- ✅ Meta service local -->
     @yield('local_meta_data')
-    <!-- Stack pour ajouter des styles spécifiques à chaque page -->
+
+    <!-- ✅ Stack pour les styles & scripts spécifiques -->
     @stack('styles')
     @stack('scripts')
-
 </head>
 
 <body>
@@ -67,21 +66,3 @@
 
 </body>
 </html>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        let lazyImages = document.querySelectorAll("img.lazy");
-        let observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    let img = entry.target;
-                    img.src = img.dataset.src;
-                    img.classList.remove("lazy");
-                    observer.unobserve(img);
-                }
-            });
-        });
-        lazyImages.forEach(img => {
-            observer.observe(img);
-        });
-    });
-</script>

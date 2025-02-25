@@ -1,3 +1,6 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
 @font-face {
     font-family: 'Baloo';
     src: url('../fonts/Baloo/Baloo-Regular.ttf');
@@ -206,17 +209,6 @@ h5 {
     border: none;
 }
 
-/*@keyframes fadeInSlide {*/
-/*    from {*/
-/*        opacity: 0;*/
-/*        transform: translateY(20px);*/
-/*    }*/
-/*    to {*/
-/*        opacity: 1;*/
-/*        transform: translateY(0);*/
-/*    }*/
-/*}*/
-
 .card h4 {
     text-transform: uppercase;
     padding-top: 1rem;
@@ -378,7 +370,6 @@ header {
     text-shadow: 2px 2px 2px #000000;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 4px #1B000A;
-    /*animation: scaleAnimation 1s ease-in-out 2s infinite alternate; !* Délai de 2s avant démarrage *!*/
 }
 
 .cta-container .cta-button:hover {
@@ -405,24 +396,6 @@ header {
     background-color: #ca0d00;
     border: 1px solid #1B000A;
 }
-
-/*@keyframes scaleAnimation {*/
-/*    from {*/
-/*        h1 {*/
-/*            text-shadow: 2px 2px 2px #000000 !important;*/
-/*        }*/
-
-/*        .nav-link, ul li a i, a, h1, h2 {*/
-/*            color: white !important;*/
-/*            text-shadow: 1px 1px 1px #000000;*/
-/*        }*/
-
-/*        transform: scale(1);*/
-/*    }*/
-/*    to {*/
-/*        transform: scale(1.1);*/
-/*    }*/
-/*}*/
 
 /* HOME BANNER BOTTOM*/
 .bottom-banner {
@@ -603,7 +576,6 @@ footer {
     }
 
     .top-hero-wrapper {
-        margin-top: 3rem;
         padding: 0.8rem 0;
     }
 

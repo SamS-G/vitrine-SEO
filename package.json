@@ -1,0 +1,24 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite"
+    },
+    "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^7.0.2",
+        "autoprefixer": "^10.4.20",
+        "axios": "^1.7.4",
+        "concurrently": "^9.0.1",
+        "laravel-vite-plugin": "^1.2.0",
+        "postcss": "^8.5.3",
+        "postcss-csso": "^6.0.1",
+        "postcss-import": "^16.1.0",
+        "postcss-preset-env": "^10.1.5",
+        "vite": "^6.0.11"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.7.2",
+        "bootstrap": "^5.3.3"
+    }
+}

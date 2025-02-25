@@ -121,29 +121,15 @@
             </div>
         </div>
     @endif
+    @push('styles')
+        <style>
+            span {
+                color: black;
+            }
+        </style>
+    @endpush
+    @push('scripts')
+        <script src="{{ Vite::asset('resources/js/form-validation') }}"></script>
+    @endpush
 
-
-    <style>
-        span {
-            color: black;
-        }
-    </style>
-    <script>
-        (function () {
-            'use strict'
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            const forms = document.querySelectorAll('.needs-validation');
-            // Loop over them and prevent submission
-            Array.prototype.slice.call(forms)
-                .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (!form.checkValidity()) {
-                            event.preventDefault()
-                            event.stopPropagation()
-                        }
-                        form.classList.add('was-validated')
-                    }, false)
-                })
-        })()
-    </script>
 @endsection
