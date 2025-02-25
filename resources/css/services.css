@@ -9,23 +9,6 @@
     text-shadow: 2px 2px 2px #000000;
 }
 
-.btn.btn-sm.service-button, .btn.service-button {
-    box-shadow: 0 2px 3px #1B000A;
-    background-color: #ca0d00;
-    color: white;
-    text-shadow: 2px 2px 2px #000000;
-    font-variation-settings: 'wght' 400;
-    letter-spacing: 1px;
-    transition: transform 0.5s ease-in-out;
-    align-self: flex-start;
-}
-
-.btn.btn-sm.service-button:hover, .btn.service-button:hover {
-    transform: scale(1.1);
-    color: white;
-    background-color: #ca0d00;
-}
-
 .service-card-body {
     display: flex;
     flex-direction: column;

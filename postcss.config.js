@@ -17,15 +17,19 @@ export default {
             ? purgecss({
                 content: [
                     './resources/views/**/*.blade.php',
-                    './resources/css/**/*.css'
+                    './resources/css/**/*.css',
+                    './resources/js/**/*.js',
                 ],
                 safelist: {
                     standard: [
                         'container', 'row', 'col', 'navbar', 'nav', 'btn',
                         'alert', 'card', 'd-flex', 'd-grid', 'text-center',
-                        'text-muted', 'bg-primary', 'text-white'
+                        'text-muted'
                     ],
-                    deep: [/fa-/, /col-/] // Garde Bootstrap Grid et FontAwesome
+                    greedy: [
+                        // ✅ Classes FontAwesome utilisées
+                        /fa-(facebook|square-facebook|instagram|envelope-open-text|mobile-screen-button|envelope|phone|plus|arrow-right|beat|at|flip)/
+                    ]
                 }
             })
             : false

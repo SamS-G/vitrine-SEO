@@ -18,6 +18,15 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    build: {
+        rollupOptions: {
+            output: {
+                manualChunks: {
+                    'bootstrap': ['bootstrap'], // ✅ Sépare Bootstrap JS pour un chargement plus rapide
+                },
+            },
+        },
+    },
     css: {
         postcss: 'postcss.config.js',
     }

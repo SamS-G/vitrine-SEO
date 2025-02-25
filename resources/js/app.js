@@ -4,3 +4,4 @@ import.meta.glob([
 ]);
 
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+
