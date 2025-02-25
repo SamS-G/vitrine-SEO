@@ -62,6 +62,7 @@ button i {
     color: #000000;
     font-size: 2rem;
 }
+
 .btn.btn-sm.service-button, .btn.service-button, .btn.button.service-button, .btn.button {
     box-shadow: 0 2px 3px #1B000A;
     background-color: #ca0d00;
@@ -108,19 +109,16 @@ h5 {
     margin-right: auto;
 }
 
-.section-title h3, .section-title h4 {
+.section-title h3, .section-title h2, .section-title h4 {
     color: #ca0d00;
     text-shadow: 1px 1px 1px #737373;
     line-height: 1.5;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .section-title h4 {
     margin-top: 2rem;
-}
-
-.section-title h3, .section-title h4 {
-    text-align: center;
 }
 
 
@@ -142,7 +140,7 @@ h5 {
     width: 50px;
 }
 
-.section-title h3 span {
+.section-title h2 span, .section-title h3 span {
     color: #212529;
 }
 
@@ -177,6 +175,7 @@ h5 {
     background-color: #ca0d00;
     border: 1px solid #1B000A;
 }
+
 /* NAVBAR */
 .navbar-container {
     background-color: #212529;
@@ -244,8 +243,8 @@ footer {
 
 /* Très petit mobile (ex: iPhone SE) */
 @media (max-width: 480px) {
-    *, .card p, a, p {
-        font-size: 0.8rem;
+    *, .card p, a {
+        font-size: 1rem;
     }
 
     h1 {
@@ -262,7 +261,7 @@ footer {
     }
 
     h5 {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .separator-left, .separator-right {
@@ -270,14 +269,14 @@ footer {
     }
 
     .cta-container a {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 
     .footer-row {
         padding: 2rem 1rem 1rem 1rem;
         display: block;
-        width: 62%;
         margin: 0 auto;
+        text-align: center;
     }
 
     .section-wrapper {
@@ -294,7 +293,7 @@ footer {
     }
 
     .section-title h4 {
-        font-size: 0.9rem;
+        font-size: 1rem;
         padding: 0.2rem 0;
         margin-top: 0;
     }
@@ -318,10 +317,10 @@ footer {
     }
 
     .navbar {
-        position: fixed;
+        position: sticky;
         top: 0;
-        width: 97.5%;
-
+        width: 100%;
+        padding-top: 0;
     }
 
     .navbar-toggler {
@@ -364,12 +363,36 @@ footer {
         width: 50px;
     }
 
-    .bg-white-soft {
-        margin-top: 5rem;
-    }
-
     #prestations-par-ville {
         margin-top: 10vh;
+    }
+
+    footer .row.footer-row div ul li {
+        margin-bottom: 1rem;
+    }
+
+    .bottom-banner, .hero-logo {
+        display: none;
+    }
+
+    .container-fluid.header-container .hero-title.text-center {
+        font-size: 1rem !important;
+    }
+
+    .top-hero-container .top-hero-wrapper {
+        justify-content: center;
+    }
+
+    /*page servies*/
+    ul {
+        padding: 0;
+    }
+    body > main > div > section.row > div > div > div > div.col-md-8 > div > div.d-flex.justify-content-around {
+        flex-direction: column;
+    }
+    body > main > div > section.row > div > div > div > div.col-md-8 > div > div.d-flex.justify-content-around .service-button {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 }
 

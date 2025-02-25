@@ -14,8 +14,8 @@
     {{-- Services --}}
     <section class="section-wrapper">
         <div class="section-title">
-            <h2 class="h1-xl"><span>S</span>ervices</h2>
-            <h4 class="h5">Menuiserie, Dépannages, Multi-Services</h4>
+            <h2><span>S</span>ervices</h2>
+            <h3>Menuiserie, Dépannages, Multi-Services</h3>
         </div>
         <div class="card-group">
             <x-card
@@ -132,8 +132,8 @@
     {{-- Choose me--}}
     <section class="section-wrapper">
         <div class="section-title">
-            <h3 class="h1-xl"><span>P</span>ourquoi choisir <span>JD</span> Travaux Services ?</h3>
-            <h4 class="h5-xl">Votre Artisan de Confiance pour Tous Vos Travaux de Pose et Rénovation</h4>
+            <h3><span>P</span>ourquoi choisir <span>JD</span> Travaux Services ?</h3>
+            <h4>Votre Artisan de Confiance pour Tous Vos Travaux de Pose et Rénovation</h4>
         </div>
         <div class="container">
             <p>
