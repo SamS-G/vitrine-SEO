@@ -7,8 +7,8 @@
     <title>@yield('title', 'Jd Travaux Services')</title>
 
     <!-- ✅ Préchargement des polices -->
-    <link rel="preload" href="{{ Vite::asset('resources/fonts/Baloo/Baloo-Regular.ttf') }}" as="font" type="font/ttf" crossorigin="anonymous">
-    <link rel="preload" href="{{ Vite::asset('resources/fonts/Playwrite_GB_S/PlaywriteGBS-VariableFont_wght.ttf') }}" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="{{ Vite::asset('resources/fonts/Baloo/Baloo-Regular.woff2') }}" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="{{ Vite::asset('resources/fonts/Playwrite_GB_S/PlaywriteGBS-VariableFont_wght.woff2') }}" as="font" type="font/woff2" crossorigin="anonymous">
 
     {{--  Image lourde du header/hero --}}
     @if(request()->is('/'))
@@ -18,7 +18,6 @@
 
     <!-- ✅ Chargement différé de Bootstrap, FontAwesome et app.css -->
     @vite(['resources/css/app.css'])
-    <!-- ✅ Déférer les scripts -->
     @vite(['resources/js/app.js'])
 
     <meta name="description" content="@yield('meta_description', "$base_meta_schema->meta_description")">

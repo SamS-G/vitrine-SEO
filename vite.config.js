@@ -5,10 +5,15 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
-                'resources/js/app.js',
-                'resources/js/leaflet.js', // Compilé mais non chargé globalement
-                'resources/js/area-business-map.js', // Compilé mais non chargé globalement
                 'resources/css/app.css',
+                'resources/css/accueil.css',
+                'resources/css/services.css',
+                'resources/css/photo-gallery.css',
+                'resources/css/zone-intervention.css',
+                'resources/js/app.js',
+                'resources/js/area-business-map.js',
+                'resources/js/form-validation.js',
+                'resources/js/leaflet.js',
             ],
             refresh: true,
         }),

@@ -1,5 +1,25 @@
 @extends('layouts.app')
 @section('title', 'JD Travaux Services')
+
+@push('styles')
+    <style>
+        .card-title.h4.experience-title {
+            color: #ca0d00;
+            text-shadow: 1px 1px 1px #212529;
+        }
+
+        h2 span {
+            color: #212C33
+        }
+
+        .shadow-sm:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+
+@endpush
+
 @section('content')
     <div class="col-8 py-5 mx-auto">
         <!-- Section de présentation -->
@@ -62,18 +82,3 @@
     </div>
 @endsection
 
-<style>
-    .card-title.h4.experience-title {
-        color: #ca0d00;
-        text-shadow: 1px 1px 1px #212529;
-    }
-
-    h2 span {
-        color: #212C33
-    }
-
-    .shadow-sm:hover {
-        transform: scale(1.02);
-        transition: transform 0.3s ease-in-out;
-    }
-</style>

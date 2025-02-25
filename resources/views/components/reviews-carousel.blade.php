@@ -45,13 +45,14 @@
     </button>
 </div>
 
-<style>
-    .testimonial {
-        max-width: 600px;
-        margin: auto;
-    }
-
-    .stars {
-        font-size: 1.2rem;
-    }
-</style>
+@push('styles')
+    <style>
+        .testimonial {
+            max-width: 600px;
+            margin: auto;
+        }
+        .stars {
+            font-size: 1.2rem;
+        }
+    </style>
+@endpush

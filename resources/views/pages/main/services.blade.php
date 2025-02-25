@@ -1,6 +1,10 @@
 @extends('layouts.app')
 @section('title', 'Services - JdServices')
 
+@push('styles')
+    @vite(['resources/css/services.css'])
+@endpush
+
 @section('content')
     <div class="col-10 mx-auto my-5">
         <section>

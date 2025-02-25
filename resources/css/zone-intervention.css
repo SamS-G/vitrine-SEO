@@ -1,0 +1,16 @@
+@import './leaflet.css';
+
+/* ZONE INTERVENTION */
+.brands-logo .card-img-top {
+    height: 70px;
+    object-fit: cover;
+    width: 100%;
+}
+
+#map {
+    height: 70vh;
+}
+
+#prestations-par-ville {
+    margin-top: 10vh;
+}

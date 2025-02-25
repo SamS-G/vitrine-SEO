@@ -1,0 +1,41 @@
+/* SERVICE-PAGE */
+.services-title {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem;
+    border-top: 2px solid #ca0d00;
+    border-bottom: 2px solid #ca0d00;
+    border-radius: 4px;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.btn.btn-sm.service-button, .btn.service-button {
+    box-shadow: 0 2px 3px #1B000A;
+    background-color: #ca0d00;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+    font-variation-settings: 'wght' 400;
+    letter-spacing: 1px;
+    transition: transform 0.5s ease-in-out;
+    align-self: flex-start;
+}
+
+.btn.btn-sm.service-button:hover, .btn.service-button:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: #ca0d00;
+}
+
+.service-card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Remplit toute la hauteur disponible */
+}
+
+.service-card-text {
+    flex-grow: 1; /* Pousse le bouton vers le bas */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #d4edda;
+}

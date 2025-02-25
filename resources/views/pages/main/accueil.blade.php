@@ -1,6 +1,10 @@
 @extends('layouts.app')
 @section('title', 'Accueil - JD Travaux Services')
 
+@push('styles')
+    @vite(['resources/css/accueil.css'])
+@endpush
+
 @section('content')
     <section class="hero">
         <x-hero ctaButton="true"/>

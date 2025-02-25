@@ -1,6 +1,13 @@
 @extends('layouts.app')
-
 @section('title', 'Contactez-nous')
+
+@push('styles')
+    <style>
+        span {
+            color: black;
+        }
+    </style>
+@endpush
 
 @section('content')
     <section>
@@ -121,15 +128,8 @@
             </div>
         </div>
     @endif
-    @push('styles')
-        <style>
-            span {
-                color: black;
-            }
-        </style>
-    @endpush
-    @push('scripts')
-        <script src="{{ Vite::asset('resources/js/form-validation') }}"></script>
-    @endpush
-
 @endsection
+
+@push('scripts')
+    @vite(['resources/js/form-validation.js'])
+@endpush

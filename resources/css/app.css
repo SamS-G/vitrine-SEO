@@ -1,15 +1,15 @@
+@import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 @import 'bootstrap/dist/css/bootstrap.min.css';
-@import '@fortawesome/fontawesome-free/css/all.min.css';
 
 @font-face {
     font-family: 'Baloo';
-    src: url('../fonts/Baloo/Baloo-Regular.ttf');
+    src: url('../fonts/Baloo/Baloo-Regular.woff2') format('woff2');
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Playwrite_GB_S';
-    src: url('../fonts/Playwrite_GB_S/PlaywriteGBS-VariableFont_wght.ttf');
+    src: url('../fonts/Playwrite_GB_S/PlaywriteGBS-VariableFont_wght.woff2') format('woff2');
     font-display: swap;
 }
 
@@ -105,38 +105,7 @@ h5 {
     text-shadow: 2px 2px 2px #000000;
 }
 
-/* SEPARATORS */
-.separator-right, .separator-left, .separator-nav {
-    position: relative;
-    background-color: #fff;
-    padding: 0 0;
-}
-
-.separator-right::after, .separator-left::after, .separator-nav:after {
-    content: "";
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    width: 100%;
-    height: 30px;
-}
-
-.separator-right::after, .separator-nav::after {
-    border-radius: 0 0 10px 0;
-    clip-path: polygon(0 0, 100% 100%, 100% 0);
-    background-color: #ca0d00;
-}
-
-.separator-left::after {
-    border-radius: 0 0 0 10px;
-    clip-path: polygon(0 100%, 100% 0, 0 0);
-    background-color: #212529;
-}
-
-.separator-nav::after {
-    background-color: #212529;
-}
-
+/* SECTIONS */
 .section-title {
     position: relative;
     margin-bottom: 3%;
@@ -145,7 +114,6 @@ h5 {
     margin-right: auto;
 }
 
-/* SECTIONS */
 .section-title h3, .section-title h4 {
     color: #ca0d00;
     text-shadow: 1px 1px 1px #737373;
@@ -198,35 +166,23 @@ h5 {
     text-shadow: 1px 1px 1px #212529;
 }
 
-/* HOME PAGE SERVICE SECTION */
-.card:not(:first-child) {
-    background: #FCFDFF;
-    color: black;
-    padding-left: 1rem;
+.card-body .button, .btn.btn-sm.button.text-uppercase, .cta-container .cta-button {
+    background-color: #ca0d00;
+    border: 1px solid #1B000A;
+    color: #FFFFFE;
 }
 
-.card-group .card {
-    border: none;
+.button i {
+    color: #FFFFFE;
 }
 
-.card h4 {
-    text-transform: uppercase;
-    padding-top: 1rem;
-    font-family: Baloo, serif;
-    font-weight: 600;
-    color: #212C33;
+.card-body .button:hover {
+    transform: scale(1.01);
+    box-shadow: 0 2px 3px #1B000A;
+    color: white;
+    background-color: #ca0d00;
+    border: 1px solid #1B000A;
 }
-
-.card p {
-    font-size: 1.1rem;
-    color: #212C33;
-}
-
-.card-group {
-    margin-top: 2vh;
-}
-
-
 /* NAVBAR */
 .navbar-container {
     background-color: #212529;
@@ -273,199 +229,6 @@ body header nav .navbar-dark {
     font-variation-settings: 'wght' 400;
     color: #6c9e6f;
     text-shadow: none;
-}
-
-/* HEADER */
-header {
-    position: sticky;
-    top: 0; /* Important : définit à partir d'où la navbar devient sticky */
-    z-index: 1000;
-}
-
-
-/*TOP BANNER */
-.hero-title {
-    flex-grow: 1; /* Important : permet au titre de grandir */
-    display: flex; /* Pour centrer le texte à l'intérieur du titre */
-    justify-content: center; /* Centre verticalement le texte */
-    align-items: center; /* Centre horizontalement le texte */
-}
-
-.top-hero-container {
-    position: relative; /* Pour positionner top-hero-wrapper */
-    display: flex;
-    flex-direction: column; /* H1 en haut, wrapper en bas */
-
-}
-
-.top-hero-wrapper {
-    display: flex;
-    align-items: center; /* Centrage vertical */
-    justify-content: space-between; /* Répartir les éléments sur la largeur */
-    position: relative; /* Permet de positionner le h2 absolument */
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 4px 4px 0 0;
-}
-
-.hero-logo {
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-
-}
-
-.hero-logo img {
-    border-radius: 2%;
-}
-
-.top-hero-wrapper h2 {
-    position: absolute; /* On le sort du flux normal */
-    left: 50%; /* Déplacer à 50% du conteneur */
-    transform: translateX(-50%); /* Centrer parfaitement */
-    margin: 0;
-}
-
-.social-container ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Aligner à droite */
-    margin: 0;
-    padding: 0;
-}
-
-.social-container li, .contact-container a {
-    /*margin-bottom: 2vh; !* Espacement entre les icônes et liens *!*/
-    list-style: none;
-}
-
-.contact-container {
-    display: flex;
-    padding-right: 1rem;
-    line-height: 2rem;
-}
-
-.mail-phone-wrapper {
-    display: flex;
-    flex-direction: column; /* Eléments l'un au-dessus de l'autre */
-    align-items: baseline;
-    margin-left: 1rem;
-}
-
-.mail-phone-wrapper a {
-    color: white;
-    text-shadow: 2px 2px 2px #000000;
-}
-
-.cta-container {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* BUTTONS */
-.cta-button {
-    color: white;
-    text-shadow: 2px 2px 2px #000000;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 4px #1B000A;
-}
-
-.cta-container .cta-button:hover {
-    box-shadow: 0 2px 3px #1B000A;
-    color: white;
-    background-color: green;
-    border: 1px solid darkgreen;
-}
-
-.card-body .button, .btn.btn-sm.button.text-uppercase, .cta-container .cta-button {
-    background-color: #ca0d00;
-    border: 1px solid #1B000A;
-    color: #FFFFFE;
-}
-
-.button i {
-    color: #FFFFFE;
-}
-
-.card-body .button:hover {
-    transform: scale(1.01);
-    box-shadow: 0 2px 3px #1B000A;
-    color: white;
-    background-color: #ca0d00;
-    border: 1px solid #1B000A;
-}
-
-/* HOME BANNER BOTTOM*/
-.bottom-banner {
-    overflow: hidden; /* Cache le dépassement */
-    background-color: rgba(0, 0, 0, 0.8) !important;
-}
-
-.banner-bottom {
-    width: 100%;
-}
-
-.bottom-banner img {
-    object-fit: contain;
-}
-
-/* SERVICE-PAGE */
-.services-title {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 0.5rem;
-    border-top: 2px solid #ca0d00;
-    border-bottom: 2px solid #ca0d00;
-    border-radius: 4px;
-    text-shadow: 2px 2px 2px #000000;
-}
-
-.btn.btn-sm.service-button, .btn.service-button {
-    box-shadow: 0 2px 3px #1B000A;
-    background-color: #ca0d00;
-    color: white;
-    text-shadow: 2px 2px 2px #000000;
-    font-variation-settings: 'wght' 400;
-    letter-spacing: 1px;
-    transition: transform 0.5s ease-in-out;
-    align-self: flex-start;
-}
-
-.btn.btn-sm.service-button:hover, .btn.service-button:hover {
-    transform: scale(1.1);
-    color: white;
-    background-color: #ca0d00;
-}
-
-.service-card-body {
-    display: flex;
-    flex-direction: column;
-    height: 100%; /* Remplit toute la hauteur disponible */
-}
-
-.service-card-text {
-    flex-grow: 1; /* Pousse le bouton vers le bas */
-}
-
-.accordion-button:not(.collapsed) {
-    background-color: #d4edda;
-}
-
-/* ZONE INTERVENTION */
-.brands-logo .card-img-top {
-    height: 70px;
-    object-fit: cover;
-    width: 100%;
-}
-
-#map {
-    height: 70vh;
-}
-
-#prestations-par-ville {
-    margin-top: 10vh;
 }
 
 /* FOOTER */

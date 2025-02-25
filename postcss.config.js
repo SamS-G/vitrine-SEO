@@ -17,7 +17,6 @@ export default {
             ? purgecss({
                 content: [
                     './resources/views/**/*.blade.php',
-                    './resources/js/**/*.vue',
                     './resources/css/**/*.css'
                 ],
                 safelist: {

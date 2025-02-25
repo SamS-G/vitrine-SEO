@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Marques - JD Travaux Services')
+
 @section('content')
     <section>
         <div class="container py-5">

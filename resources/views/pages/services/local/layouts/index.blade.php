@@ -1,7 +1,7 @@
 @extends('layouts.app')
+
 @push('styles')
-    {{--  Impossible à compiler avec Vite => fichier vide en js...  --}}
-    <link rel="stylesheet" href="{{ asset('css/leaflet.css') }}">
+   @vite(['resources/css/zone-intervention.css'])
 @endpush
 
 @push('scripts')
