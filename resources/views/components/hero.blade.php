@@ -1,5 +1,5 @@
 <div class="container-fluid header-container">
-    <img loading="lazy" decoding="async" fetchpriority="high" src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/home/redHouse.webp') : Vite::asset('resources/images/home/redHouse.webp') }}" alt="Une maison à la porte rouge en pierre" class="ratio-3x2">
+    <img loading="eager" decoding="async" fetchpriority="high" src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/home/redHouse.webp') : Vite::asset('resources/images/home/redHouse.webp') }}" alt="Une maison à la porte rouge en pierre" class="ratio-3x2">
     <h1 class="hero-title text-center">
         Artisan menuisier en Plaine de l'Ain <br/>
         Spécialiste en réparation et pose de volets roulants et moustiquaires, <br/>
