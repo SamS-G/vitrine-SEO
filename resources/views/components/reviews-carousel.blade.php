@@ -17,7 +17,9 @@
                 <div class="testimonial text-center p-4 bg-light rounded shadow">
                     <img src="{{ $review['authorAttribution']['photoUri'] ?? 'https://via.placeholder.com/80' }}"
                          alt="Photo de {{ $review['authorAttribution']['displayName'] }}"
-                         class="rounded-circle mb-3 img-fluid ratio-1x1"
+                         class="rounded-circle mb-3 img-fluid"
+                         width="128"
+                         height="128"
                          >
                     <h5 class="pb-3">{{ $review['authorAttribution']['displayName'] }}</h5>
                     <small><em>{{ Carbon::parse($review['publishTime'])->locale('fr')->translatedFormat('j F Y') }}</em></small>

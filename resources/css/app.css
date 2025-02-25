@@ -16,30 +16,6 @@
 }
 
 /* COMMUN */
-.ratio-3x1 {
-    height: auto;
-    aspect-ratio: 3 / 1;
-}
-
-.ratio-3x2 {
-    height: auto;
-    aspect-ratio: 3 / 2;
-}
-
-.ratio-3x4 {
-    height: auto;
-    aspect-ratio: 3 / 4;
-}
-
-.ratio-1x1 {
-    height: auto;
-    aspect-ratio: 1 / 1;
-}
-
-.ratio-2x3 {
-    height: auto;
-    aspect-ratio: 2 / 3
-}
 
 html {
     padding: 1px 5px;

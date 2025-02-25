@@ -2,8 +2,13 @@
     <div class="top-hero-wrapper">
         <!-- Logo à gauche -->
         <a class="img-fluid hero-logo" href="{{ url('/') }}">
-            <img src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/logo_small.webp') : Vite::asset('resources/images/logo_small.webp') }}"
-                 alt="logo" title="logo de JdTravauxServices" class="ratio-3x2">
+            <img
+                src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/logo_small.webp') : Vite::asset('resources/images/logo_small.webp') }}"
+                alt="logo"
+                title="logo de JdTravauxServices"
+                width="150"
+                height="150"
+            >
         </a>
         <div class="contact-container">
             <div class="social-container">

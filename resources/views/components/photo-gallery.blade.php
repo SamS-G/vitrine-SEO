@@ -13,7 +13,7 @@
     <!-- Catégories -->
     <ul class="nav nav-pills mb-3" id="categoryTabs" role="tablist">
         @foreach($categories as $key => $category)
-            <li class="nav-item mb-4" role="presentation">
+            <li class="nav-item mb-4 mx-2" role="presentation">
                 <button class="nav-link gallery-button @if($loop->first) active @endif" id="tab-{{ $key }}"
                         data-bs-toggle="pill" data-bs-target="#category-{{ $key }}" type="button" role="tab">
                     {{ $category['name'] }}
@@ -32,7 +32,10 @@
                             <div class="card photo-card position-relative overflow-hidden">
                                 <img src="{{ Vite::asset("resources/images/{$photo['image']}") }}"
                                      class="img-fluid w-100 h-100 object-fit-cover"
-                                     alt="Photo de {{ $photo['location'] }}">
+                                     alt="Photo de {{ $photo['location'] }}"
+                                     width="419"
+                                     height="462"
+                                >
                                 <div class="photo-overlay d-flex flex-column justify-content-center p-2">
                                     <h5 class="text-white fw-bold text-center">{{ $photo['location'] }}</h5>
                                     {!! $photo['description'] !!}

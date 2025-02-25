@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @push('styles')
-   @vite(['resources/css/zone-intervention.css'])
+    @vite(['resources/css/zone-intervention.css'])
 @endpush
 
 @push('scripts')
@@ -56,7 +56,11 @@
                         <img
                             src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/amberieux.webp') : Vite::asset('resources/images/cities/amberieux.webp') }}"
                             class="card-img-top"
-                            alt="Fenêtres, portes, volet posés à Ambérieu-en-Bugey">
+                            alt="Fenêtres, portes, volet posés à Ambérieu-en-Bugey"
+                            title="Fenêtres, portes, volet posés à Ambérieu-en-Bugey"
+                            width="190"
+                            height="70"
+                        >
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Ambérieux-en-Bugey</u></h5>
@@ -82,7 +86,11 @@
                         <img
                             src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/meximieux.webp') : Vite::asset('resources/images/cities/meximieux.webp') }}"
                             class="card-img-top bg-secondary"
-                            alt="Fenêtres, portes, volet posés et installés à Meximieux">
+                            alt="Fenêtres, portes, volet posés et installés à Meximieux"
+                            title="Fenêtres, portes, volet posés et installés à Meximieux"
+                            width="190"
+                            height="70"
+                        >
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Meximieux</u></h5>
@@ -108,7 +116,11 @@
                         <img
                             src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/lagnieux.webp') : Vite::asset('resources/images/cities/lagnieux.webp') }}"
                             class="card-img-top"
-                            alt="Fenêtres, portes, volet posés et installés à Lagnieu">
+                            alt="Fenêtres, portes, volet posés et installés à Lagnieu"
+                            title="Fenêtres, portes, volet posés et installés à Lagnieu"
+                            width="190"
+                            height="70"
+                        >
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Lagnieu</u></h5>
@@ -138,8 +150,16 @@
                             class="card-img-top w-75"
 =======
                             class="card-img-top"
+<<<<<<< HEAD
 >>>>>>> a09fda5 (optimisation chargement css et format iamges)
                             alt="Fenêtres, portes, volet posés et installés à Dagneux">
+=======
+                            alt="Fenêtres, portes, volet posés et installés à Dagneux"
+                            title="Fenêtres, portes, volet posés et installés à Dagneux"
+                            width="190"
+                            height="70"
+                        >
+>>>>>>> 8e2bac0 (ajout taille images)
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Dagneux</u></h5>
@@ -164,7 +184,11 @@
                         <img
                             src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/leyment.webp') : Vite::asset('resources/images/cities/leyment.webp') }}"
                             class="card-img-top"
-                            alt="Fenêtres, portes, volet posés et installés à Leyment">
+                            alt="Fenêtres, portes, volet posés et installés à Leyment"
+                            title="Fenêtres, portes, volet posés et installés à Leyment"
+                            width="190"
+                            height="70"
+                        >
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Leyment</u></h5>
@@ -189,7 +213,11 @@
                         <img
                             src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/beynost.webp') : Vite::asset('resources/images/cities/beynost.webp') }}"
                             class="card-img-top"
-                            alt="Fenêtres, portes, volet posés et installés à Beynost">
+                            alt="Fenêtres, portes, volet posés et installés à Beynost"
+                            title="Fenêtres, portes, volet posés et installés à Beynost"
+                            width="190"
+                            height="70"
+                        >
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Beynost</u></h5>
@@ -203,9 +231,15 @@
 =======
                         <p class="card-text">Retrouvez toutes les prestations réalisables en menuiserie, pose de
                             revêtements de sol dans la commune de <em>Beynost.</em></p>
+<<<<<<< HEAD
 >>>>>>> a09fda5 (optimisation chargement css et format iamges)
                         <a href="{{ url('/prestations-beynost') }}" role="button" class="btn mx-auto mt-auto button">Voir
                             les services</a>
+=======
+                        <a href="{{ url('/prestations-beynost') }}" role="button" class="btn mx-auto mt-auto button">
+                            Voir les services
+                        </a>
+>>>>>>> 8e2bac0 (ajout taille images)
                     </div>
                 </div>
             </div>
@@ -215,7 +249,11 @@
                         <img
                             src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/miribel.webp') : Vite::asset('resources/images/cities/miribel.webp') }}"
                             class="card-img-top"
-                            alt="Fenêtres, portes, volet posés et installés à Miribel">
+                            alt="Fenêtres, portes, volet posés et installés à Miribel"
+                            title="Fenêtres, portes, volet posés et installés à Miribel"
+                            width="190"
+                            height="70"
+                        >
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Miribel</u></h5>
@@ -242,7 +280,11 @@
                         <img
                             src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/montluel.webp') : Vite::asset('resources/images/cities/montluel.webp') }}"
                             class="card-img-top"
-                            alt="Fenêtres, portes, volet posés et installés à Montluel">
+                            alt="Fenêtres, portes, volet posés et installés à Montluel"
+                            title="Fenêtres, portes, volet posés et installés à Montluel"
+                            width="190"
+                            height="70"
+                        >
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Montluel</u></h5>
@@ -267,7 +309,11 @@
                         <img
                             src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/tramoyes.webp') : Vite::asset('resources/images/cities/tramoyes.webp') }}"
                             class="card-img-top"
-                            alt="Fenêtres, portes, volet posés et installés à Tramoyes">
+                            alt="Fenêtres, portes, volet posés et installés à Tramoyes"
+                            title="Fenêtres, portes, volet posés et installés à Tramoyes"
+                            width="190"
+                            height="70"
+                        >
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Tramoyes</u></h5>
@@ -293,7 +339,11 @@
                         <img
                             src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/perouges.webp') : Vite::asset('resources/images/cities/perouges.webp') }}"
                             class="card-img-top"
-                            alt="Fenêtres, portes, volet posés et installés à Perouges">
+                            alt="Fenêtres, portes, volet posés et installés à Perouges"
+                            title="Fenêtres, portes, volet posés et installés à Perouges"
+                            width="190"
+                            height="70"
+                        >
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Pérouges</u></h5>
@@ -316,7 +366,11 @@
                         <img
                             src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/charnoz.webp') : Vite::asset('resources/images/cities/charnoz.webp') }}"
                             class="card-img-top"
-                            alt="Fenêtres, portes, volet posés et installés à Charnoz-sur-Ain">
+                            alt="Fenêtres, portes, volet posés et installés à Charnoz-sur-Ain"
+                            title="Fenêtres, portes, volet posés et installés à Charnoz-sur-Ain"
+                            width="190"
+                            height="70"
+                        >
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Charnoz-sur-Ain</u></h5>
@@ -333,8 +387,9 @@
                             revêtements de sol dans la commune de <em>Charnoz-sur-Ain</em>.</p>
 >>>>>>> a09fda5 (optimisation chargement css et format iamges)
                         <a href="{{ url('/prestations-charnoz-sur-Ain') }}" role="button"
-                           class="btn mx-auto mt-auto button">Voir
-                            les services</a>
+                           class="btn mx-auto mt-auto button">
+                            Voir les services
+                        </a>
                     </div>
                 </div>
             </div>
@@ -344,7 +399,11 @@
                         <img
                             src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/sainte-julie.webp') : Vite::asset('resources/images/cities/sainte-julie.webp') }}"
                             class="card-img-top"
-                            alt="Fenêtres, portes, volet posés et installés à Sainte-Julie">
+                            alt="Fenêtres, portes, volet posés et installés à Sainte-Julie"
+                            title="Fenêtres, portes, volet posés et installés à Sainte-Julie"
+                            width="190"
+                            height="70"
+                        >
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Sainte-Julie</u></h5>
@@ -370,7 +429,10 @@
                         <img
                             src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/chazey-sur-ain.webp') : Vite::asset('resources/images/cities/chazey-sur-ain.webp') }}"
                             class="card-img-top"
-                            alt="Fenêtres, portes, volet posés et installés à Chazey-sur-Ain">
+                            alt="Fenêtres, portes, volet posés et installés à Chazey-sur-Ain"
+                            title="Fenêtres, portes, volet posés et installés à Chazey-sur-Ain"
+                            width="190"
+                            height="70">
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Chazey-sur-Ain</u></h5>
@@ -396,7 +458,11 @@
                         <img
                             src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/villieu-loyes-mollon.webp') : Vite::asset('resources/images/cities/villieu-loyes-mollon.webp') }}"
                             class="card-img-top"
-                            alt="Fenêtres, portes, volet posés et installés à Villieu-Loyes-Mollon">
+                            alt="Fenêtres, portes, volet posés et installés à Villieu-Loyes-Mollon"
+                            title="Fenêtres, portes, volet posés et installés à Villieu-Loyes-Mollon"
+                            width="190"
+                            height="70"
+                        >
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Vilieu-Loyes-Mollon</u></h5>
@@ -412,8 +478,9 @@
                             revêtements de sol dans la commune de <em>Vilieu-Loyes-Mollon</em>.</p>
 >>>>>>> a09fda5 (optimisation chargement css et format iamges)
                         <a href="{{ url('/prestations-vilieu-loyes-mollon') }}" role="button"
-                           class="btn mx-auto mt-auto button">Voir
-                            les services</a>
+                           class="btn mx-auto mt-auto button">
+                            Voir les services
+                        </a>
                     </div>
                 </div>
             </div>
@@ -423,7 +490,11 @@
                         <img
                             src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/cities/les-grottes-la-balme.webp') : Vite::asset('resources/images/cities/les-grottes-la-balme.webp') }}"
                             class="card-img-top"
-                            alt="Fenêtres, portes, volet posés et installés aux Grottes-la-Balme">
+                            alt="Fenêtres, portes, volet posés et installés aux Grottes-la-Balme"
+                            title="Fenêtres, portes, volet posés et installés aux Grottes-la-Balme"
+                            width="190"
+                            height="70"
+                        >
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Les-Grottes-la-Balme</u></h5>
