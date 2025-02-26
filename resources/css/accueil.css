@@ -26,14 +26,6 @@
     margin-top: 2vh;
 }
 
-/* HEADER */
-header {
-    position: sticky;
-    top: 0; /* Important : définit à partir d'où la navbar devient sticky */
-    z-index: 1000;
-}
-
-
 /*TOP BANNER */
 .hero-title {
     flex-grow: 1; /* Important : permet au titre de grandir */
@@ -75,6 +67,7 @@ header {
     left: 50%; /* Déplacer à 50% du conteneur */
     transform: translateX(-50%); /* Centrer parfaitement */
     margin: 0;
+    width: 100%;
 }
 
 .social-container ul {
@@ -116,19 +109,28 @@ header {
 }
 
 /* BUTTONS */
+body > main > section.hero > div > a {
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+}
+
 .cta-button {
     color: white;
     text-shadow: 2px 2px 2px #000000;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 4px #1B000A;
+    background-color: #ca0d00;
+    border: 1px solid #1b000a;
 }
 
-.cta-container .cta-button:hover {
+.cta-button:hover {
     box-shadow: 0 2px 3px #1B000A;
     color: white;
     background-color: green;
     border: 1px solid darkgreen;
 }
+
 /* HOME BANNER BOTTOM*/
 .bottom-banner {
     overflow: hidden; /* Cache le dépassement */
@@ -142,6 +144,7 @@ header {
 .bottom-banner img {
     object-fit: contain;
 }
+
 /* SEPARATORS */
 .separator-right, .separator-left, .separator-nav {
     position: relative;

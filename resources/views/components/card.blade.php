@@ -1,3 +1,18 @@
+@push('styles')
+    <style>
+        .card {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card .text-center {
+            margin-top: auto;
+        }
+
+    </style>
+@endpush
+
 <div class="card">
     <img
         class="img-fluid {{ $imgClass }}"

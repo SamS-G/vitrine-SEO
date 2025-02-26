@@ -132,8 +132,8 @@
     {{-- Choose me--}}
     <section class="section-wrapper">
         <div class="section-title">
-            <h3><span>P</span>ourquoi choisir <span>JD</span> Travaux Services ?</h3>
-            <h4>Votre Artisan de Confiance pour Tous Vos Travaux de Pose et Rénovation</h4>
+            <h2><span>P</span>ourquoi choisir <span>JD</span> Travaux Services ?</h2>
+            <h3>Votre Artisan de Confiance pour Tous Vos Travaux de Pose et Rénovation</h3>
         </div>
         <div class="container">
             <p>
@@ -168,8 +168,8 @@
     {{-- Reviews --}}
     <section class="section-wrapper">
         <div class="section-title">
-            <h3 class="h1-xl"><span>C</span>e qu'en disent nos <span>C</span>lients</h3>
-            <h4 class="h5-xl">Nos avis</h4>
+            <h2 class="h1-xl"><span>C</span>e qu'en disent nos <span>C</span>lients</h2>
+            <h3 class="h5-xl">Nos avis</h3>
         </div>
         <x-reviews-carousel
             :reviews="$reviews"

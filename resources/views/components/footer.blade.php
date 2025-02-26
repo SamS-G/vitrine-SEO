@@ -4,7 +4,7 @@
             <div class="col-md-3">
                 <h5>📍 Coordonnées</h5>
                 <ul class="list-unstyled">
-                    <li>JD Travaux Services - Plaine de l'Ain</li>
+                    <li><em>JD Travaux Services - Plaine de l'Ain</em></li>
                     <li><i class="fas fa-phone"></i> <a href="tel:0689442815" class="text-light text-decoration-none">06 89 44 28 15</a></li>
                     <li><i class="fas fa-envelope"></i> <a href="mailto:jdtravauxservices@gmail.com" class="text-light text-decoration-none">jdtravauxservices@gmail.com</a></li>
                 </ul>
