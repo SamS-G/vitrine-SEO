@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d1df957-50df-4c44-a6f6-7ede6cea1e40" name="Changes" comment="modif pour prod, url image service, config Vite">
+      <change afterPath="$PROJECT_DIR$/resources/images/cities/loyettes.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/cities/saint-andre.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/cities/saint-vulbas.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/cities/villars-les-dombes.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/responsive/cities/loyettes.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/responsive/cities/saint-andre.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/responsive/cities/saint-vulbas.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/images/responsive/cities/villars-les-dombes.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/main/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/main/services.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/services/local/layouts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/services/local/layouts/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +179,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;complete-contenu-pages&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/samuel/PhpstormProjects/jdTravauxServices/resources/images/services/local&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -373,6 +381,7 @@
     <MESSAGE value="responsive + jenssegers/agent pour image opti. pour mobile" />
     <MESSAGE value="ajout nouveau seeders pour cities" />
     <MESSAGE value="modif pour prod, url image service, config Vite" />
-    <option name="LAST_COMMIT_MESSAGE" value="modif pour prod, url image service, config Vite" />
+    <MESSAGE value="responsive tablette" />
+    <option name="LAST_COMMIT_MESSAGE" value="responsive tablette" />
   </component>
 </project>
