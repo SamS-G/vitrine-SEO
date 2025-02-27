@@ -4,6 +4,6 @@
 @section('content')
     <x-prestations-par-ville
         :ville="$ville"
-        :prestations="$prestations"
+        :prestations="$services"
     />
 @endsection

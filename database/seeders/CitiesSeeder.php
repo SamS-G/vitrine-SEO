@@ -190,6 +190,54 @@ class CitiesSeeder extends Seeder
                     'place-3' => "Route de Hières-sur-Amby"
                 ])
             ],
+            [
+                'slug' => 'loyettes',
+                'name' => 'Loyettes',
+                'postal_code' => '01360',
+                'latitude' => 45.766667,
+                'longitude' => 5.200000,
+                'landmarks' => json_encode([
+                    'place-1' => "Rue de la Mairie",
+                    'place-2' => "Rue du Rhône",
+                    'place-3' => "Route de l'Eglise"
+                ])
+            ],
+            [
+                'slug' => 'saint-vulbas',
+                'name' => 'Saint-Vulbas',
+                'postal_code' => '01150',
+                'latitude' => 45.833328,
+                'longitude' => 5.28333,
+                'landmarks' => json_encode([
+                    'place-1' => "Rue de la Plaine",
+                    'place-2' => "Rue du Bugey",
+                    'place-3' => "Route des Ecoles"
+                ])
+            ],
+            [
+                'slug' => 'saint-andre-de-corcy',
+                'name' => 'Saint-André-de-Corcy',
+                'postal_code' => '01390',
+                'latitude' => 45.9263,
+                'longitude' => 4.9477,
+                'landmarks' => json_encode([
+                    'place-1' => "Le Bourg",
+                    'place-2' => "Route de Civrieux",
+                    'place-3' => "Route de Tramoyes"
+                ])
+            ],
+            [
+                'slug' => 'villars-les-dombes',
+                'name' => 'Villars-les Dombes',
+                'postal_code' => '01330',
+                'latitude' => 45.9875,
+                'longitude' => 5.0560,
+                'landmarks' => json_encode([
+                    'place-1' => "Rue de la Mairie",
+                    'place-2' => "Rue du Parc",
+                    'place-3' => "Rue Pasteur"
+                ])
+            ],
         ]);
     }
 }

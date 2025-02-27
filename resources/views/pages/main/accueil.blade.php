@@ -126,7 +126,6 @@
             />
         </div>
     </section>
-
     <div class="separator-right"></div>
     <div class="separator-left"></div>
     {{-- Choose me--}}
@@ -138,11 +137,11 @@
         <div class="container">
             <p>
                 Lorsqu’il s’agit d’améliorer votre habitat, faire appel à un artisan qualifié et de confiance est
-                essentiel. Chez JD Travaux Services, nous vous garantissons un accompagnement sur-mesure du début à la
+                essentiel. Avec JD Travaux Services, je vous garanti un accompagnement sur-mesure du début à la
                 fin de votre projet. <br/>
                 Que ce soit pour la pose de fenêtres, de portes d’entrée, de portails, de revêtements de sol, de
-                moustiquaires ou encore des travaux de rénovation du bâtiment, nous mettons notre savoir-faire artisanal
-                et notre engagement client au cœur de chaque intervention.
+                moustiquaires ou encore des travaux de rénovation du bâtiment, je met mon savoir-faire artisanal
+                et mon engagement client au cœur de chaque intervention.
             </p>
             <h3>Un Seul Interlocuteur du Devis à la Pose – Un Service 100% Personnalisé</h3>
             <p>Contrairement aux grandes enseignes où les interlocuteurs se multiplient, JD Travaux Services vous assure
@@ -153,7 +152,6 @@
                 </li>
                 <li>✅ Un engagement qualité, de la sélection des matériaux à la finition parfaite.</li>
             </ul>
-
             <div class="cta-container mt-4">
                 <a href="{{ route('contact') }}" class="btn btn-md cta-button text-uppercase">
                     <i class="fa-regular fa-envelope"></i> Demander mon devis
@@ -162,20 +160,24 @@
 
         </div>
     </section>
-
     <div class="separator-left"></div>
     <div class="separator-right"></div>
     {{-- Reviews --}}
     <section class="section-wrapper">
         <div class="section-title">
-            <h2 class="h1-xl"><span>C</span>e qu'en disent nos <span>C</span>lients</h2>
-            <h3 class="h5-xl">Nos avis</h3>
+            <h2 class="h1-xl"><span>C</span>e qu'en disent mes <span>C</span>lients</h2>
+            <h3 class="h5-xl">Les avis</h3>
         </div>
         <x-reviews-carousel
             :reviews="$reviews"
         />
+        <h4 class="text-center mt-5">
+            Vous souhaitez laisser un avis ? 🌟🌟🌟🌟🌟
+            <a href="https://g.page/r/Cd4ZmtHkK5czEBM/review" target="_blank">
+                <strong><span class="text-primary">c'est par ici</span> ➡️</strong>
+            </a>
+        </h4>
     </section>
-
     <div class="separator-right"></div>
     <div class="separator-left"></div>
     {{-- Bottom banner--}}

@@ -3,6 +3,7 @@
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LocalServicesController;
+use App\Http\Middleware\FixTypeAndVille;
 use App\Models\City;
 use App\Models\Service;
 use Illuminate\Support\Facades\Response;
@@ -33,7 +34,7 @@ $exceptions = [
     'reparation-volets-roulants',
     'travaux-batiment'
 ];
-// 🔹 Génération dynamique des routes statiques
+// Génération dynamique des routes statiques
 foreach ($services as $service) {
     Route::view("/services/pose-$service", "pages.services.pose-$service")
         ->name("services.pose-$service");
@@ -42,26 +43,14 @@ foreach ($exceptions as $exception) {
     Route::view("/services/$exception", "pages.services.$exception")
         ->name("services.$exception");
 }
-// ROUTES LOCALES DES SERVICES AVEC DYNAMIC META-DATAS
-Route::get('services/pose-{type}-{ville}', [LocalServicesController::class, 'showService'])
-    ->where([
-        'type' => '[a-zA-Z-]+',
-        'ville' => '[a-zA-Z-]+'
-    ])
-    ->name('services.local');
-// ✅ Route alternative pour `/services/{type}-{ville}` (ex: depannage-volets-lagnieu)
-Route::get('services/{type}-{ville}', [LocalServicesController::class, 'showService'])
-    ->where([
-        'type' => 'depannage-[a-zA-Z-]+|reparation|travaux-[a-zA-Z-]+',
-        'ville' => '[a-zA-Z-]+'
-    ])
-    ->name('services.local.alt');
 
+// ROUTES LOCALES DES SERVICES AVEC DYNAMIC META-DATAS
+Route::get('services/{type}-{ville}', [LocalServicesController::class, 'showService'])
+    ->middleware(FixTypeAndVille::class)
+    ->name('services.local');
+
+// Index des Services par ville
 Route::get('prestations-{ville}', [LocalServicesController::class, 'showCityServices']);
-// ✅ Gestion des erreurs 404
-Route::fallback(function () {
-    return response()->view('pages.404', [], 404);
-});
 
 //ENVOI DU FORMULAIRE DE CONTACT
 Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
@@ -80,11 +69,12 @@ Route::get('/sitemap.xml', function () {
         ['loc' => url('/plan-site'), 'priority' => '0.7'],
     ];
 
-    // Ajoute le sitemap des pages locales
+// Ajoute le sitemap des pages locales
     $routes[] = ['loc' => url('/sitemap-local.xml'), 'priority' => '0.9'];
 
     return response()->view('sitemap.global', compact('routes'))->header('Content-Type', 'application/xml');
 });
+
 // SITEMAP LOCAL
 Route::get('/sitemap-local.xml', function () {
     $services = Service::all();
@@ -103,6 +93,9 @@ Route::get('/sitemap-local.xml', function () {
     return Response::view('sitemap.local', compact('routes'))->header('Content-Type', 'application/xml');
 });
 
-
+// ✅ Gestion des erreurs 404
+Route::fallback(function () {
+    return response()->view('pages.404', [], 404);
+});
 
 

@@ -13,11 +13,11 @@
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card shadow-lg border-0 text-center">
                     <div class="card-body">
-                        <h2 class="card-title text-dark fw-bold h4">{{ $prestation['title'] }}</h2>
+                        <h2 class="card-title text-dark fw-bold h4">{{ $prestation->name }}</h2>
                         <p class="card-text text-muted">
-                            {{ $prestation['description'] }}
+                            {{ $prestation->description }}
                         </p>
-                        <a href="{{ url($prestation['url']) }}" class="btn service-button">
+                        <a href="{{ $prestation->url }}" class="btn service-button">
                            En savoir <i class="fa-solid fa-plus fa-flip" style="--fa-animation-duration: 5s;"></i>
                         </a>
                     </div>

@@ -16,7 +16,7 @@ class MetaSchemasSeeder extends Seeder
         $places = null;
         foreach ($services as $service) {
             // Décoder les variations JSON en tableau associatif
-            $service_variations = json_decode($service->variations, true);
+            $service_variations = json_decode($service->meta_schema_variations_name, true);
 
             foreach ($cities as $city) {
                 if ($service->id !== 1) {

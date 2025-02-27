@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('slug')->unique()->comment('Nom action utilisé dans URL pour le SEO');
             $table->string('name')->comment('Nom du service');
-            $table->json('variations')->nullable()->comment('Utilisé pour le SEO');
+            $table->text('description')->comment('Description du service optimisé SEO');
+            $table->json('meta_schema_variations_name')->nullable()->comment('Utilisé pour le SEO');
             $table->timestamps();
         });
     }

@@ -39,8 +39,8 @@
                                 neuves.</p>
                         </div>
                         <div class="card-footer text-center">
-                            <a href="https://www.castes-industrie.fr" class="btn button service-button" target="_blank"><i
-                                        class="fa-solid fa-at"></i> Visiter le site</a>
+                            <a href="https://www.castes-industrie.fr" class="btn button service-button" target="_blank">
+                                <i class="fa-solid fa-at"></i> Visiter le site</a>
                         </div>
                     </div>
                 </div>
@@ -64,18 +64,19 @@
                                 intérieurs, tout en contribuant à l'efficacité énergétique des bâtiments.</p>
                         </div>
                         <div class="card-footer text-center">
-                            <a href="https://www.amb-france.com" class="btn button service-button" target="_blank"><i
-                                        class="fa-solid fa-at"></i> Visiter le site</a>
+                            <a href="https://www.amb-france.com" class="btn button service-button" target="_blank">
+                                <i class="fa-solid fa-at"></i> Visiter le site</a>
                         </div>
                     </div>
                 </div>
-
                 <!-- LAKAL -->
                 <div class="col">
                     <div class="card h-100">
                         <div class="brands-logo mx-auto"><img
-                                    src="{{ Vite::asset('resources/images/brands/lakal-logo.webp') }}" class="img-fluid"
-                                    alt="LAKAL"></div>
+                                    src="{{ Vite::asset('resources/images/brands/lakal-logo.webp') }}"
+                                    class="img-fluid"
+                                    alt="LAKAL">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">LAKAL</h5>
                             <p class="card-text">LAKAL est une marque allemande de référence dans le domaine des volets
@@ -90,8 +91,8 @@
                                 s'affirme comme un leader dans son secteur.</p>
                         </div>
                         <div class="card-footer text-center">
-                            <a href="https://www.lakal.de" class="btn button service-button" target="_blank"><i
-                                        class="fa-solid fa-at "></i> Visiter le site</a>
+                            <a href="https://www.lakal.de" class="btn button service-button" target="_blank">
+                                <i class="fa-solid fa-at "></i> Visiter le site</a>
                         </div>
                     </div>
                 </div>

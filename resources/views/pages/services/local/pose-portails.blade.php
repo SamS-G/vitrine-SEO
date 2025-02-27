@@ -15,27 +15,26 @@
         <p class="text-center text-muted">Des portails faits pour durer</p>
         <div class="d-flex justify-content-around">
             <div>
-                <h2 class="h3-xl my-4">Nos modèles de portails</h2>
+                <h2 class="h3-xl my-4">Mes modèles de portails</h2>
                 <ul class="list-group">
                     <li class="list-group-item">Portail battant en aluminium ou PVC</li>
                     <li class="list-group-item">Portail coulissant motorisé</li>
                     <li class="list-group-item">Portail manuel ou automatique</li>
                 </ul>
                 <a href="{{ url('contact') }}" class="btn button mt-3">Devis personnalisé</a>
+                <div class="mt-3">
+                    <h2 class="mt-5">Nos interventions à {{ $city->name }}</h2>
+                    <p>
+                        J'ai interviens dans les quartiers proches de
+                        : {{ implode(', ', json_decode($city->landmarks, true)) }}
+                        .</p>
+                </div>
             </div>
             <img
                 src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/services/local/portail.webp') : Vite::asset('resources/images/services/local/portail.webp') }}"
                 alt="Pose de portails à {{ $city->name }}"
-                class="img-fluid rounded mt-3 ratio-3x2">
-        </div>
-
-
-        <div class="mt-3">
-            <h2>Nos interventions à {{ $city->name }}</h2>
-            <p>
-                Nous intervenons dans les quartiers proches de
-                : {{ implode(', ', json_decode($city->landmarks, true)) }}
-                .</p>
+                title="Pose de portails à {{ $city->name }}"
+                class="img-fluid rounded mt-3">
         </div>
     </div>
 @endsection

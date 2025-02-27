@@ -12,22 +12,18 @@
                 !</h1>
             <div class="container pb-5">
                 <p>
-                    Chez JD Travaux Services, nous mettons notre savoir-faire artisanal au service de vos projets pour
+                    Chez JD Travaux Services, je met mon savoir-faire artisanal au service de vos projets pour
                     améliorer votre habitat. <br/>
                     De la pose de fenêtres, portes et portails, à l’installation de revêtements de sol, en passant par
-                    la
-                    pose de moustiquaires et les travaux de rénovation du bâtiment, nous vous garantissons un travail
-                    soigné
-                    et durable.
+                    la pose de moustiquaires et les travaux de rénovation du bâtiment, je vous garanti un travail
+                    soigné et durable.
                 </p>
                 <ul>
                     <li> 💡 Un seul interlocuteur du devis à la pose pour un accompagnement personnalisé et une relation
-                        de
-                        confiance.
+                        de confiance.
                     </li>
-                    <li> 📍 Intervention locale & devis gratuit – Parcourez nos services et contactez-nous pour donner
-                        vie à
-                        vos projets ! 🚀
+                    <li> 📍 Intervention locale & devis gratuit – Parcourez mes services et contactez-moi pour donner
+                        vie à vos projets ! 🚀
                     </li>
                 </ul>
             </div>
@@ -41,7 +37,7 @@
                         'image' => 'vitre.webp',
                         'text' =>
                         '<p class="card-text text-muted">
-                        Améliorez le confort et l’efficacité énergétique de votre maison avec nos <strong>fenêtres en PVC, aluminium ou bois</strong>.
+                        Améliorez le confort et l’efficacité énergétique de votre maison avec mes <strong>fenêtres en PVC, aluminium ou bois</strong>.
                         <strong>JD Travaux Services</strong> vous assure une pose soignée, alliant <strong>performance thermique, acoustique et design élégant</strong>.
                         </p>
                             <ul class="list-unstyled text-success fw-semibold">
@@ -57,7 +53,7 @@
                         'image' => 'volet-moustiquaire.webp',
                         'text' =>
                             '<p class="card-text text-muted">
-                                Protégez votre intérieur des insectes tout en profitant de l’air frais avec nos
+                                Protégez votre intérieur des insectes tout en profitant de l’air frais avec mes
                                 <strong>moustiquaires sur-mesure</strong>. JD Travaux Services installe des solutions adaptées
                                 à vos fenêtres et portes pour un <strong>confort optimal sans compromis sur l’esthétisme</strong>.
                             </p>
@@ -72,7 +68,7 @@
                         'route' => 'services/pose-volets-roulants',
                         'image' => 'volet.webp', 'text' =>
                            '    <p class="card-text text-muted">
-                                   Améliorez l’isolation et la sécurité de votre habitation avec nos
+                                   Améliorez l’isolation et la sécurité de votre habitation avec mes
                                    <strong>volets roulants classiques, électriques ou solaires</strong>.
                                    <strong>JD Travaux Services</strong> vous accompagne dans le choix et l’installation de solutions adaptées
                                    à votre logement pour un <strong>confort optimal toute l’année</strong>.
@@ -122,7 +118,7 @@
                                 '<p class="card-text text-muted">
                                     Améliorez l’accès à votre propriété avec un <strong>portail sur-mesure</strong>, alliant
                                     <strong>sécurité, design et robustesse</strong>. <strong>JD Travaux Services</strong> installe des
-                                    <strong>portails battants, coulissants ou motorisés</strong>, en <strong>aluminium, acier ou PVC</strong>,
+                                    <strong>portails battants, coulissants ou motorisés</strong>, en <strong>aluminium, acier ou PVC </strong>,
                                     adaptés à vos besoins et à l’esthétique de votre maison.
                                 </p>
                                 <ul class="list-unstyled text-success fw-semibold">
@@ -137,7 +133,7 @@
                         'image' => 'parquet.webp',
                         'text' =>
                            '<p class="card-text text-muted">
-                                Offrez à votre intérieur un <strong>sol élégant, résistant et facile d’entretien</strong> grâce à nos prestations
+                                Offrez à votre intérieur un <strong>sol élégant, résistant et facile d’entretien</strong> grâce à mes prestations
                                 de <strong>pose de parquet, carrelage, lino, vinyle et stratifié</strong>.
                                 <strong>JD Travaux Services</strong> vous accompagne dans le choix du matériau idéal et réalise une
                                 <strong>installation soignée pour un résultat impeccable et durable</strong>.
