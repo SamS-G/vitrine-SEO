@@ -13,13 +13,13 @@
             'Esthétique et valorisation du bien'
     ]"
             :gallery="[
-       'av-fenetre.jpg',
-        'ap-fenetre.jpg',
+         ['src' => 'portail.webp', 'figcaption' => 'La Toulousaine, gamme Velden'],
+         ['src' => 'portail-2.webp', 'figcaption' => 'La Toulousaine, gamme Tanna Duo'],
     ]"
             :faq="[
-        ['question' => 'Quels types de porte portails proposez-vous ?', 'answer' => 'Nous proposons des portails coulissants ou battants'],
-        ['question' => 'Quelle est la durée d’installation ?', 'answer' => 'En moyenne, l’installation d’une fenêtre prend 3 à 4 heures.'],
-        ['question' => 'Quelles motorisations proposez-vous ?', 'answer' => 'Nous proposons uniquement de motorisation de haute qualité de marque Somfy et BFT.']
+        ['question' => 'Quels types de porte portails proposez-vous ?', 'answer' => 'Je propose des portails battants ou coulissants, avec ou sans motorisation.'],
+        ['question' => 'Quelle est la durée d’installation ?', 'answer' => 'Portail manuel : ½ journée. Portail motorisé : 1 journée'],
+        ['question' => 'Quelle motorisation recommandez-vous ?', 'answer' => 'J\'installe des motorisations Somfy, fiables et compatibles avec les systèmes domotiques.']
     ]"
         />
     </section>

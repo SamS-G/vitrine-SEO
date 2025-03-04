@@ -71,6 +71,17 @@
                                     </div>
                                 </div>
                                 <div class="md-3">
+                                    <label for="phone" class="form-label">Numéro de téléphone</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" required pattern="^(\+33|0)[1-9](\d{8})$">
+                                    <div class="invalid-feedback">
+                                        <i class="fa-solid fa-xmark"></i> Numéro de téléphone manquant
+                                    </div>
+                                </div>
+                                <div class="md-3">
+                                    <label for="address" class="form-label">Adresse</label>
+                                    <input type="text" class="form-control" id="address" name="address">
+                                </div>
+                                <div class="md-3">
                                     <label for="message" class="form-label">Votre message</label>
                                     <textarea rows="10" type="text" class="form-control" id="message" name="message"
                                               required></textarea>

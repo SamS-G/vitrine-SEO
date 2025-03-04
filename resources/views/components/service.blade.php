@@ -16,14 +16,17 @@
         </div>
     </div>
 
-    {{-- Section Galerie Avant/Après --}}
+    {{-- Section exemple --}}
     <div class="gallery mb-5">
-        <h2 class="text-center mb-4 bg-white-soft">Exemple avant / après</h2>
+        <h2 class="text-center mb-4 bg-white-soft">Exemples</h2>
         <div class="row">
             @foreach ($gallery as $image)
-                <div class="col-md-6 mb-3 text-center">
-                    <img src="{{ Vite::asset("resources/images/services/{$image}") }}" class="img-fluid rounded shadow"
+                <div class="{{ count($gallery) > 2  ? 'col-md-4' : 'col-md-6'}} mb-3 text-center">
+                    <figure role="figure" aria-label="{{ $image['figcaption'] ?? "" }}">
+                    <img src="{{ Vite::asset("resources/images/services/service/{$image['src']}") }}" class="img-fluid rounded shadow"
                          alt="Avant / Après">
+                    <figcaption><small><em>{{ $image['figcaption'] ?? "" }}</em></small></figcaption>
+                    </figure>
                 </div>
             @endforeach
         </div>
@@ -49,7 +52,7 @@
                          aria-labelledby="heading{{ $index }}"
                          data-bs-parent="#faqAccordion">
                         <div class="accordion-body">
-                            {{ $question['answer'] }}
+                         <p><em>{{ $question['answer'] }}</em></p>
                         </div>
                     </div>
                 </div>

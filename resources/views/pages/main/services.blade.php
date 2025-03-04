@@ -26,6 +26,7 @@
                         vie à vos projets ! 🚀
                     </li>
                 </ul>
+                <p class="text-primary text-center border border-primary"><strong>🔹 Dans chaque rubrique retrouvez les réponses aux questions les plus fréquement posées. </strong></p>
             </div>
         </section>
         <section class="row">
@@ -187,7 +188,7 @@
                     <div class="card">
                         <div class="row g-0">
                             <div class="col-md-4">
-                                <img src="{{  Agent::isMobile() ? Vite::asset("resources/images/responsive/services/{$service['image']}") : Vite::asset("resources/images/services/{$service['image']}") }}"
+                                <img src="{{  Agent::isMobile() ? Vite::asset("resources/images/responsive/services/{$service['image']}") : Vite::asset("resources/images/services/index/{$service['image']}") }}"
                                      class="img-fluid rounded-start"
                                      alt="{{ $service['title'] }}"
                                      width="347"

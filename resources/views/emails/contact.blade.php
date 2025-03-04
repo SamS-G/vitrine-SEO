@@ -33,6 +33,18 @@
                     </td>
                 </tr>
                 <tr>
+                    <th><strong>Téléphone:</strong></th>
+                    <td style="padding: 20px; font-family: Arial, sans-serif; color: #555;">
+                        <p>{{ $data['phone'] }}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th><strong>Adresse:</strong></th>
+                    <td style="padding: 20px; font-family: Arial, sans-serif; color: #555;">
+                        <p>{{ $data['address'] }}</p>
+                    </td>
+                </tr>
+                <tr>
                     <th><strong>Message:</strong></th>
                     <td style="padding: 20px; font-family: Arial, sans-serif; color: #555;">
                         <p>{{ $data['content'] }}</p>

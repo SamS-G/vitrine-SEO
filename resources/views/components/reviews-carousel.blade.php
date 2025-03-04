@@ -1,5 +1,12 @@
 @php use Carbon\Carbon; @endphp
 @props(['reviews'])
+@push('styles')
+    <style>
+        .stars {
+            font-size: 1.2rem;
+        }
+    </style>
+@endpush
 
 <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
     <!-- Indicateurs -->
@@ -14,7 +21,7 @@
     <div class="carousel-inner">
         @foreach ($reviews['reviews'] as $index => $review)
             <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
-                <div class="testimonial text-center p-4 bg-light rounded shadow">
+                <div class="container testimonial text-center p-4 bg-light rounded shadow">
                     <img src="{{ $review['authorAttribution']['photoUri'] ?? 'https://via.placeholder.com/80' }}"
                          alt="Photo de {{ $review['authorAttribution']['displayName'] }}"
                          loading="lazy"
@@ -47,15 +54,21 @@
         <i class="fa-solid fa-chevron-right"></i>
     </button>
 </div>
+@push('scripts')
+    <script>
+        function uniformizeHeights() {
+            let maxHeight = 0;
+            document.querySelectorAll(".testimonial").forEach(el => {
+                el.style.height = "auto"; // Réinitialiser avant de recalculer
+                maxHeight = Math.max(maxHeight, el.offsetHeight);
+            });
+            document.querySelectorAll(".testimonial").forEach(el => {
+                el.style.height = maxHeight + "px"; // Appliquer la plus grande hauteur
+            });
+        }
 
-@push('styles')
-    <style>
-        .testimonial {
-            max-width: 600px;
-            margin: auto;
-        }
-        .stars {
-            font-size: 1.2rem;
-        }
-    </style>
+        // Exécuter au chargement et après chaque changement de slide
+        document.addEventListener("DOMContentLoaded", uniformizeHeights);
+        window.addEventListener("resize", uniformizeHeights);
+    </script>
 @endpush

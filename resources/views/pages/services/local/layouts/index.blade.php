@@ -13,27 +13,27 @@
     <div class="col-10 mx-auto py-5">
         <h1 class="text-center mb-4 bg-white-soft">Mes Services de Menuiserie et Dépannage dans la Plaine de l'Ain</h1>
         <p class="text-justify mb-5">
-            <strong><em>JD MultiServices</em></strong> intervient dans les communes de la <em>Plaine de l'Ain</em>,
+            <strong><em>JD Travaux Services</em></strong> intervient dans les communes de la <em>Plaine de l'Ain</em>,
             notamment dans les communes
             <strong><em>
-                    <a href="https://ville-amberieuenbugey.fr" rel="nofollow">d'Ambérieux-en-Bugey,</a>
-                    <a href="https://lagnieu.fr" rel="nofollow">Lagnieu</a>
-                    <a href="https://ville-meximieux.fr" rel="nofollow">Meximieux</a>
-                    <a href="https://www.ville-dagneux.fr" rel="nofollow">Dagneux</a>
-                    <a href="https://leymen.fr" rel="nofollow">Leyment</a>
-                    <a href="https://www.beynost.fr" rel="nofollow">Beynost</a>
-                    <a href="https://www.miribel.fr" rel="nofollow">Mirible</a>
-                    <a href="https://www.ville-montluel.fr" rel="nofollow">Montluel</a>
-                    <a href="https://www.tramoyes.fr" rel="nofollow">Tramoyes</a>
-                    <a href="https://perouges.fr" rel="nofollow">Pérouges</a>
-                    <a href="https://www.mairie-charnoz.fr/accueil/" rel="nofollow">Charnoz</a>
-                    <a href="https://www.saintejulie.fr" rel="nofollow">Sainte-Julie</a>
-                    <a href="https://www.chazey-sur-ain.fr" rel="nofollow">Chazey-sur-Ain</a>
-                    <a href="https://www.mairievlm.fr" rel="nofollow">Villieu-Loyes-Mollon</a>
-                    <a href="https://www.labalmelesgrottes.com" rel="nofollow">La-Balme-Les-Grottes</a>
-                    <a href="https://commune-loyettes.fr" rel="nofollow">Loyettes</a>
-                    <a href="https://saintandredecorcy.fr" rel="nofollow">Saint-André-de-Corcy</a>
-                    <a href="https://www.villars-les-dombes.fr" rel="nofollow">Villars-les-Dombes</a>
+                    <a href="https://ville-amberieuenbugey.fr" rel="nofollow">d'Ambérieux-en-Bugey, </a>
+                    <a href="https://lagnieu.fr" rel="nofollow">Lagnieu, </a>
+                    <a href="https://ville-meximieux.fr" rel="nofollow">Meximieux, </a>
+                    <a href="https://www.ville-dagneux.fr" rel="nofollow">Dagneux, </a>
+                    <a href="https://leymen.fr" rel="nofollow">Leyment, </a>
+                    <a href="https://www.beynost.fr" rel="nofollow">Beynost, </a>
+                    <a href="https://www.miribel.fr" rel="nofollow">Mirible, </a>
+                    <a href="https://www.ville-montluel.fr" rel="nofollow">Montluel, </a>
+                    <a href="https://www.tramoyes.fr" rel="nofollow">Tramoyes, </a>
+                    <a href="https://perouges.fr" rel="nofollow">Pérouges, </a>
+                    <a href="https://www.mairie-charnoz.fr/accueil/" rel="nofollow">Charnoz, </a>
+                    <a href="https://www.saintejulie.fr" rel="nofollow">Sainte-Julie, </a>
+                    <a href="https://www.chazey-sur-ain.fr" rel="nofollow">Chazey-sur-Ain, </a>
+                    <a href="https://www.mairievlm.fr" rel="nofollow">Villieu-Loyes-Mollon, </a>
+                    <a href="https://www.labalmelesgrottes.com" rel="nofollow">La-Balme-Les-Grottes, </a>
+                    <a href="https://commune-loyettes.fr" rel="nofollow">Loyettes, </a>
+                    <a href="https://saintandredecorcy.fr" rel="nofollow">Saint-André-de-Corcy, </a>
+                    <a href="https://www.villars-les-dombes.fr" rel="nofollow">Villars-les-Dombes, </a>
                     <a href="https://saint-vulbas.fr" rel="nofollow">Saint-Vulbas.</a>
                 </em></strong><br/>
             Je propose des solutions sur-mesure pour la pose de fenêtres, portes, et volets dans toute la région.

@@ -14,17 +14,22 @@ class ContactController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
-            'message' => 'required|string|min:10'
+            'message' => 'required|string|min:10',
+            'phone' => 'required|string|max:255',
         ], [
             'name.required' => 'Le champ Nom et Prénom est obligatoire.',
             'email.required' => 'L\'adresse email est obligatoire.',
             'email.email' => 'Veuillez entrer une adresse email valide.',
             'message.required' => 'Le champ Message est obligatoire.',
-            'message.min' => 'Votre message doit contenir au moins 10 caractères.'
+            'message.min' => 'Votre message doit contenir au moins 10 caractères.',
+            'phone.min' => 'Votre téléphone doit contenir 10 chiffres.',
+            'phone.required' => 'Votre numéro de téléphone est requis.',
         ]);
 
         $data = [
             'name' => $request->name,
+            'phone' => $request->phone,
+            'address' => !is_null($request->address) ?? null,
             'email' => $request->email,
             'content' => $request->message
         ];

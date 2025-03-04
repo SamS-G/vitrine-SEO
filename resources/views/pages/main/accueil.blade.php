@@ -16,6 +16,12 @@
         <div class="section-title">
             <h2><span>S</span>ervices</h2>
             <h3>Menuiserie, Dépannages, Multi-Services</h3>
+            <p class="services-presentation">Vous recherchez un artisan de confiance pour vos travaux ? <br />
+                <b><em>JD Travaux Services</em></b> vous accompagne à chaque étape : de la commande à la pose, en passant par le service après-vente.
+                <br />
+                Avec un interlocuteur unique, vous bénéficiez d’un suivi personnalisé et d’un travail soigné pour tous
+                vos projets de rénovation et d’installation.
+            </p>
         </div>
         <div class="card-group">
             <x-card
@@ -166,17 +172,17 @@
     <section class="section-wrapper">
         <div class="section-title">
             <h2 class="h1-xl"><span>C</span>e qu'en disent mes <span>C</span>lients</h2>
-            <h3 class="h5-xl">Les avis</h3>
+            <h3 class="text-center h4">
+                Vous souhaitez laisser un avis ? 🌟🌟🌟🌟🌟
+                <a href="https://g.page/r/Cd4ZmtHkK5czEBM/review" target="_blank">
+                    <strong><span class="text-primary">c'est par ici</span> ➡️</strong>
+                </a>
+            </h3>
         </div>
+
         <x-reviews-carousel
             :reviews="$reviews"
         />
-        <h4 class="text-center mt-5">
-            Vous souhaitez laisser un avis ? 🌟🌟🌟🌟🌟
-            <a href="https://g.page/r/Cd4ZmtHkK5czEBM/review" target="_blank">
-                <strong><span class="text-primary">c'est par ici</span> ➡️</strong>
-            </a>
-        </h4>
     </section>
     <div class="separator-right"></div>
     <div class="separator-left"></div>

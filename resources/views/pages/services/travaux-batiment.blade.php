@@ -18,12 +18,12 @@ Vous voulez apprendre? Je peux aussi vous proposer de travailler avec vous sur v
             'Expertise'
     ]"
             :gallery="[
-       'av-fenetre.jpg',
-        'ap-fenetre.jpg',
+        ['src' => 'plomberie.webp', 'figcaption' => 'Travaux de plomberie'],
+        ['src' => 'electricite.webp', 'figcaption' => 'Travaux électriques'],
+        ['src' => 'maconnerie.webp', 'figcaption' => 'Travaux de maçonnerie'],
     ]"
             :faq="[
-        ['question' => 'Quels types de prestations proposez-vous ?', 'answer' => 'Nous proposons la pose de terrasses, travaux plomberie, serrurerie, aide et formation sur votre chantier'],
-        ['question' => 'Quelle est le délai d\'intervention ?', 'answer' => 'En moyenne, et selon le type de travaux comptez 7 jours.'],
+        ['question' => 'Quels types de prestations proposez-vous ?', 'answer' => 'Je vous accompagne pour tous types de travaux d’aménagement et de rénovation. Je garanti un devis sous 7 jours et une intervention rapide selon votre type de projet.'],
     ]"
         />
     </section>

@@ -13,13 +13,13 @@
             'Esthétique et valorisation du bien'
     ]"
             :gallery="[
-       'av-fenetre.jpg',
-        'ap-fenetre.jpg',
+    ['src' => 'volet-roulant.webp', 'figcaption' => 'Gamme PTR & PTS'],
+    ['src' => 'volet-roulant-2.webp', 'figcaption' => 'Gamme VA'],
     ]"
             :faq="[
-        ['question' => 'Quels types de volets proposez-vous ?', 'answer' => 'Nous proposons des volets roulants manuels, électriques et solaire.'],
-        ['question' => 'Quelle est la durée d’installation ?', 'answer' => 'En moyenne, l’installation d’une fenêtre prend 3 à 4 heures.'],
-        ['question' => 'Proposez-vous des fenêtres sur mesure ?', 'answer' => 'Oui, nous réalisons des volets entièrement personnalisées selon vos besoins.']
+        ['question' => 'Quels types de volets roulants proposez-vous ?', 'answer' => 'Je propose des volets roulants manuels, électriques, solaires, ainsi que la motorisation de vos volets existants.'],
+        ['question' => ' Combien de temps prend l’installation ?', 'answer' => 'Entre 2 et 4 heures, selon le type de pose et le raccordement électrique.'],
+        ['question' => ' Peut-on personnaliser les volets roulants ?', 'answer' => 'Oui, tout est personnalisable : dimensions, coloris, motorisation…']
     ]"
         />
     </section>

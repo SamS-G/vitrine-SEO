@@ -18,13 +18,13 @@
             'Economique'
     ]"
             :gallery="[
-       'av-fenetre.jpg',
-        'ap-fenetre.jpg',
+        ['src' => 'depannage-volet.webp', 'figcaption' => ''],
+        ['src' => 'depannage-volet-2.webp', 'figcaption' => ''],
     ]"
             :faq="[
-        ['question' => 'Quels types de volets roulants réparez-vous ?', 'answer' => 'Nous proposons réparons tous les types de volets, manuels, électriques ou solaires'],
-        ['question' => 'Quelle est le délai d\'intervantion ?', 'answer' => 'En moyenne, j\'interviens dans les 24 heures.'],
-        ['question' => 'Avez-vous vous les pièces en stock ?', 'answer' => 'Grâce à mon expérience j\'ai en stock les pièces nécessaires aux pannes les plus courantes.']
+        ['question' => 'Quels types de volets réparez-vous ?', 'answer' => 'Tous les modèles : manuels, électriques et solaires.'],
+        ['question' => 'Quel est votre délai d’intervention ?', 'answer' => 'Sous 48h, avec un devis rapide.'],
+        ['question' => 'Avez-vous des pièces en stock ?', 'answer' => 'J\'ai les pièces mécaniques en stock, et je peux commander rapidement les motorisations adaptées.']
     ]"
         />
     </section>

@@ -15,13 +15,13 @@
             'Réduction de l\'entretien'
     ]"
             :gallery="[
-       'av-fenetre.jpg',
-        'ap-fenetre.jpg',
+ ['src' => 'porte-entree.webp', 'figcaption' => 'Bel\'m Style contemporain'],
+ ['src' => 'porte-entree-2.webp', 'figcaption' => 'Bel\'m Porte vitrée'],
     ]"
             :faq="[
-        ['question' => 'Quels types de porte d\'entrée proposez-vous ?', 'answer' => 'Nous proposons des portes bois, PVC ou blindé, adaptées à votre logement.'],
+        ['question' => 'Quels types de portes d’entrée installez-vous ?', 'answer' => 'La pose prend une journée, souvent en dépose totale pour ne pas réduire la largeur de passage.'],
         ['question' => 'Quelle est la durée d’installation ?', 'answer' => 'En moyenne, l’installation d’une fenêtre prend 3 à 4 heures.'],
-        ['question' => 'Proposez-vous des fenêtres sur mesure ?', 'answer' => 'Oui, nous réalisons des portes entièrement personnalisées selon vos besoins.']
+        ['question' => ' Proposez-vous des portes sur mesure ?', 'answer' => 'Oui, toutes les portes sont réalisées sur mesure pour s’adapter parfaitement à votre ouverture.']
     ]"
         />
     </section>

@@ -12,13 +12,13 @@
             'Esthétique et valorisation du bien'
     ]"
             :gallery="[
-       'av-fenetre.jpg',
-        'ap-fenetre.jpg',
+       ['src' => 'porte-garage.webp', 'figcaption' => 'TechPro, porte sectionnelle'],
+       ['src' => 'porte-garage-2.webp', 'figcaption' => 'TechPro, porte coulissante'],
     ]"
             :faq="[
-        ['question' => 'Quels types de porte de garage proposez-vous ?', 'answer' => 'Nous proposons des portes de garage sectionnelles.'],
-        ['question' => 'Quelle est la durée d’installation ?', 'answer' => 'En moyenne, l’installation d’une fenêtre prend 3 à 4 heures.'],
-        ['question' => 'Quelles motorisations proposez-vous ?', 'answer' => 'Nous proposons uniquement de motorisation de haute qualité de marque Somfy et BFT.']
+        ['question' => ' Quels types de portes de garage proposez-vous ?', 'answer' => 'J\'installe des portes sectionnelles, basculantes, battantes, coulissantes ou à enroulement.'],
+        ['question' => 'Quelle est la durée d’installation ?', 'answer' => 'L\’installation prend environ une journée, selon le modèle et le raccordement électrique.'],
+        ['question' => 'Quelles motorisations proposez-vous ?', 'answer' => 'Nous utilisons exclusivement des motorisations Somfy, reconnues pour leur fiabilité et compatibilité domotique.']
     ]"
         />
     </section>

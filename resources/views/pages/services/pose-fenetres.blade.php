@@ -15,13 +15,13 @@ Faites-moi confiance pour l'installation de vos fenêtres et profitez d'une isol
         'Garantie décennale'
     ]"
     :gallery="[
-       'av-fenetre.jpg',
-       'ap-fenetre.jpg',
+       ['src' => 'av-fenetre.webp', 'figcaption' => ''],
+       ['src' => 'ap-fenetre.webp', 'figcaption' => '']
     ]"
+
     :faq="[
-        ['question' => 'Quels types de fenêtres proposez-vous ?', 'answer' => 'Je propose des fenêtres en PVC, aluminium et bois adaptées à votre logement.'],
-        ['question' => 'Quelle est la durée d’installation ?', 'answer' => 'En moyenne, l’installation d’une fenêtre prend 3 à 4 heures.'],
-        ['question' => 'Proposez-vous des fenêtres sur mesure ?', 'answer' => 'Oui, je réalise des fenêtres entièrement personnalisées selon vos besoins.']
+        ['question' => 'Quelle est la durée d’installation ?', 'answer' => 'L’installation d’une fenêtre prend en moyenne une demi-journée, variable selon le type de pose (neuf, rénovation, dépose totale, finitions).'],
+        ['question' => 'Proposez-vous des fenêtres sur mesure', 'answer' => 'Oui, je réalise des fenêtres entièrement personnalisées. Une prise de cotes est effectuée avant le devis pour s’assurer d’une installation parfaite.'],
     ]"
 />
     </section>

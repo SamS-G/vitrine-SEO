@@ -12,13 +12,15 @@
 'Confort et discrétion : Des modèles adaptés à toutes les ouvertures, presque invisibles une fois posés.'
     ]"
             :gallery="[
-       'av-fenetre.jpg',
-       'ap-fenetre.jpg',
+       ['src' => 'moustiquaire.webp', 'figcaption' => 'AMB gamme Neoscenica'],
+       ['src' => 'moustiquaire-2.webp', 'figcaption' => 'AMB gamme Estetica']
     ]"
             :faq="[
-        ['question' => 'Quels types de porte portails proposez-vous ?', 'answer' => 'Nous proposons des portails coulissants ou battants'],
-        ['question' => 'Quelle est la durée d’installation ?', 'answer' => 'En moyenne, l’installation d’une fenêtre prend 3 à 4 heures.'],
-        ['question' => 'Quelles motorisations proposez-vous ?', 'answer' => 'Nous proposons uniquement de motorisation de haute qualité de marque Somfy et BFT.']
+        ['question' => 'Quels types de moustiquaires proposez-vous ?', 'answer' => 'Pour les fenêtres standards un système à enroulement vertical.
+                                                                                    Pour les baies vitrées un système coulissant ou rideau latéral.
+'],
+        ['question' => ' Combien de temps dure l’installation ?', 'answer' => 'L’installation prend environ 2 heures, incluant les finitions comme le joint silicone pour une étanchéité optimale'
+        ],
     ]"
         />
     </section>

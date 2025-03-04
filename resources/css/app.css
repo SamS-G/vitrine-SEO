@@ -57,6 +57,7 @@ h3 {
     display: inline-block;
     position: relative;
 }
+
 .btn {
     width: max-content;
     letter-spacing: 1px;
@@ -243,11 +244,21 @@ footer {
 }
 
 .footer-row {
-    padding: 3rem 2rem 2rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
     margin-left: 0 !important;
     margin-right: 0 !important;
     max-width: 100%;
     overflow-x: hidden;
+}
+
+.footer-row > div {
+    margin-bottom: 2rem;
+}
+
+.footer-row > div ul {
+    margin: 0;
 }
 
 /* RESPONSIVE */
@@ -255,12 +266,12 @@ footer {
 /* Grands écrans (ex: 4K) */
 @media (min-width: 1440px) {
     body > main > section.hero > div > a {
-        top: 90%;
+        top: 60%;
     }
 }
 
 /* ✅ Tablettes : max 1024px */
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     h3 {
         font-size: 1.2rem;
     }
@@ -312,7 +323,18 @@ footer {
         width: 100%;
     }
 
-    /* pages Nos prestations à xxx*/
+    .footer-row {
+        flex-direction: column;
+        padding: 2rem 1rem 1rem;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer-row>div ul {
+        text-align: center;
+    }
+
+        /* pages Nos prestations à xxx*/
     body > main > div > div.d-flex.justify-content-around {
         flex-direction: column;
     }
@@ -320,26 +342,30 @@ footer {
     body > main > div > div.d-flex.justify-content-around img {
         margin-top: 1rem;
     }
+
     /* page services */
     body > main > div > section.row > div > div > div > div.col-md-4,
     body > main > div > section.row > div > div > div > div.col-md-8 {
         width: 100%;
     }
+
     body > main > div > section.row > div > div > div > div.col-md-8 > div > div.d-flex.justify-content-around {
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
     }
+
     body > main > div > section.row > div > div > div > div.col-md-8 > div > div.d-flex.justify-content-around > a:nth-child(1) {
         margin-bottom: 1rem;
     }
+
     body > main > section.hero > div > a {
         top: 75%;
     }
 }
 
 /* ✅ Mobiles : max 768px */
-@media (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 768px) {
     .navbar-toggler {
         margin: 0 auto;
     }
@@ -357,13 +383,22 @@ footer {
     }
 
     h2, .section-title h2 span {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
-    h5, .card p, a, h3, .cta-container a, .section-title h3, .nav-link,
+    h5, .cta-container a, .section-title h3, .nav-link,
     .container-fluid.header-container .hero-title.text-center,
     .carousel-control-next .fa-solid, .carousel-control-prev .fa-solid {
         font-size: 1.1rem !important;
+    }
+
+    .services-presentation {
+        font-size: 0.9rem !important;
+        text-align: justify;
+    }
+
+    .card p {
+        font-size: 1rem !important;
     }
 
     .section-title span, .experience-title span {
@@ -445,16 +480,17 @@ footer {
 }
 
 /* Très petit mobile (ex: iPhone SE) */
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
     h1 {
         font-size: 1.5rem !important;
     }
 
     h3 {
         text-align: center;
+        font-size: 1.1rem;
     }
 
-    h2, .fa-brands, .card h4 {
+    h2, .fa-brands {
         font-size: 1.2rem;
     }
 
@@ -487,7 +523,7 @@ footer {
 
     .section-wrapper {
         margin-top: 5vh;
-        padding: 2vh 4vw;
+        padding: 2vh 3vw;
     }
 
     .section-title {
@@ -565,6 +601,9 @@ footer {
         height: 7rem;
         flex-direction: column;
     }
+    .footer-row>div ul {
+        text-align: center;
+    }
 
     /*page servies*/
     ul {
@@ -584,7 +623,9 @@ footer {
     .carousel-control-next, .carousel-control-prev {
         width: 0;
     }
+
     body > main > section.hero > div > a {
         top: 90%;
+        font-size: 1rem !important;
     }
 }

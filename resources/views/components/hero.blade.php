@@ -1,26 +1,3 @@
-<div class="container-fluid header-container">
-    <img loading="eager" decoding="async" fetchpriority="high"
-         src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/home/redHouse.webp') : Vite::asset('resources/images/home/redHouse.webp') }}"
-         alt="Une maison à la porte rouge en pierre"
-         width="1340"
-         height="678"
-    >
-    <h1 class="hero-title text-center">
-        Artisan menuisier en Plaine de l'Ain <br/>
-        Spécialiste en réparation et pose de volets roulants et moustiquaires, <br/>
-        fenêtres, baies, portes et portails près de chez vous.
-    </h1>
-    @if($ctaButton)
-        <x-button
-            buttonName="Demander mon devis"
-            link="contact"
-            linkClass="btn btn-lg cta-button"
-            iconClass="fa-regular fa-envelope"
-            container="cta-container"
-        />
-    @endif
-</div>
-
 @push('styles')
     <style>
         .header-container {
@@ -39,7 +16,7 @@
 
         .hero-title {
             position: absolute;
-            top: 25%; /* Centre verticalement */
+            top: 35%; /* Centre verticalement */
             left: 50%; /* Centre horizontalement */
             transform: translate(-50%, -50%); /* Ajuste le centrage */
             color: white; /* Couleur du texte */
@@ -59,4 +36,27 @@
 
     </style>
 @endpush
+
+<div class="container-fluid header-container">
+    <img loading="eager" decoding="async" fetchpriority="high"
+         src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/home/redHouse.webp') : Vite::asset('resources/images/home/redHouse.webp') }}"
+         alt="Une maison à la porte rouge en pierre"
+         width="2500"
+         height="1095"
+    >
+    <h1 class="hero-title text-center">
+        Artisan menuisier en Plaine de l'Ain <br/>
+        Spécialiste en réparation et pose de volets roulants et moustiquaires, <br/>
+        fenêtres, baies, portes et portails près de chez vous.
+    </h1>
+    @if($ctaButton)
+        <x-button
+            buttonName="Demander un devis"
+            link="contact"
+            linkClass="btn cta-button"
+            iconClass="fa-regular fa-envelope"
+            container="cta-container"
+        />
+    @endif
+</div>
 
