@@ -264,7 +264,7 @@ footer {
 /* RESPONSIVE */
 
 /* Grands écrans (ex: 4K) */
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
     body > main > section.hero > div > a {
         top: 85%;
     }
