@@ -41,7 +41,7 @@
         <div class="col-9 mx-auto">
             <p class="alert alert-primary talert-dismissible fade show text-center" role="alert">
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                Sous la carte représentant le zone dans laquelle <strong>JD Multi-Services</strong> intervient, cliquez
+                Sous la carte représentant le zone dans laquelle <strong>JD Travaux Services</strong> intervient, cliquez
                 sur votre commune pour découvrir mes services spécifiques.
             </p>
         </div>
@@ -63,7 +63,6 @@
                     </div>
                     <div class="card-body d-flex flex-column">
                         <h5 class="card-title"><u>Ambérieux-en-Bugey</u></h5>
-
                         <p class="card-text">Découvrez toutes mes prestations de menuiserie et travaux du bâtiment à
                             <em>Ambérieux-en-Bugey</em> : pose de fenêtres, installation de portes d’entrée et de
                             garage, réparation de volets roulants et bien plus encore.
@@ -71,7 +70,7 @@
                         </p>
                         <a href="{{ url('/prestations-amberieu-en-bugey') }}"
                            role="button"
-                           class="btn mx-auto button">Voir les services
+                           class="btn mx-auto mt-auto button">Voir les services
                         </a>
                     </div>
                 </div>

@@ -19,12 +19,26 @@
             top: 35%; /* Centre verticalement */
             left: 50%; /* Centre horizontalement */
             transform: translate(-50%, -50%); /* Ajuste le centrage */
-            color: white; /* Couleur du texte */
-            text-align: center;
-            font-size: 2rem; /* Ajuste la taille */
+            color: white;
             background: rgba(0, 0, 0, 0.5); /* Ajoute un fond semi-transparent */
             padding: 1rem;
             border-radius: 10px;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1rem 0;
+            border-radius: 10px;
+        }
+
+        .hero-text p {
+            margin-bottom: 0;
+            font-size: 1.5rem;
         }
 
         body > main > section.hero > div > div > a {
@@ -45,10 +59,15 @@
          height="1095"
     >
     <h1 class="hero-title text-center">
-        Artisan menuisier en Plaine de l'Ain <br/>
-        Spécialiste en réparation et pose de volets roulants et moustiquaires, <br/>
-        fenêtres, baies, portes et portails près de chez vous.
+        Artisan Menuisier en Plaine de l'Ain et sur la Côtière <br/>Pose et Dépannage
     </h1>
+    <div class="container hero-text">
+        <p class="text-center">Spécialiste de la menuiserie extérieure, j'interviens pour la pose, la
+            réparation et le remplacement de fenêtres, portes et volets roulants. <br>
+            Faites appel à un expert local pour des menuiseries sur-mesure et un service de qualité.
+        </p>
+    </div>
+
     @if($ctaButton)
         <x-button
             buttonName="Demander un devis"
@@ -59,4 +78,7 @@
         />
     @endif
 </div>
+
+
+
 

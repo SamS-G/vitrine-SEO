@@ -12,7 +12,7 @@
     <div class="separator-right"></div>
     <div class="separator-left"></div>
     {{-- Services --}}
-    <section class="section-wrapper">
+    <section id="home-service-section" class="section-wrapper">
         <div class="section-title">
             <h2><span>S</span>ervices</h2>
             <h3>Menuiserie, Dépannages, Multi-Services</h3>
@@ -135,7 +135,7 @@
     <div class="separator-right"></div>
     <div class="separator-left"></div>
     {{-- Choose me--}}
-    <section class="section-wrapper">
+    <section id="home-whyme-section" class="section-wrapper">
         <div class="section-title">
             <h2><span>P</span>ourquoi choisir <span>JD</span> Travaux Services ?</h2>
             <h3>Votre Artisan de Confiance pour Tous Vos Travaux de Pose et Rénovation</h3>
@@ -169,7 +169,7 @@
     <div class="separator-left"></div>
     <div class="separator-right"></div>
     {{-- Reviews --}}
-    <section class="section-wrapper">
+    <section id="home-review-section" class="section-wrapper">
         <div class="section-title">
             <h2 class="h1-xl"><span>C</span>e qu'en disent mes <span>C</span>lients</h2>
             <h3 class="text-center h4">
@@ -187,7 +187,7 @@
     <div class="separator-right"></div>
     <div class="separator-left"></div>
     {{-- Bottom banner--}}
-    <section class="banner-bottom">
+    <section id="home-bottomBanner-section" class="banner-bottom">
         @include('components.bottomBanner')
     </section>
     <div class="separator-left"></div>

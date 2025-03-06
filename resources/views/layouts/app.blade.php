@@ -46,15 +46,7 @@
 
 <header>
     <x-navbar
-        :navItems="[
-    ['title' => 'Accueil', 'href' => 'home'],
-    ['title' => 'Tous les Services', 'href' => 'services'],
-    ['title' => 'Mes Réalisations', 'href' => 'realisations'],
-    ['title' => 'JD Travaux Services', 'href' => 'presentation'],
-    ['title' => 'Mes Marques', 'href' => 'marques'],
-    ['title' => 'Zones d’interventions', 'href' => 'zone-interventions'],
-    ['title' => 'Contact', 'href' => 'contact'],
-    ]"
+        :navItems="$siteData['app']['navItems']"
     />
 </header>
 

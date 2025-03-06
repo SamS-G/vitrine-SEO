@@ -8,7 +8,7 @@
             <h1 class="font-bold bg-danger">404</h1>
             <h2 class="text-2xl font-semibold mt-2 text-gray-800">Oups ! Cette page est introuvable.</h2>
             <p class="mt-4 text-gray-600">
-                Il semble que la page que vous recherchez n'existe pas ou a été déplacée.<br>
+                Il semble que la page que vous recherchez n'existe pas ou aie été déplacée.<br>
                 Ne vous inquiétez pas, nous sommes là pour vous aider !
             </p>
             <div class="mt-6">
@@ -16,7 +16,7 @@
                     <em>Retour à l'accueil</em>
                 </a>
             </div>
-            <img src="{{ Vite::asset('resources/images/404.webp') }}" alt="Page introuvable" class="my-5 w-64 mx-auto rounded-3 ratio-3x2">
+            <img src="{{ Vite::asset('resources/images/404.webp') }}" alt="Page introuvable" title="Erreur 404" class="my-5 w-64 mx-auto rounded-3">
         </div>
     </div>
 @endsection

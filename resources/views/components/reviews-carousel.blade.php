@@ -12,7 +12,8 @@
     <!-- Indicateurs -->
     <div class="carousel-indicators">
         @foreach ($reviews['reviews'] as $index => $review)
-            <button type="button" aria-label="bouton de défilement des images" data-bs-target="#testimonialCarousel" data-bs-slide-to="{{ $index }}"
+            <button type="button" aria-label="bouton de défilement des images" data-bs-target="#testimonialCarousel"
+                    data-bs-slide-to="{{ $index }}"
                     class="{{ $index === 0 ? 'active' : '' }}"></button>
         @endforeach
     </div>
@@ -28,7 +29,7 @@
                          class="rounded-circle mb-3 img-fluid"
                          width="128"
                          height="128"
-                         >
+                    >
                     <h5 class="pb-3">{{ $review['authorAttribution']['displayName'] }}</h5>
                     <small><em>{{ Carbon::parse($review['publishTime'])->locale('fr')->translatedFormat('j F Y') }}</em></small>
                     <p class="text-muted pt-3">{{ $review['originalText']['text'] }}</p>
@@ -47,28 +48,22 @@
     </div>
 
     <!-- Boutons de navigation -->
-    <button class="carousel-control-prev" type="button" aria-label="défilement vers la gauche" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" aria-label="défilement vers la gauche"
+            data-bs-target="#testimonialCarousel" data-bs-slide="prev">
         <i class="fa-solid fa-chevron-left"></i>
     </button>
-    <button class="carousel-control-next" type="button" aria-label="défilement vers la droite" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" aria-label="défilement vers la droite"
+            data-bs-target="#testimonialCarousel" data-bs-slide="next">
         <i class="fa-solid fa-chevron-right"></i>
     </button>
 </div>
 @push('scripts')
+    @vite(['resources/js/heightUniformizer.js'])
     <script>
-        function uniformizeHeights() {
-            let maxHeight = 0;
-            document.querySelectorAll(".testimonial").forEach(el => {
-                el.style.height = "auto"; // Réinitialiser avant de recalculer
-                maxHeight = Math.max(maxHeight, el.offsetHeight);
-            });
-            document.querySelectorAll(".testimonial").forEach(el => {
-                el.style.height = maxHeight + "px"; // Appliquer la plus grande hauteur
-            });
-        }
-
-        // Exécuter au chargement et après chaque changement de slide
-        document.addEventListener("DOMContentLoaded", uniformizeHeights);
-        window.addEventListener("resize", uniformizeHeights);
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.heightUniformizer) {
+                window.heightUniformizer('testimonial');
+            }
+        });
     </script>
 @endpush

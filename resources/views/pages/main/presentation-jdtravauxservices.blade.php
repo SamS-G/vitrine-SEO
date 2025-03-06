@@ -21,7 +21,7 @@
 @endpush
 
 @section('content')
-    <div class="col-8 py-5 mx-auto">
+    <div class="col-10 py-5 mx-auto">
         <!-- Section de présentation -->
         <div class="row align-items-center mb-5">
             <div class="col-md-4 text-center">
@@ -50,7 +50,7 @@
             </div>
         </div>
         <!-- Section d'expérience -->
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row g-3">
             <div class="col">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body d-flex flex-column">

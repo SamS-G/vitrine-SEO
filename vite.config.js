@@ -14,6 +14,7 @@ export default defineConfig({
                 'resources/js/area-business-map.js',
                 'resources/js/form-validation.js',
                 'resources/js/leaflet.js',
+                'resources/js/heightUniformizer.js',
             ],
             refresh: true,
         }),

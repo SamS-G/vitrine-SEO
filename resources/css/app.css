@@ -266,32 +266,51 @@ footer {
 /* Grands écrans (ex: 4K) */
 @media (min-width: 1440px) {
     body > main > section.hero > div > a {
-        top: 60%;
+        top: 85%;
+    }
+
+    body > main > section.hero > div > div {
+        top: 65%;
+    }
+
+    body > main > section.hero > div > h1 {
+        top: 35%
     }
 }
 
 /* ✅ Tablettes : max 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
+
+    body > div > div > h2 {
+        top: 5%;
+    }
+
     h3 {
         font-size: 1.2rem;
     }
 
     .navbar-toggler {
-        margin: 0 auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2%;
     }
 
     .hero-title {
         width: 100%;
-        top: 50% !important;
+        top: 30% !important;
         font-size: 1.5rem !important;
+    }
+
+    body > main > section.hero > div > div {
+        top: 64%;
     }
 
     .top-hero-wrapper {
         align-items: baseline !important;
     }
 
-    .top-hero-wrapper h2 {
-        margin-top: 2% !important;
+    body > main > section.hero > div > div > p {
+        font-size: 1.1rem;
     }
 
     .contact-container {
@@ -315,6 +334,10 @@ footer {
         display: block;
     }
 
+    #home-service-section .card-group .card {
+        text-align: center;
+    }
+
     .card-group .card {
         margin-bottom: 3rem;
     }
@@ -330,11 +353,12 @@ footer {
         margin: 0 auto;
         text-align: center;
     }
-    .footer-row>div ul {
+
+    .footer-row > div ul {
         text-align: center;
     }
 
-        /* pages Nos prestations à xxx*/
+    /* pages Nos prestations à xxx*/
     body > main > div > div.d-flex.justify-content-around {
         flex-direction: column;
     }
@@ -360,26 +384,48 @@ footer {
     }
 
     body > main > section.hero > div > a {
-        top: 75%;
+        top: 86%;
     }
 }
 
 /* ✅ Mobiles : max 768px */
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 767px) {
     .navbar-toggler {
-        margin: 0 auto;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 4%;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        top: 5%
     }
 
     h3 {
         text-align: center;
+        font-size: 1.1rem;
     }
 
-    h1 {
-        font-size: 1.7rem !important;
+    .hero-logo {
+        display: none;
     }
 
     .top-hero-container .top-hero-wrapper .h1-xl {
         font-size: 1.5rem;
+    }
+
+    .contact-container {
+        margin-top: 10% !important;
+        margin-bottom: 2% !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #home-service-section {
+        margin-top: 13rem !important;
     }
 
     h2, .section-title h2 span {
@@ -387,9 +433,13 @@ footer {
     }
 
     h5, .cta-container a, .section-title h3, .nav-link,
-    .container-fluid.header-container .hero-title.text-center,
+    .container-fluid.header-container,
     .carousel-control-next .fa-solid, .carousel-control-prev .fa-solid {
         font-size: 1.1rem !important;
+    }
+
+    #home-service-section .card-group .card div > a {
+        font-size: 0.7rem;
     }
 
     .services-presentation {
@@ -411,7 +461,11 @@ footer {
 
     body > div > div > a > img {
         height: auto;
-        width: 75%;
+        width: 72%;
+    }
+
+    .separator-right, .separator-left {
+        display: none;
     }
 
     .hero-logo {
@@ -423,17 +477,26 @@ footer {
         top: 50% !important;
     }
 
-    .contact-container {
-        padding: 0 !important;
-        margin: 0 auto !important;
+    .hero-title {
+        padding: 0.5rem !important;
+        width: 100%;
+        top: 40% !important;
+    }
+
+    .hero-text {
+        top: 135% !important;
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+        background: rgba(0, 0, 0, 0.8) !important;
+    }
+
+    .hero-text p {
+        font-size: 1rem !important;
+        padding: 0 0.5rem !important;
     }
 
     .top-hero-wrapper {
         align-items: baseline !important;
-    }
-
-    .top-hero-wrapper h2 {
-        margin-top: 2% !important;
     }
 
     body > main > section.hero > div > div > a {
@@ -442,6 +505,10 @@ footer {
 
     .section-wrapper {
         padding: 1vh 2vh;
+    }
+
+    #home-service-section {
+        margin-top: 9.0rem !important;
     }
 
     .card-group {
@@ -454,6 +521,7 @@ footer {
 
     .footer-row, .footer-row div ul, h3 {
         text-align: center;
+        flex-direction: column;
     }
 
     /* page nos services */
@@ -477,12 +545,32 @@ footer {
     body > main > div > div.d-flex.justify-content-around > div > a {
         width: 100%;
     }
+
+    body > main > section.hero > div > a {
+        top: 72%;
+        font-size: 1rem !important;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 479px) {
+    #home-service-section {
+        margin-top: 10.5rem !important;
+    }
+
+    body > main > section.hero > div > div {
+        top: 159% !important;
+    }
+
+    body > main > section.hero > div > a {
+        top: 79% !important;
+        font-size: 1rem !important;
+    }
 }
 
 /* Très petit mobile (ex: iPhone SE) */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 479px) {
     h1 {
-        font-size: 1.5rem !important;
+        font-size: 1.4rem !important;
     }
 
     h3 {
@@ -490,16 +578,24 @@ footer {
         font-size: 1.1rem;
     }
 
-    h2, .fa-brands {
-        font-size: 1.2rem;
+    h2, h2 span, .fa-brands {
+        font-size: 1.5rem;
     }
 
     .header-container {
         height: 10rem;
     }
 
-    .section-title span, .experience-title span {
+    .nav-link {
         font-size: 1.1rem;
+    }
+
+    .experience-title span {
+        font-size: 1.1rem;
+    }
+
+    #home-service-section {
+        margin-top: 12.5rem;
     }
 
     body > footer > div > div:nth-child(1) > ul > li:nth-child(3) > i, .button {
@@ -546,7 +642,6 @@ footer {
         position: sticky;
         top: 0;
         width: 100%;
-        padding-top: 0;
     }
 
     .navbar-toggler {
@@ -562,7 +657,7 @@ footer {
     }
 
     .contact-container {
-        margin-top: 15%;
+        margin-bottom: 2%;
     }
 
     .hero-title {
@@ -571,12 +666,24 @@ footer {
         top: 40% !important;
     }
 
+    .hero-text {
+        top: 163% !important;
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+        background: rgba(0, 0, 0, 0.8) !important;
+    }
+
+    .hero-text p {
+        font-size: 1rem !important;
+        padding: 0 0.5rem !important;
+    }
+
     body > main > section.hero > div > div > a {
         top: 85% !important;
     }
 
     .top-hero-wrapper h2 {
-        top: 0;
+        top: 5%;
         font-size: 1.5rem !important;
     }
 
@@ -601,7 +708,8 @@ footer {
         height: 7rem;
         flex-direction: column;
     }
-    .footer-row>div ul {
+
+    .footer-row > div ul {
         text-align: center;
     }
 
@@ -625,7 +733,7 @@ footer {
     }
 
     body > main > section.hero > div > a {
-        top: 90%;
+        top: 74%;
         font-size: 1rem !important;
     }
 }
