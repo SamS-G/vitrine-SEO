@@ -29,7 +29,7 @@ class ContactController extends Controller
         $data = [
             'name' => $request->name,
             'phone' => $request->phone,
-            'address' => !is_null($request->address) ?? null,
+            'address' => $request->address,
             'email' => $request->email,
             'content' => $request->message
         ];

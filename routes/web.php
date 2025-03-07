@@ -6,7 +6,7 @@ use App\Http\Controllers\LocalServicesController;
 use App\Http\Middleware\FixTypeAndVille;
 use App\Models\City;
 use App\Models\Service;
-use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
 
 // PAGES STATIQUES
@@ -56,11 +56,12 @@ Route::get('prestations-{ville}', [LocalServicesController::class, 'showCityServ
 Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
 
 // SITEMAP GLOBAL
-Route::get('/sitemap.xml', function () {
+Route::get('/generate-sitemap', function () {
+    // Pages principales du site
     $routes = [
         ['loc' => url('/'), 'priority' => '1.0'],
         ['loc' => url('/contact'), 'priority' => '0.8'],
-        ['loc' => url('//presentation-jdtravauxservices'), 'priority' => '0.7'],
+        ['loc' => url('/presentation-jdtravauxservices'), 'priority' => '0.7'],
         ['loc' => url('/services'), 'priority' => '0.9'],
         ['loc' => url('/zone-interventions'), 'priority' => '0.6'],
         ['loc' => url('/nos-marque'), 'priority' => '0.5'],
@@ -69,29 +70,33 @@ Route::get('/sitemap.xml', function () {
         ['loc' => url('/plan-site'), 'priority' => '0.7'],
     ];
 
-// Ajoute le sitemap des pages locales
+    // Ajouter le sitemap des pages locales
     $routes[] = ['loc' => url('/sitemap-local.xml'), 'priority' => '0.9'];
 
-    return response()->view('sitemap.global', compact('routes'))->header('Content-Type', 'application/xml');
-});
+    // Générer et enregistrer sitemap.xml
+    $sitemapContent = view('sitemap.global', compact('routes'))->render();
+    File::put(public_path('sitemap.xml'), $sitemapContent);
 
-// SITEMAP LOCAL
-Route::get('/sitemap-local.xml', function () {
+    // Générer et enregistrer sitemap-local.xml
     $services = Service::all();
     $cities = City::all();
-    $routes = [];
+    $localRoutes = [];
 
     foreach ($services as $service) {
         foreach ($cities as $city) {
-            $routes[] = [
+            $localRoutes[] = [
                 'loc' => url("/services/{$service->slug}-{$city->slug}"),
                 'priority' => '0.7'
             ];
         }
     }
 
-    return Response::view('sitemap.local', compact('routes'))->header('Content-Type', 'application/xml');
+    $sitemapLocalContent = view('sitemap.local', compact('localRoutes'))->render();
+    File::put(public_path('sitemap-local.xml'), $sitemapLocalContent);
+
+    return "Sitemap généré avec succès : /sitemap.xml et /sitemap-local.xml";
 });
+
 
 // ✅ Gestion des erreurs 404
 Route::fallback(function () {

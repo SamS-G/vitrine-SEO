@@ -1,2 +1,26 @@
 User-agent: *
-Disallow:
+# Bloquer les dossiers sensibles (base de données, config, vendor)
+Disallow: /storage/
+Disallow: /database/
+Disallow: /resources/
+Disallow: /node_modules/
+Disallow: /bootstrap/
+Disallow: /vendor/
+
+# Bloquer l'accès aux fichiers sensibles
+Disallow: /*.env$
+Disallow: /*.htaccess$
+
+# Bloquer le cache de Laravel et les fichiers internes
+Disallow: /public/storage/
+Disallow: /public/database/
+
+# ✅ Autoriser les fichiers CSS, JS et images situés dans public/build/assets/
+Allow: /build/assets/
+
+# Empêcher l'indexation des paramètres URL spécifiques
+Disallow: /*?page=
+Disallow: /*?utm_source=
+
+# Indiquer l'emplacement du sitemap
+Sitemap: https://jdtravauxservices.fr/sitemap.xml
