@@ -18,7 +18,7 @@ class FixTypeAndVille
     public function handle(Request $request, Closure $next)
     {
         // Définition d'une regex pour capturer correctement `{type}` et `{ville}`
-        $regex = '/^(pose-portes-garage|pose-revetements-sol|pose-fenetres|pose-portes|pose-portails|pose-volets|pose-moustiquaires|depannage-volets|travaux-batiment)-(.+)$/';
+        $regex = '/^(pose-portes-garage|pose-revetements-sol|pose-fenetres|pose-portes-entree|pose-portails|pose-volets-roulants|pose-moustiquaires|depannage-volets-roulants|travaux-batiment)-(.+)$/';
 
         // Récupération des paramètres actuels de la route
         $type = $request->route('type');

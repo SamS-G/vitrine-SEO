@@ -17,9 +17,9 @@
             <div>
                 <h2 class="h3-xl my-4">Mes types de volets</h2>
                 <ul class="list-group">
-                    <li class="list-group-item">Volets roulants électriques ou solaires</li>
-                    <li class="list-group-item">Volets battants en aluminium, PVC ou bois</li>
-                    <li class="list-group-item">Automatisation de volets existants</li>
+                    <li class="list-group-item">✅ Volets roulants électriques ou solaires</li>
+                    <li class="list-group-item">✅ Volets battants en aluminium, PVC ou bois</li>
+                    <li class="list-group-item">✅ Automatisation de volets existants</li>
                 </ul>
                 <a href="{{ url('contact') }}" class="btn mt-3 button">Obtenir un devis</a>
                 <div class="mt-3">

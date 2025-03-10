@@ -18,10 +18,10 @@
             <div>
                 <h2>Mes prestations de réparation</h2>
                 <ul>
-                    <li>Réparation de volets roulants électriques et manuels</li>
-                    <li>Remplacement de moteur et de lames endommagées</li>
-                    <li>Réglage des fins de course et ajustement des volets</li>
-                    <li>Intervention en urgence sous 48h</li>
+                    <li>✅ Réparation de volets roulants électriques et manuels</li>
+                    <li>✅ Remplacement de moteur et de lames endommagées</li>
+                    <li>✅ Réglage des fins de course et ajustement des volets</li>
+                    <li>✅ Intervention en urgence sous 48h</li>
                 </ul>
                 <a href="{{ route('contact') }}" class="btn button mt-3">Demander une intervention</a>
                 <div class="mt-3">

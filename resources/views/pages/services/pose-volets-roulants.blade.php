@@ -3,11 +3,11 @@
 @section('content')
     <section>
         <x-service
-            title="{{ $siteData['services']['pose-volets']['title'] }}"
-            description="{!! $siteData['services']['pose-volets']['description'] !!}"
-            :advantages="$siteData['services']['pose-volets']['advantages']"
-            :gallery="$siteData['services']['pose-volets']['gallery']"
-            :faq="$siteData['services']['pose-volets']['faq']"
+            title="{{ $siteData['service']['pose-volets-roulants']['title'] }}"
+            description="{!! $siteData['service']['pose-volets-roulants']['description'] !!}"
+            :advantages="$siteData['service']['pose-volets-roulants']['advantages']"
+            :gallery="$siteData['service']['pose-volets-roulants']['gallery']"
+            :faq="$siteData['service']['pose-volets-roulants']['faq']"
         />
     </section>
 @endsection

@@ -20,24 +20,24 @@ Route::view('/contact', 'pages.main.contact')->name('contact');
 
 // ROUTES GÉNÉRIQUES DES SERVICES
 $services = [
-    'volets-roulants',
-    'portes-entree',
-    'fenetres',
-    'portes-garage',
-    'portails',
-    'revetements-sol',
-    'reparation-volets-roulants',
+    'pose-volets-roulants',
+    'pose-portes-entree',
+    'pose-fenetres',
+    'pose-portes-garage',
+    'pose-portails',
+    'pose-revetements-sol',
+    'depannage-volets-roulants',
     'travaux-batiment',
-    'moustiquaires'
+    'pose-moustiquaires'
 ];
 $exceptions = [
-    'reparation-volets-roulants',
+    'depannage-volets-roulants',
     'travaux-batiment'
 ];
 // Génération dynamique des routes statiques
 foreach ($services as $service) {
-    Route::view("/services/pose-$service", "pages.services.pose-$service")
-        ->name("services.pose-$service");
+    Route::view("/services/$service", "pages.services.$service")
+        ->name("services.$service");
 }
 foreach ($exceptions as $exception) {
     Route::view("/services/$exception", "pages.services.$exception")
@@ -60,13 +60,12 @@ Route::get('/generate-sitemap', function () {
     // Pages principales du site
     $routes = [
         ['loc' => url('/'), 'priority' => '1.0'],
-        ['loc' => url('/'), 'priority' => '1.0'],
         ['loc' => url('/contact'), 'priority' => '0.8'],
         ['loc' => url('/presentation-jdtravauxservices'), 'priority' => '0.7'],
         ['loc' => url('/services'), 'priority' => '0.9'],
         ['loc' => url('/realisations'), 'priority' => '0.8'],
         ['loc' => url('/zone-interventions'), 'priority' => '0.6'],
-        ['loc' => url('/mes-marques'), 'priority' => '0.5'],
+        ['loc' => url('/marques'), 'priority' => '0.5'],
         ['loc' => url('/mentions-legales.html'), 'priority' => '0.5'],
         ['loc' => url('/utilisation-donnees.html'), 'priority' => '0.5'],
         ['loc' => url('/plan-site'), 'priority' => '0.7'],
@@ -105,12 +104,12 @@ Route::get('/plan-site', function () {
         ['url' => url('/'), 'title' => 'Accueil'],
         ['url' => url('/contact'), 'title' => 'Contact'],
         ['url' => url('/presentation-jdtravauxservices'), 'title' => 'Présentation'],
-        ['url' => url('/realisations'), 'title' => 'Réalisations'],
+        ['url' => url('/realisations'), 'title' => 'Mes Réalisations'],
         ['url' => url('/services'), 'title' => 'Mes Services'],
         ['url' => url('/zone-interventions'), 'title' => 'Zones d\'intervention'],
-        ['url' => url('/mes-marques'), 'title' => 'Mes Marques'],
-        ['url' => url('/mentions-legales.html'), 'title' => 'Mentions Légales'],
-        ['url' => url('/utilisation-donnees.html'), 'title' => 'Politique de confidentialité'],
+        ['url' => url('/marques'), 'title' => 'Les Marques'],
+        ['url' => url('/mentions-legales.html'), 'title' => 'Les Mentions Légales'],
+        ['url' => url('/utilisation-donnees.html'), 'title' => 'La Politique de confidentialité'],
     ];
     // Ajouter dynamiquement les pages des services
     $services = Service::all();
@@ -135,7 +134,6 @@ Route::get('/plan-site', function () {
     }
     return view('plan-site', compact('pages'));
 });
-
 
 // ✅ Gestion des erreurs 404
 Route::fallback(function () {

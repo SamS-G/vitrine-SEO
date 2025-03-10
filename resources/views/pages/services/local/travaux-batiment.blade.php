@@ -18,10 +18,10 @@
             <div>
                 <h2 class="h3-xl my-4">Multi-services</h2>
                 <ul class="list-group">
-                    <li class="list-group-item">Réparations de portes, fenêtres et volets</li>
-                    <li class="list-group-item">Pose de plinthes, moulures et ajustements divers</li>
-                    <li class="list-group-item">Remplacement de serrures et poignées</li>
-                    <li class="list-group-item">Amélioration et isolation thermique et phonique</li>
+                    <li class="list-group-item">✅ Réparations de portes, fenêtres et volets</li>
+                    <li class="list-group-item">✅ Pose de plinthes, moulures et ajustements divers</li>
+                    <li class="list-group-item">✅ Remplacement de serrures et poignées</li>
+                    <li class="list-group-item">✅ Amélioration et isolation thermique et phonique</li>
                 </ul>
                 <a href="{{ url('contact') }}" class="btn button mt-3">Obtenir un devis</a>
                 <div class="mt-3">

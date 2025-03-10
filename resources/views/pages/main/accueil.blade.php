@@ -108,7 +108,7 @@
                 title="Dépannage volets"
                 text="Dépannage sur volets roulants PVC ou aluminium"
                 iconClass="fa-solid fa-plus"
-                link="services/reparation-volets-roulants"
+                link="services/depannage-volets-roulants"
                 src="{{ Agent::isMobile() ? Vite::asset('resources/images/responsive/home/services/reparation-volet.webp') : Vite::asset('resources/images/home/services/reparation-volet.webp') }}"
                 imgClass=""
                 linkClass="btn btn-sm button"

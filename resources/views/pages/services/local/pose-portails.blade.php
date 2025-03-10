@@ -17,9 +17,9 @@
             <div>
                 <h2 class="h3-xl my-4">Mes modèles de portails</h2>
                 <ul class="list-group">
-                    <li class="list-group-item">Portail battant en aluminium ou PVC</li>
-                    <li class="list-group-item">Portail coulissant motorisé</li>
-                    <li class="list-group-item">Portail manuel ou automatique</li>
+                    <li class="list-group-item">✅ Portail battant en aluminium ou PVC</li>
+                    <li class="list-group-item">✅ Portail coulissant motorisé</li>
+                    <li class="list-group-item">✅ Portail manuel ou automatique</li>
                 </ul>
                 <a href="{{ url('contact') }}" class="btn button mt-3">Devis personnalisé</a>
                 <div class="mt-3">

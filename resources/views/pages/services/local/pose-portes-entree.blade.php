@@ -17,9 +17,9 @@
             <div class="col-md-6">
                 <h2 class="h3-xl my-4">Mes types de portes</h2>
                 <ul class="list-group">
-                    <li class="list-group-item">Portes d'entrée blindées et sécurisées</li>
-                    <li class="list-group-item">Portes intérieures design et modernes</li>
-                    <li class="list-group-item">Portes de garage sectionnelles et basculantes</li>
+                    <li class="list-group-item">✅ Portes d'entrée blindées et sécurisées</li>
+                    <li class="list-group-item">✅ Portes intérieures design et modernes</li>
+                    <li class="list-group-item">✅ Portes de garage sectionnelles et basculantes</li>
                 </ul>
                 <a href="{{ url('contact') }}" class="btn button mt-3 cta-button">Obtenir un devis gratuit</a>
                 <div class="mt-3">
