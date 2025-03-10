@@ -64,10 +64,19 @@
         <div>
             <h5>⚖ Mentions légales</h5>
             <ul class="list-unstyled">
-                <li><a href="{{ url('mentions-legales.html') }}" class="text-light text-decoration-none">Mentions
-                        légales</a></li>
-                <li><a href="{{ url('utilisation-donnees.html') }}" class="text-light text-decoration-none">Utilisation
-                        des données personnelles</a></li>
+                <li>
+                    <a href="{{ url('mentions-legales.html') }}" class="text-light text-decoration-none">Mentions
+                        légales
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('utilisation-donnees.html') }}" class="text-light text-decoration-none">Utilisation
+                        des données personnelles
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/plan-site') }}" class="text-light text-decoration-none">Plan du site</a>
+                </li>
             </ul>
         </div>
     </div>

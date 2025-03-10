@@ -4,17 +4,17 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LocalServicesController;
 use App\Http\Middleware\FixTypeAndVille;
-use App\Models\City;
-use App\Models\Service;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
+use App\Models\City;
+use App\Models\Service;
 
 // PAGES STATIQUES
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::view('/services', 'pages.main.services')->name('services');
 Route::view('/realisations', 'pages.main.realisations')->name('realisations');
 Route::view('/presentation-jdtravauxservices', 'pages.main.presentation-jdtravauxservices')->name('presentation');
-Route::view('/nos-marques', 'pages.main.nos-marques')->name('marques');
+Route::view('/marques', 'pages.main.marques')->name('marques');
 Route::view('/zone-interventions', 'pages.services.local.layouts.index')->name('zone-interventions');
 Route::view('/contact', 'pages.main.contact')->name('contact');
 
@@ -60,13 +60,15 @@ Route::get('/generate-sitemap', function () {
     // Pages principales du site
     $routes = [
         ['loc' => url('/'), 'priority' => '1.0'],
+        ['loc' => url('/'), 'priority' => '1.0'],
         ['loc' => url('/contact'), 'priority' => '0.8'],
         ['loc' => url('/presentation-jdtravauxservices'), 'priority' => '0.7'],
         ['loc' => url('/services'), 'priority' => '0.9'],
+        ['loc' => url('/realisations'), 'priority' => '0.8'],
         ['loc' => url('/zone-interventions'), 'priority' => '0.6'],
-        ['loc' => url('/nos-marque'), 'priority' => '0.5'],
-        ['loc' => url('/mentions-legales'), 'priority' => '0.5'],
-        ['loc' => url('/utilisation-donnees'), 'priority' => '0.5'],
+        ['loc' => url('/mes-marques'), 'priority' => '0.5'],
+        ['loc' => url('/mentions-legales.html'), 'priority' => '0.5'],
+        ['loc' => url('/utilisation-donnees.html'), 'priority' => '0.5'],
         ['loc' => url('/plan-site'), 'priority' => '0.7'],
     ];
 
@@ -96,11 +98,57 @@ Route::get('/generate-sitemap', function () {
 
     return "Sitemap généré avec succès : /sitemap.xml et /sitemap-local.xml";
 });
+// PLAN DU SITE
+Route::get('/plan-site', function () {
+    // Liste des pages principales
+    $pages = [
+        ['url' => url('/'), 'title' => 'Accueil'],
+        ['url' => url('/contact'), 'title' => 'Contact'],
+        ['url' => url('/presentation-jdtravauxservices'), 'title' => 'Présentation'],
+        ['url' => url('/realisations'), 'title' => 'Réalisations'],
+        ['url' => url('/services'), 'title' => 'Mes Services'],
+        ['url' => url('/zone-interventions'), 'title' => 'Zones d\'intervention'],
+        ['url' => url('/mes-marques'), 'title' => 'Mes Marques'],
+        ['url' => url('/mentions-legales.html'), 'title' => 'Mentions Légales'],
+        ['url' => url('/utilisation-donnees.html'), 'title' => 'Politique de confidentialité'],
+    ];
+    // Ajouter dynamiquement les pages des services
+    $services = Service::all();
+    $cities = City::all();
+
+    foreach ($services as $service) {
+        if (!str_contains($service->slug, 'base')) {
+            $pages[] = ['url' => url("/services/{$service->slug}"), 'title' => $service->name];
+        }
+    }
+
+    // Ajouter dynamiquement les pages Services + Villes
+    foreach ($services as $service) {
+        if (!str_contains($service->slug, 'base')) {
+            foreach ($cities as $city) {
+                $pages[] = [
+                    'url' => url("/services/{$service->slug}-{$city->slug}"),
+                    'title' => "{$service->name} à {$city->name}"
+                ];
+            }
+        }
+    }
+    return view('plan-site', compact('pages'));
+});
 
 
 // ✅ Gestion des erreurs 404
 Route::fallback(function () {
     return response()->view('pages.404', [], 404);
 });
+// Suppression Google des anciennes URL
+Route::middleware(['page.supprimee'])->group(function () {
+    Route::get('/qui-suis-je', fn() => abort(410));
+    Route::get('/mes-services', fn() => abort(410));
+    Route::get('/photos-chantiers', fn() => abort(410));
+    Route::get('/contactez-moi-pour-votre-devis-gratuit', fn() => abort(410));
+});
+
+
 
 
