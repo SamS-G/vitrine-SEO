@@ -1,5 +1,8 @@
 @extends('layouts.app')
-@section('title', 'Zone Géographique - JD Travaux Services')
+@section('title', "Services proposés à $ville - JD Travaux Services")
+@section('url')
+    <link rel="canonical" href="{{ url()->current() }}">
+@endsection
 
 @section('content')
     <div id="prestations-par-ville" class="container">

@@ -1,5 +1,8 @@
 @extends('layouts.app')
-@section('title', 'Accueil - JD Travaux Services')
+@section('title', 'Page d\'accueil avec services proposés, témoignages clients')
+@section('url')
+    <link rel="canonical" href="{{ url()->current() }}">
+@endsection
 
 @push('styles')
     @vite(['resources/css/accueil.css'])

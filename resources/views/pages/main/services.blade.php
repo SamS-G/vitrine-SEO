@@ -1,5 +1,8 @@
 @extends('layouts.app')
-@section('title', 'Services - JdServices')
+@section('title', 'Services proposés localement - JdServices')
+@section('url')
+    <link rel="canonical" href="{{ url()->current() }}">
+@endsection
 
 @push('styles')
     @vite(['resources/css/services.css'])

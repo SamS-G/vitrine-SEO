@@ -1,11 +1,13 @@
 @extends('layouts.app')
 @section('title', $meta_data->meta_title)
 @section('meta_description', $meta_data->meta_description)
-
 @section('local_meta_data')
     <script type="application/ld+json">
         {!! $meta_data->meta_schema !!}
     </script>
+@endsection
+@section('url')
+    <link rel="canonical" href="{{ url()->current() }}">
 @endsection
 
 @section('content')

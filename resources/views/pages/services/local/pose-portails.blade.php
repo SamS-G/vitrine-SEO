@@ -1,12 +1,14 @@
 @extends('layouts.app')
 
 @section('title', "Pose de portails à {$city->name} - JD Travaux Services")
-@section('meta_description', "Installation de portails électriques ou manuels à {$city->name}. Choisissez un portail battant ou coulissant adapté à votre habitation.")
-
+@section('meta_description', $meta_data->meta_description)
 @section('local_meta_data')
     <script type="application/ld+json">
         {!! $meta_data->meta_schema !!}
     </script>
+@endsection
+@section('url')
+    <link rel="canonical" href="{{ url()->current() }}">
 @endsection
 
 @section('content')

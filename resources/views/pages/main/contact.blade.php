@@ -1,5 +1,8 @@
 @extends('layouts.app')
-@section('title', 'Contactez-nous')
+@section('title', 'Page pour contacter l\'entreprise JD Travaux Services' )
+@section('url')
+    <link rel="canonical" href="{{ url()->current() }}">
+@endsection
 
 @push('styles')
     <style>

@@ -1,5 +1,9 @@
 @extends('layouts.app')
-@section('title', 'Réalisations - JD Travaux Services')
+@section('title', 'Réalisations faites par JD Travaux Services')
+@section('url')
+    <link rel="canonical" href="{{ url()->current() }}">
+@endsection
+
 @push('styles')
     <style>
         .instagram {

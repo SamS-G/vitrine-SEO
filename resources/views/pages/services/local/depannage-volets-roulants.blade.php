@@ -1,12 +1,14 @@
 @extends('layouts.app')
 
 @section('title', "Dépannage de volets roulants à {$city->name} - JD Travaux Services")
-@section('meta_description', "Intervention rapide pour le dépannage et la réparation de volets roulants à {$city->name}. Remplacement de pièces, réparation motorisation et réglage.")
-
+@section('meta_description', $meta_data->meta_description)
 @section('local_meta_data')
     <script type="application/ld+json">
         {!! $meta_data->meta_schema !!}
     </script>
+@endsection
+@section('url')
+    <link rel="canonical" href="{{ url()->current() }}">
 @endsection
 
 @section('content')

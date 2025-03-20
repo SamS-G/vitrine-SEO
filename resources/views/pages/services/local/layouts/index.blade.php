@@ -8,7 +8,7 @@
     @vite(['resources/js/leaflet.js', 'resources/js/area-business-map.js'])
 @endpush
 
-@section('title', 'Zone Géographique - JD Travaux Services')
+@section('title', 'Liste des communes désservie par JD Travaux Services pour ses prestations')
 @section('content')
     <div class="col-10 mx-auto py-5">
         <h1 class="text-center mb-4 bg-white-soft">Mes Services de Menuiserie et Dépannage dans la Plaine de l'Ain</h1>

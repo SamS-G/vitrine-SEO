@@ -1,12 +1,14 @@
 @extends('layouts.app')
 
 @section('title', "Pose de portes à {$city->name} - JD Travaux Services")
-@section('meta_description', "JD Travaux Services installe vos portes d'entrée, portes intérieures et portes de garage à {$city->name}. Sécurisez votre habitation avec nos modèles sur-mesure.")
-
+@section('meta_description', $meta_data->meta_description)
 @section('local_meta_data')
     <script type="application/ld+json">
         {!! $meta_data->meta_schema !!}
     </script>
+@endsection
+@section('url')
+    <link rel="canonical" href="{{ url()->current() }}">
 @endsection
 
 @section('content')

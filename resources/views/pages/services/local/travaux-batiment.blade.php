@@ -1,12 +1,14 @@
 @extends('layouts.app')
 
 @section('title', "Multiservices en travaux du bâtiment à {$city->name} - JD Travaux Services")
-@section('meta_description', "Petits travaux du bâtiment à {$city->name} : menuiserie, rénovation intérieure et extérieure, ajustements et réparations diverses.")
-
+@section('meta_description', $meta_data->meta_description)
 @section('local_meta_data')
     <script type="application/ld+json">
         {!! $meta_data->meta_schema !!}
     </script>
+@endsection
+@section('url')
+    <link rel="canonical" href="{{ url()->current() }}">
 @endsection
 
 @section('content')
