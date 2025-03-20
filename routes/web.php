@@ -4,10 +4,10 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LocalServicesController;
 use App\Http\Middleware\FixTypeAndVille;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Route;
 use App\Models\City;
 use App\Models\Service;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Route;
 
 // PAGES STATIQUES
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -84,11 +84,13 @@ Route::get('/generate-sitemap', function () {
     $localRoutes = [];
 
     foreach ($services as $service) {
-        foreach ($cities as $city) {
-            $localRoutes[] = [
-                'loc' => url("/services/{$service->slug}-{$city->slug}"),
-                'priority' => '0.7'
-            ];
+        if ($service->slug !== 'base') {
+            foreach ($cities as $city) {
+                $localRoutes[] = [
+                    'loc' => url("/services/{$service->slug}-{$city->slug}"),
+                    'priority' => '0.7'
+                ];
+            }
         }
     }
 
