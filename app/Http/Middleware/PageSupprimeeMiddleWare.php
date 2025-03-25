@@ -16,8 +16,6 @@ class PageSupprimeeMiddleWare
     public function handle(Request $request, Closure $next): Response
     {
         $pagesSupprimees = [
-            'qui-suis-je',
-            'mes-services',
             'photos-chantiers',
             'contactez-moi-pour-votre-devis-gratuit'
         ];

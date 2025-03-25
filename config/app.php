@@ -2,6 +2,7 @@
 
 use App\Providers\AppServiceProvider;
 use App\Providers\GooglePlacesServiceProvider;
+use App\Providers\RedirectServiceProvider;
 
 return [
 
@@ -151,6 +152,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         AppServiceProvider::class,
         GooglePlacesServiceProvider::class,
+        RedirectServiceProvider::class,
         Jenssegers\Agent\AgentServiceProvider::class,
     ],
     'aliases' => [

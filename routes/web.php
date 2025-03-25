@@ -138,13 +138,11 @@ Route::get('/plan-site', function () {
 });
 
 // ✅ Gestion des erreurs 404
-Route::fallback(function () {
-    return response()->view('pages.404', [], 404);
-});
+//Route::fallback(function () {
+//    return response()->view('pages.404', [], 404);
+//});
 // Suppression Google des anciennes URL
 Route::middleware(['page.supprimee'])->group(function () {
-    Route::get('/qui-suis-je', fn() => abort(410));
-    Route::get('/mes-services', fn() => abort(410));
     Route::get('/photos-chantiers', fn() => abort(410));
     Route::get('/contactez-moi-pour-votre-devis-gratuit', fn() => abort(410));
 });
